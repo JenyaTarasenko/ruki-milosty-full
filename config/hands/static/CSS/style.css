@@ -1,0 +1,2403 @@
+
+/* ---------------------общие--------------*/
+a {
+
+    text-decoration: none;
+    color:#E9EBEB;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* .body {
+
+    margin: 0;
+    padding: 0;
+} */
+html,body {
+   
+    font-family:  'Inter', 'Unbounded', sans-serif;
+    font-size: 16px; 
+    /* color: #CCC5B9;  */
+
+    overflow-x: hidden;
+    max-width: 1280px; /* Ограничиваем максимальную ширину */
+    margin: 0 auto; /* Центрируем контент */
+    padding: 0;
+}
+/* ---------------------общие--------------*/
+
+
+
+/* ---------------------меню--------------*/
+.navbar-expand-lg .navbar-collapse {
+
+    margin-left: 90px;
+}
+
+
+.nav-link.active {
+    color: #E77B2D!important; /* Белый текст */
+}
+.custom-nuvbar {
+    background-color: #fff;
+}
+.navbar-toggler {
+    border: none !important; 
+  
+}
+/* меню  bootstrap  убрать обводку при нажатии */
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #FFB202;
+   
+} 
+
+.text-decor-mobile {
+
+    font-family: 'Inter',sans-serif;
+    font-size: 15px;
+    color: rgb(53, 53, 53);
+
+
+}
+.text-decor-mobile:hover {
+
+    color: #FFB202;
+
+
+}
+/* ---------------------меню--------------*/
+/* -----------------first section------------------*/
+.first-color-section {
+
+   
+    background-color: #F5F9FF;
+    border-radius: 40px;
+}
+.first-text h2 {
+    font-family: "Jost",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 42px;
+}
+.first-text {
+
+    padding: 10px;
+}
+.first-item {
+
+    /* padding: 10px; */
+
+}
+.first-text-description {
+    /* padding: 10px; */
+
+
+}
+.img-first-page {
+    width: 450px;
+    height: 450px;
+
+}
+.first-item h1{
+    font-family: "Unbounded",sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    /* line-height: 70px; */
+    color:#C01F2F;
+}
+.first-text-description h3 {
+
+    font-family: "Jost",sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    /* line-height: 28px; */
+    color: #070707;
+}
+.first-text-description  {
+
+    width: 400px;
+}
+.img-first-page-mobile,
+.image-first-mobile {
+    display: none;
+}
+.rounded-button {
+
+    border: 1px solid black; /* Добавим начальную черную обводку */
+    width: 190px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Unbounded",sans-serif;
+    line-height: 23px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.rounded-button:hover {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при наведении */
+
+    color: #FFB202; /* Меняем цвет текста при наведении */
+}
+.rounded-button:active {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при нажатии */
+    color: #FFB202; /* Меняем цвет текста при нажатии */
+}
+/* -----------------first section------------------*/
+/* -----------------slider section------------------*/
+.slider-container {
+    width: 1100px;
+    margin: 0 auto; /* Центрирование */
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.slider-items {
+    border-radius: 30px;
+}
+.slaider-section {
+    display: flex;
+    justify-content: center; /* Центрирует контейнер по горизонтали */
+    align-items: center; /* Центрирует контейнер по вертикали */
+  
+
+}
+/* -----------------slider section------------------*/
+/* -----------------Text section------------------*/
+.text-section {
+
+  
+   
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    text-align: center; /* Выравнивание текста по центру */
+
+
+}
+.main-text {
+    font-family: "Unbounded",sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.description-text {
+
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(106, 106, 106);
+    max-width: 500px;
+}
+/* -----------------Text section------------------*/
+/* -----------------new-ditache-section"------------------*/
+
+.fixed-image-ditache {
+
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 30px;
+
+}
+.circle {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Делаем круг */
+    overflow: hidden; /* Обрезаем изображение по форме */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+
+
+
+}
+.circle img {
+
+    width: 30px; /* Делаем картинку 100% ширины контейнера */
+    height: 30px;
+    object-fit: cover; 
+} 
+.new-ditache-item h5{
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #000000;
+    max-width: 500px;
+
+}
+.new-ditache-item-description h6 {
+
+    font-family: "Jost",sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #363535;
+    max-width: 500px;
+
+}
+
+.new-ditache-card-text-first h6  {
+    
+    font-family: "Unbounded",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000;
+    max-width: 500px;
+
+}
+
+.new-ditache-card-text h6{
+
+
+   font-family: "Jost",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #363535;
+    max-width: 500px;
+
+
+
+}
+/* -----------------new-ditache-section"------------------*/
+
+/* -----------------Text  card-dialnist------------------*/
+.left-card {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+
+}
+.dialnist-card {
+
+    margin-top: 50px;
+
+}
+.card-left-item {
+    width: 480px;
+    height: 220px;
+    border-radius: 40px;
+    background-color: #F5F9FF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); /* Смещение 4px вниз и вправо, мягкая тень */
+    padding: 20px;
+    border-radius: 40px; /* Немного скруглим углы */
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.card-left-item:hover {
+    transform: scale(1.02); /* Увеличиваем на 5% при наведении */
+}
+
+.card-left-item:active {
+    transform: scale(1.03); /* Немного больше при нажатии */
+}
+.conteiner-left-item {
+
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.conteiner-left-item h4 {
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 48px;
+    /* line-height: 70px; */
+}
+.conteiner-left-item h5 {
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 24px;
+    /* line-height: 70px; */
+
+
+}
+.conteiner-left-item p  {
+
+    font-family: "Unbounded",sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.card-column-item-left {
+
+    width: 230px;
+    height: 220px;
+    border-radius: 40px;
+    background-color: #FFB20247;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); /* Смещение 4px вниз и вправо, мягкая тень */
+    padding: 20px;
+    border-radius: 40px; /* Немного скруглим углы */
+    transition: transform 0.3s ease-in-out;
+
+}
+.card-column-item-left:hover {
+    transform: scale(1.02); /* Увеличиваем на 5% при наведении */
+}
+
+.card-column-item-left:active {
+    transform: scale(1.03); /* Немного больше при нажатии */
+}
+.column-item-left-container {
+
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.column-item-left-container h4{
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 35px;
+
+}
+.column-item-left-container h5 {
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 24px;
+
+}
+.column-item-left-container p {
+
+    font-family: "Unbounded",sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size:13px;
+    margin-top: 20px;
+
+}
+
+.card-column-item-right {
+
+    width: 230px;
+    height: 220px;
+    border-radius: 40px;
+    background-color:#D9D9D959;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); /* Смещение 4px вниз и вправо, мягкая тень */
+    padding: 20px;
+    border-radius: 40px; /* Немного скруглим углы */
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.card-column-item-right:hover {
+    transform: scale(1.02); /* Увеличиваем на 5% при наведении */
+}
+
+.card-column-item-right:active {
+    transform: scale(1.03); /* Немного больше при нажатии */
+}
+/* -----------------right------------------*/
+.card-right-item{
+
+    width: 230px;
+    height: 450px;
+    border-radius: 40px;
+    background-color:#A0EBCB80;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); /* Смещение 4px вниз и вправо, мягкая тень */
+    padding: 20px;
+    border-radius: 40px; /* Немного скруглим углы */
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.card-right-item:hover {
+    transform: scale(1.02); /* Увеличиваем на 5% при наведении */
+}
+
+.card-right-item:active {
+    transform: scale(1.03); /* Немного больше при нажатии */
+}
+.column-item-right-container {
+
+    margin-top: 40px;
+
+
+}
+.column-item-right-container h5 {
+
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 24px;
+
+
+}
+.column-item-right-container h4 {
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 48px;
+
+
+}
+.column-item-right-container p {
+
+    font-family: "Unbounded",sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size:13px;
+    margin-top: 20px;
+    margin-top: 100px;
+
+}
+
+.card-right-description {
+    width: 240px;
+    height: 210px;
+    border-radius: 40px;
+    background-color:#0B699526;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); /* Смещение 4px вниз и вправо, мягкая тень */
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+
+}
+.card-right-description:hover {
+    transform: scale(1.02); /* Увеличиваем на 5% при наведении */
+}
+
+.card-right-description:active {
+    transform: scale(1.03); /* Немного больше при нажатии */
+}
+.card-right-description-row {
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.card-right-description-row h5 {
+
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 24px;
+
+
+
+}
+.card-right-description-row p {
+
+
+    font-family: "Unbounded",sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size:13px;
+    margin-top: 20px;
+    margin-top: 30px;
+
+    
+
+
+}
+.card-right-description-row h4 {
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 35px;
+
+}
+.card-right-description-rows {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.card-right-description-rows h4 {
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 35px;
+
+}
+.card-right-description-rows h5 {
+
+
+    font-family: "Unbounded",sans-serif;
+    color: #C01F2F;
+    font-weight: 600;
+    font-size: 24px;
+
+
+
+}
+
+.card-right-description-rows p {
+
+    font-family: "Unbounded",sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size:13px;
+    margin-top: 20px;
+    margin-top: 30px;
+
+
+}
+
+/* -----------------Text  card-dialnist------------------*/
+
+/* -----------------card project------------------*/
+.project-card {
+
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    color:#000000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);  /* Немного увеличиваем размер */
+ 
+}
+
+.project-card:active {
+    transform: scale(0.98); 
+}
+/* .news-card-style {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+.project-card-link {
+
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.imag-projects-card {
+
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover; /* Обрезка без искажения */
+    border-radius: 20px; /* Скругление углов */
+    
+}
+.card-description {
+
+    height: 60px; /* Ограничение высоты */
+    /* overflow: hidden;  */
+    /* text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical; */
+
+}
+.card-body h5 {
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.card-description h6{
+
+    font-family: "Jost",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+.project-close {
+
+    font-family: "Jost",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color:#000000;
+
+
+}
+.project-close-open span{
+
+    font-family: "Jost",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color:#636363;
+
+
+}
+.project-month{
+
+    font-family: "Inter",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color:#E77B2D;
+
+
+}
+/* -----------------card project------------------*/
+/* -----------------section button------------------*/
+.button-section{
+
+    border: 1px solid black; /* Добавим начальную черную обводку */
+    width: 220px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Unbounded",sans-serif;
+    line-height: 23px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button-section:hover {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при наведении */
+
+    color: #FFB202; /* Меняем цвет текста при наведении */
+}
+.button-section:active {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при нажатии */
+    color: #FFB202; /* Меняем цвет текста при нажатии */
+}
+/* -----------------section button------------------*/
+/* -----------------news-section------------------*/
+.news-card {
+
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    border-radius:60px;
+    filter: brightness(0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+
+
+.news-card:hover {
+    transform: scale(1.02);  /* Немного увеличиваем размер */
+ 
+}
+
+.news-card:active {
+    transform: scale(0.98); 
+}
+
+
+.news-card-body {
+
+    margin-top: 50px;
+    padding: 20px;
+
+}
+.news-items h5 {
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+    color: #F5F9FF;
+    position: relative;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+}
+
+.news-card-body {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Для корректного отображения текста поверх фона */
+    z-index: 1; /* Текст будет поверх фона */
+    
+}
+.news-description h6 {
+
+
+    font-family: "Jost",sans-serif;
+    font-size: 14px;
+    font-weight: 3.news-top p 00;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.news-top p{
+
+    font-family: "Jost",sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #ffffff;
+    letter-spacing: 2px;
+
+    
+
+
+}
+
+/* -----------------news-section------------------*/
+
+/* -----------------section-about-image------------------*/
+
+.image-about-style img {
+
+    width: 1200px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+/* -----------------section-about-image-----------------*/
+/* -----------------section-about-card-----------------*/
+
+.about-card {
+
+    width: 420px;
+    height: 350px;
+    background-color:#5C7685;
+    border-radius: 30px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.about-card:hover {
+    transform: scale(1.01);  /* Немного увеличиваем размер */
+ 
+}
+
+.about-card:active {
+    transform: scale(0.98); 
+}
+
+
+.about-card-body-logo {
+    /* background-image: url(../image/about-card.svg); */
+    /* width:48px;
+    height: 48px; */
+    margin-right: 30px;
+    margin-top: 30px;  
+}
+.about-card-body-item h5{
+
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #F5F9FF;
+
+}
+
+.about-card-body-item {
+
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.about-card-body-items {
+
+    margin-top: 40px;
+
+}
+
+.about-card-body-items p{
+
+    font-family: "Jost",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #ffffff;
+
+
+
+}
+/* -----------------section-about-card-----------------*/
+/* -----------------team-about-card-----------------*/
+.team-card-man img {
+
+    height: 150px;
+    width: 150px;
+    border-radius: 50%; 
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.team-card--items p{
+
+    margin: 0;
+    padding: 0;
+    font-family: "Inter",sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #040404;
+}
+
+.team-card-right {
+
+    width: 400px;
+    height:140px;
+    border-radius: 30px 30px 30px 0px;
+    background-color: #e8f4fa;
+    margin-bottom: 70px;
+}
+.team-card--items,
+.team-card--item {
+    margin: 0;
+    padding: 0;
+}
+.team-card--item {
+
+
+    font-family:"Inter",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #808080;
+
+}
+.team-card-mans img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%; 
+    object-fit: cover;
+
+
+}
+.team-card-right-body p {
+
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #040404;
+
+}
+.team-card-right-body {
+
+    padding: 15px;
+}
+/* -----------------team-about-card-----------------*/
+
+/* -----------------pidtrimka card-----------------*/
+.pidtrimka-card {
+
+    width: 650px;
+    height: 300px;
+    /* background-color: #C7EDFA; */
+    border-radius: 40px;
+    background: linear-gradient(135deg, rgba(199, 237, 250, 0.8), rgba(180, 220, 255, 0.6));
+    backdrop-filter: blur(10px); /* Эффект стекла */
+    transition: all 0.3s ease-in-out;
+    
+
+}
+
+.pidtrimka-card:hover {
+    transform: translateY(-5px); /* Легкий подъем */
+    box-shadow: 0 8px 15px rgba(40, 40, 40, 0.1);
+    /* background: linear-gradient(135deg, rgba(199, 237, 250, 1), rgba(150, 210, 255, 0.8)); */
+}
+
+/* Эффект при нажатии */
+.pidtrimka-card:active {
+    transform: scale(0.97); /* Легкое сжатие */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.pidtrimka-card-body_text {
+
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 40px;
+
+}
+.pidtrimka-card-body_text h6 {
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+
+    color: #040404;
+}
+.pidtrimka-card-body_img {
+
+    background-image: url(../image/ruki-many.png);
+    width: 170px;
+    height: 170px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+.pidtrimka-card-oplata-body_items h6{
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #C01F2F;
+
+}
+.pidtrimka-card-oplata-body_items {
+
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.pidtrimka-card-oplata-body_button {
+
+    margin-top: 20px;
+    margin-right: 20px;
+
+
+}
+/* -----------------pidtrimka card-----------------*/
+/* -----------------nasha-dialnist-----------------*/
+.nasha-dialnist-card {
+
+    width: 350px;
+    height: 400px;
+    background: linear-gradient(to bottom, #daf3fa, #97d3e4);
+    /* background-color: #d5f6fe; */
+    border-radius: 40px;
+
+}
+.nasha-dialnist-card-logo img{
+
+ 
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: 40px;
+
+
+}
+.nasha-dialnist-card_text h6 {
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #040404;
+
+
+}
+.nasha-dialnist-card-description p {
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #373737;
+
+
+}
+.nasha-dialnist-card-body {
+
+    margin-top: 10px;
+    padding: 30px;
+
+
+}
+/* -----------------nasha-dialnist-----------------*/
+/* -----------------video-card-----------------*/
+.videio-card {
+    width: 450px;
+    height: 350px;
+    background: linear-gradient(to bottom, #0c4568, #106aa3);
+    /* background-color: #0C3249; */
+    opacity: 80%;
+    border-radius: 40px;
+
+}
+.videio-card_items h4{
+
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color:#fff;
+
+}
+
+.videio-card_text h5{
+
+    font-family:"Unbounded",sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color:#fff;
+
+
+}
+
+.button-section-video {
+
+    border: 1px solid #fff; /* Добавим начальную черную обводку */
+    width: 220px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Unbounded",sans-serif;
+    line-height: 23px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button-section-video:hover {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при наведении */
+
+    color: #FFB202; /* Меняем цвет текста при наведении */
+}
+.button-section-video:active {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при нажатии */
+    color: #FFB202; /* Меняем цвет текста при нажатии */
+}
+.videio-card-body{
+
+    margin-top: 80px;
+    padding: 40px;
+}
+.video-card-content {
+
+    width: 550px;
+    height: 350px;
+    background-image: url(../image/video-yotube.png);
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 40px;
+
+}
+/* -----------------video-card-----------------*/
+
+/* -----------------shlah-section-----------------*/
+.shlah-card-one {
+
+    width: 280px;
+    height: 330px;
+    /* background-color: #CFF5E5; */
+    background: linear-gradient(to bottom, #CFF5E5, #88ceb1);
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.shlah-card-one:hover {
+    transform: translateY(-5px); /* Легкий подъем */
+    box-shadow: 0 8px 15px rgba(40, 40, 40, 0.1);
+    /* background: linear-gradient(135deg, rgba(199, 237, 250, 1), rgba(150, 210, 255, 0.8)); */
+}
+
+/* Эффект при нажатии */
+.shlah-card-one:active {
+    transform: scale(0.97); /* Легкое сжатие */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.shlah-card-one-top_logo {
+
+    /* background-image: url(/image/shlah1.png); */
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+.shlah-card-one-top_text h6 {
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #373737;
+
+}
+.shlah-card-one-body_items p {
+
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #373737;
+
+}
+.shlah-card-one-body  {
+
+    margin-top: 40px;
+    padding: 30px;
+}
+.shlah-card-one-top_text {
+
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.shlah-card-two {
+
+    width: 280px;
+    height: 380px;
+    background: linear-gradient(to bottom, #B1C7D2, #70b1d1);
+    /* background-color: #B1C7D2; */
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.shlah-card-two:hover {
+    transform: translateY(-5px); /* Легкий подъем */
+    box-shadow: 0 8px 15px rgba(40, 40, 40, 0.1);
+    /* background: linear-gradient(135deg, rgba(199, 237, 250, 1), rgba(150, 210, 255, 0.8)); */
+}
+
+/* Эффект при нажатии */
+.shlah-card-two:active {
+    transform: scale(0.97); /* Легкое сжатие */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.shlah-card-three {
+    width: 280px;
+    height: 440px;
+    background: linear-gradient(to bottom, #C6E2F0, #78b5d3);
+    /* background-color:#C6E2F0; */
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+
+}
+.shlah-card-three:hover {
+    transform: translateY(-5px); /* Легкий подъем */
+    box-shadow: 0 8px 15px rgba(40, 40, 40, 0.1);
+    /* background: linear-gradient(135deg, rgba(199, 237, 250, 1), rgba(150, 210, 255, 0.8)); */
+}
+
+/* Эффект при нажатии */
+.shlah-card-three:active {
+    transform: scale(0.97); /* Легкое сжатие */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* -----------------shlah-section-----------------*/
+/* -----------------ruki-section-section-----------------*/
+.ruki-section {
+
+    background-image: url('../image/rurki.png'); /* Фон */
+    background-size: cover; /* Подгоняет под размер */
+    background-position: center; /* Центрирует */
+    background-repeat: no-repeat;
+    min-height: 600px; /* Минимальная высота секции */
+    display: flex;
+    align-items: center; /* Центрирует по вертикали */
+    justify-content: center; /* Центрирует по горизонтали */
+    text-align: center; /* Центрирует текст */
+    margin-top: 60px;
+}
+.ruki-text h3{
+
+    font-family: "Jost",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #373737;
+    width: 500px;
+
+}
+
+.ruki-item  {
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #C01F2F;
+
+
+}
+.ruki-description {
+
+    width: 500px;
+    
+
+}
+.ruki-description h6{
+    font-family: "Jost",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #373737;
+
+}
+
+/* -----------------ruki-section-section-----------------*/
+
+/* -----------------footer-section-----------------*/
+.footer {
+
+    background-color: #000000;
+    width: 100%;       /* Растягивается на всю ширину */
+    max-width: 1280px; /* Но не больше 1280px */
+    min-height: 600px; /* Можно оставить, если нужно */
+    margin: 0 auto;  
+}
+.footer-logo img{
+
+ 
+    width: 70px;
+    height: 60px;
+
+}
+.footer-soс-youtube {
+
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.footer-soc {
+
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.footer-soс-youtube:hover,
+.footer-soc:hover {
+    transform: scale(1.2); /* увеличиваем иконку на 20% */
+}
+.footer-item p{
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.footer-item-text h6{
+
+    font-family: "Jost",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 45%;
+}
+.footer-column-bady-left {
+
+    margin-top: 50px;
+}
+
+.footer-colum-right {
+
+    margin-top: 50px;
+    margin-left: 350px;
+
+}
+.full-width-divider {
+    width: 100%;
+    height: 1px;
+    background-color:#cccccc30; /* Цвет линии */
+
+    margin-top: 60px;
+}
+.footer-item-tel a,
+.footer-item-mail a{
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9d9999;
+
+}
+.footer-item-rigth-text h6{
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #9d9999;
+}
+.footer-item-rigth-text {
+
+    width: 250px;
+}
+
+.footer-item-rigth-description p{
+
+
+    font-family:"Unbounded",sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #ffffff;
+
+
+}
+.mars-studio p{
+
+    font-family: "Jost",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#444444;
+    opacity: 60%;
+ 
+
+}
+
+
+.button-footer {
+
+    border: 1px solid rgb(255, 255, 255); /* Добавим начальную черную обводку */
+    width: 220px;
+    color:rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Unbounded",sans-serif;
+    line-height: 23px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button-footer:hover {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при наведении */
+
+    color: #FFB202; /* Меняем цвет текста при наведении */
+}
+.button-footer:active {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при нажатии */
+    color: #FFB202; /* Меняем цвет текста при нажатии */
+}
+
+.oplata-footer-bady {
+
+    margin-top: 50px;
+
+
+}
+
+.oplata-footer-bady img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+.footer-item-tel a,
+.footer-item-mail a {
+    color: white; /* Обычный цвет */
+  
+    transition: color 0.3s ease-in-out, text-decoration 0.3s;
+}
+
+.footer-item-tel a:hover,
+.footer-item-mail a:hover {
+    color: #FFB202; /* Цвет при наведении */
+  
+}
+/* -----------------footer-section-----------------*/
+/* -----------------about-page-----------------*/
+/* -----------------about-first-section-----------------*/
+
+.about-first-text h1 {
+
+    font-family: "Jost",sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #373737;
+
+
+}
+.about-first-text  {
+
+    width: 400px;
+}
+.about-first-description h2 {
+
+
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #373737;
+    opacity: 50%;
+    
+}
+.about-first-description {
+
+    width: 400px;
+}
+
+.about-first-descriptiontext h3{
+
+
+    font-family: "Jost",sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #373737;
+
+}
+.about-first-descriptiontext  {
+
+    width: 400px;
+}
+
+.about-first-img-body  img{
+
+    border-radius: 40px;
+
+
+}
+/* -----------------about-first-section-----------------*/
+/* -----------------about-image-----------------*/
+.about-image-item img {
+
+    width: 500px;
+    height: 600px;
+    border-radius: 30px;
+
+}
+
+
+
+.about-image-items img{
+
+    /* width: 500px;
+    height: 300px; */
+    border-radius: 30px;
+
+}
+.about-image-text  h4{
+
+    font-family: "Jost",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #373737;
+}
+.about-image-text  {
+
+    width: 500px;
+}
+
+/* -----------------about-image-----------------*/
+
+/* -----------------about-image-full-----------------*/
+.img-full-about-team {
+
+    border-radius: 20px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    object-fit: cover;
+
+
+}
+/* -----------------about-image-full-----------------*/
+/* -----------------about-text-section-----------------*/
+.about-text-description h3{
+
+    font-family: "Jost",sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #373737;
+}
+.about-text-description  {
+
+    width: 510px;
+}
+
+.about-text-description-item h4{
+  
+    font-family: "Unbounded",sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: #C01F2F;
+}
+.about-text-description-item  {
+
+    width: 650px;
+}
+.about-text-description-items p{
+
+    font-family: "Jost",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #373737;
+
+}
+
+
+/* -----------------about-text-section-----------------*/
+
+/* -----------------about-page-----------------*/
+
+/* -----------------news-page-----------------*/
+/* -----------------about-card-section -----------------*/
+.arctic-row  {
+
+    margin-top: 10px;
+
+
+}
+.card-image-about-center{
+
+    width: 200px;
+    height: 200px;
+}
+.card-page-new {
+
+    width: 450px;
+    height: 450px;
+    background-color: #FFE9B8;
+    border-radius: 40px;
+
+}
+.card-page-new-top {
+
+    width: 920px;
+    height: 340px;
+    background-color: #ebddff;
+    border-radius: 40px;
+}
+.card-page-news-body--circul-top img,
+.card-page-news-body--circul img{
+    width: 48px;
+    height:48px;
+   
+
+}
+.card-page-news-body--description-items-top {
+
+    padding: 10px 40px;
+}
+.card-page-news-body--description-imgs-top img {
+
+    width: 150px;
+    height:150px;
+    margin-left: 500px;
+}
+.card-page-news-body--description-imgs {
+    /* margin-top: 30px; */
+    margin-left: 200px;
+}
+.card-page-news-body--description-img {
+
+    margin-top: 30px;
+    margin-left: 220px;
+
+
+}
+.card-page-news-body--circul-top,
+.card-page-news-body--circul {
+
+    margin-top:40px;
+    margin-left: 40px;
+}
+.card-page-news-body--description-item-top h3{
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #373737;
+    position: absolute;
+    width: 300px;
+   
+    margin-left: 50px;
+    margin-top: 20px;
+
+
+}
+.card-page-news-body--description-item h3{
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #373737;
+    position: absolute;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+.card-page-news-body--description-items-top h4,
+.card-page-news-body--description-items h4,
+.card-page-news-body--description-text h4{
+
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #373737;
+
+}
+.card-page-news-body--description-items  {
+
+    margin-top: 20px;
+
+
+}
+
+/* -----------------about-card-section -----------------*/
+
+/* -----------------section-pagination -----------------*/
+
+.section-pagination .pagination .page-link {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px; /* Задаем ширину */
+    height: 45px; /* Задаем высоту */
+    line-height: 45px; /* Выравниваем текст */
+    text-align: center;
+    border-radius: 50%; /* Делаем кнопки круглыми */
+    margin: 0 5px; /* Добавляем небольшие отступы */
+    /* border: 1px solid #000000;  */
+    color: #030303; /* Цвет текста */
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.section-pagination .pagination .page-item.active .page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: rgb(11, 10, 10);
+    border: 1px solid #E77B2D;
+}
+.section-pagination .pagination .page-link:hover {
+    background-color: #E77B2D;
+    color: white;
+    border-color:#E77B2D;
+}
+/* -----------------section-pagination -----------------*/
+
+/* -----------------section-chasty-pitannia-----------------*/
+.chasty-pitannia-card-two--bady-text,
+.chasty-pitannia-card-one--bady-text {
+    /* width: 200px; */
+    margin-top: 40px;
+    margin-left: 30px;
+ 
+
+
+}
+.chasty-pitannia-card-four {
+    width: 400px;
+    height: 350px;
+    background: linear-gradient(to bottom, #CFF5E5, #e7fef5);
+
+    border-radius: 40px;
+
+
+}
+.chasty-pitannia-card-three {
+
+    background: linear-gradient(to bottom, #DCEDF6, #f2faff);
+    width: 500px;
+    height: 350px;
+    border-radius: 40px;
+
+
+
+}
+.chasty-pitannia-card-one {
+
+    width: 400px;
+    height: 350px;
+    background: linear-gradient(to bottom, #D9D9D9, #f0eded);
+    border-radius: 40px;
+}
+
+.chasty-pitannia-card-two--bady-text h5,
+.chasty-pitannia-card-one--bady-text h5 {
+
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    color: #373737;
+
+  
+
+}
+
+.chasty-pitannia-card-one--bady-description h6{
+
+
+    font-family: "Jost",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #373737;
+    width: 400px;
+}
+.chasty-pitannia-card-two--bady-description h6 {
+
+    font-family: "Jost",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #373737;
+
+}
+
+
+.chasty-pitannia-card-one--bady-description-item p{
+
+
+    font-family: "Jost",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #373737;
+    padding: 0;
+    margin: 0; 
+}
+
+.chasty-pitannia-card-two {
+
+    width: 500px;
+    height: 350px;
+    background: linear-gradient(to bottom, #FFC541, #ffda83);
+
+    border-radius: 40px;
+
+}
+
+/* -----------------section-chasty-pitannia-----------------*/
+
+/* -----------------dialnist-new-----------------*/
+.dialnist-new-card-one {
+
+    width: 500px;
+    height: 300px;
+    /* background: linear-gradient(to bottom, #342BD8, #9892ff); */
+    background:#342BD8;
+    opacity: 70%;
+    border-radius: 50px;
+}
+.dialnist-new-card-three,
+.dialnist-new-card-two {
+    width: 290px;
+    height: 300px;
+    background: linear-gradient(to bottom, #FFE9B8, #ffefce);
+    border-radius: 50px;
+}
+.dialnist-one-card-bady {
+
+    margin-top: 40px;
+    padding: 30px;
+    margin-left: 30px;
+}
+.dialnist-one-card-bady-text h6{
+
+    font-family: "Jost",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 400px;
+
+} 
+.dialnis-new-card-two--body {
+
+    position: relative;
+}
+
+.button-dialnist-about{
+
+    border: 1px solid rgb(255, 255, 255); /* Добавим начальную черную обводку */
+    width: 270px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Unbounded",sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 23px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button-dialnist-about:hover {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при наведении */
+
+    color: #FFB202; /* Меняем цвет текста при наведении */
+}
+.button-dialnist-about:active {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при нажатии */
+    color: #FFB202; /* Меняем цвет текста при нажатии */
+}
+
+.dialnist-new-card-img {
+
+    margin-left: 45px;
+    margin-top: 30px;
+
+}
+
+.dialnist-new-card-img img{
+
+    width: 200px;
+    height: 200px;
+    opacity: 90%;
+
+}
+.dialnist-new-card-two--text {
+
+    position: absolute;
+}
+.dialnist-new-card-two--text h6 {
+
+    font-family: "Jost",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #373737;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 150px;
+
+
+}
+.dialnist-new-card-two--description p{
+
+    font-family: "Jost",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #373737;
+    padding: 20px;
+
+}
+.dialnist-new-card-two--description {
+
+    margin-top: 100px;
+    width: 300px;
+    position: absolute;
+
+}
+.dialnist-new-card-three--description h5 {
+
+    font-family: "Jost",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #373737;
+    margin-top: 140px;
+}
+.dialnist-new-card-three {
+
+    width: 290px;
+    height: 300px;
+    background: linear-gradient(to bottom, #7FADF2, #7FADF2);
+    border-radius: 50px;
+
+}
+
+.dialnist-new-card-three--body {
+
+    margin-top: 60px;
+    padding: 20px;
+
+    position: relative;
+}
+.dialnist-new-card-three--text {
+
+    width: 270px;
+}
+
+.dialnist-new-card-three--img {
+
+    margin-top: 80px;
+    margin-left: 140px; 
+
+}
+
+.dialnist-new-card-three--img img{
+
+    width: 100px;
+    height: 100px;
+}
+.dialnist-new-card-three--text p{
+
+    font-family: "Jost",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #373737;
+    width: 250px;
+}
+.dialnist-new-card-three--text,
+.dialnist-new-card-three--description {
+
+    position: absolute;
+    margin-left: 10px;
+
+}
+
+.dialnist-new-card-four {
+
+    width: 320px;
+    height: 300px;
+    background: #FCEBFD;
+    border-radius: 50px;
+}
+
+.dialnist-new-card-four--body {
+
+    margin-top: 30px;
+    padding: 20px;
+
+}
+.dialnist-new-card-four--text {
+    margin-top: 30px;
+
+}
+.dialnist-new-card-four--img  {
+
+    
+    margin-left: 50px;
+    margin-top: -70px;
+
+}
+.dialnist-new-card-four--img img{
+
+    width: 150px;
+    height: 150px;
+    margin-left: 90px;
+
+}
+.dialnist-new-card-four--text {
+
+    width: 300px;
+    margin-left: 20px;
+}
+.dialnist-new-card-four--text p{
+
+    font-family: "Jost",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #373737;
+
+}
+.dialnist-new-card-four--description h5 {
+
+    font-family: "Jost",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #373737;
+
+}
+
+.dialnist-new-card-four--description {
+
+    margin-top: 140px;
+    margin-left: 20px;
+}
+.dialnist-new-card-four--description,
+.dialnist-new-card-four--text{
+
+
+    position: absolute;
+
+}
+.dialnist-new-card-five {
+
+    width: 750px;
+    height: 300px;
+    background-color: #12E395;
+    border-radius: 50px;
+
+
+}
+
+.dialnist-five-card-bady  {
+
+    margin-top: 40px;
+    
+}
+
+.dialnist-five-card-bady-text h6{
+
+    font-family: "Jost",sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: #373737;
+
+}
+.dialnist-five-card-bady-text {
+
+    /* width: 240px; */
+    margin-top: 30px;
+
+}
+/* .dialnist-five-card-bady-button {
+
+    margin-top: 40px;
+
+
+} */
+
+.button-dialnist-about-top{
+
+    border: 1px solid rgb(0, 0, 0); /* Добавим начальную черную обводку */
+    width: 270px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Unbounded",sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 23px;
+    font-weight: 600;
+    background-color: transparent;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.button-dialnist-about-top:hover {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при наведении */
+
+    color: #FFB202; /* Меняем цвет текста при наведении */
+}
+.button-dialnist-about-top:active {
+    border-color: #FFB202; /* Изменяем цвет обводки на #FFB202 при нажатии */
+    color: #FFB202; /* Меняем цвет текста при нажатии */
+}
+
+.dialnist-five-card-bady-items p {
+
+
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #373737;
+
+
+
+}
+/* -----------------dialnist-new-----------------*/
+
+/* -----------------news-page-----------------*/
+
+
+/* -----------------projects-detail-page-----------------*/
+/* -----------------section-full-scrin-image-----------------*/
+.full-screen-image {
+    width: calc(100vw - 40px); /* 100% ширины минус паддинги */
+    height: calc(100vh - 40px); /* 100% высоты минус паддинги */
+    object-fit: cover; /* Обрезка изображения без искажений */
+    display: block; /* Убираем лишние отступы */
+    margin: auto; /* Выравниваем */
+    border-radius: 30px;
+}
+/* -----------------section-full-scrin-image-----------------*/
+
+/* -----------------projects-detail-section-----------------*/
+.detail-logo {
+    width: 30px;
+    height: 30px;
+}
+.project-open p,
+.detail-data p,
+.detail-avtor p{
+
+    margin: 0;
+    padding: 0;
+    font-family: "Jost",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #373737;
+
+}
+
+.detail-logo {
+
+    width: 25px;
+    height: 25px;
+}
+.detail-logo-youtube {
+
+    width: 30px;
+    height: 30px;
+}
+.detail-text-description p{
+
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #373737;
+
+}
+.detail-soc img {
+    transition: all 0.3s ease-in-out; /* Плавные эффекты */
+}
+
+.detail-soc img:hover {
+    transform: scale(1.1); /* Увеличение на 10% при наведении */
+    filter: brightness(85%); /* Немного затемнить */
+}
+
+.detail-soc img:active {
+    transform: scale(0.9); /* Уменьшение при нажатии */
+    filter: brightness(70%); /* Еще сильнее затемнить */
+}
+/* -----------------projects-detail-section-----------------*/
+/* -----------------random-detail-image-section-----------------*/
+/* -----------------random-detail-image-section-----------------*/
+.detail-random-img {
+
+    width: 500px;
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 30px;
+
+    
+}
+.osoblivosty-line {
+
+    width: 180px;
+    border-bottom: 2px solid black;
+
+}
+.osoblivosty-detail h5{
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #373737;
+
+
+}
+
+/* -----------------projects-detail-page-----------------*/
+/* -----------------contact-page-----------------*/
+/* -----------------contact-ruki-milosty-----------------*/
+.contact-rukimilosty-item h1 {
+
+    font-family: "Jost",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #373737;
+
+
+}
+
+.contact-rukimilosty-text h2 {
+
+    font-family: "Unbounded",sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: #C01F2F;
+
+
+}
+.contact-rukimilosty-text {
+
+    max-width: 1100px;
+}
+.contact-rukimilosty-description h3{
+
+    font-family: "Jost",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #373737;
+}
+.contact-rukimilosty-description {
+
+    max-width: 500px;
+}
+/* -----------------contacty-section-----------------*/
+
+.contact-card {
+
+    background: linear-gradient(to bottom, #FFE9B8, #fff8e7);
+    width: 240px;
+    height: 270px;
+    border-radius: 40px;
+}
+.contact-card-body  {
+
+    margin-top: 40px;
+    margin-left: 40px;
+
+
+}
+.contact-text h6 {
+
+
+    font-family: "Jost",sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #373737;
+
+
+}
+.contact-body-col-row img {
+
+    width: 25px;
+    height: 25px;
+}
+.contact-text {
+
+    max-width: 150px;
+}
+
+.contact-body-col-rows {
+
+    margin-top: -10px;
+}
+.contact-body-col-rows p,
+.contact-body-col-row  p{
+    margin-top: 20px;
+
+}
+.contact-body-col-rows p,
+.contact-body-col-row p {
+
+    font-family: "Jost",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #373737;
+}
+
+.contact-card-two  {
+
+    background: linear-gradient(to bottom, #CFF5E5, #ecfff7);
+    width: 340px;
+    height: 270px;
+    border-radius: 40px;
+
+
+}
+.contact-body-column-items p {
+
+    margin: 0;
+    padding: 0;
+
+
+}
+.contact-card-two-body {
+    margin-top: 40px;
+    margin-left: 30px;
+
+}
+.contact-card-tree {
+
+    background: linear-gradient(to bottom, #78a8f0, #b8d4ff);
+    width: 590px;
+    height: 270px;
+    border-radius: 40px;
+}
+/* -----------------contacty-section-----------------*/
+/* -----------------card-contact-oplata-section-----------------*/
+.card-contact-oplata {
+
+    width: 350px;
+    height: 300px;
+    background: linear-gradient(to bottom, #121215, #4C4C7B);
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.card-contact-oplata:hover {
+
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3); /* Тень */
+    transform: scale(1.03); /* Легкое увеличение */
+}
+
+.card-contact-oplata:active {
+
+    box-shadow: 0px 2px 5px rgba(0, 86, 179, 0.5);
+    transform: scale(0.98); /* Незначительное уменьшение */
+}
+
+
+
+.card-contact-oplata-body {
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.card-contact-oplata-items-top {
+
+    margin-top: 70px;
+
+}
+.card-oplata-recvizit-top {
+
+    margin-top: 35px;
+
+}
+.recvizit-card h5,
+.card-oplata-recvizit-top h5{
+
+    font-family: "Jost",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    opacity: 30%;
+
+
+}
+.recvizit-card-item h6,
+.card-oplata-recvizit-top-item h6 {
+
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+}
+
+.card-contact-img-top {
+
+    margin-top: 40px;
+
+
+}
+.card-contact-img-top  img{
+
+    width: 250px;
+
+}
+.card-contact-oplata-body-top {
+
+
+    margin-left: 40px;
+    margin-top: 50px;
+
+}
+/* -----------------card-contact-oplata-section-----------------*/
+
+
+/* -----------------contact-ruki-milosty-----------------*/
+/* -----------------contact-page-----------------*/
+
+
+
+
+
+
+
+
+
+/* font-family: "Unbounded", "Jost",'Inter',sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal; */
+/* #040404 */
+/* color: #373737; */
+/* background: linear-gradient(to bottom, #B1C7D2, #70b1d1); */

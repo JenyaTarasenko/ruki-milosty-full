@@ -1,0 +1,298 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}Про благодійний фонд Рукі Милості{% endblock %}
+{% block content %}
+        <!-- about-first-section   -->
+        <section class="about-first-section mt-3">
+            <div class="container">
+                <div class="row flex-column-reverse justify-content-center flex-md-row">
+                    <!-- Левая колонка с элементами -->
+                    <div class="col-md-6 d-flex flex-column gap-3 text-md-start text-center justify-content-center align-items-center">
+                        <div class="about-first-bady">
+                            <div class="about-first-text">
+                                <h1>Ми-Благодійний фонд Руки Милості</h1>
+                            </div>
+                            <div class="about-first-description mt-3">
+                                <h2>Допомагаємо людям, котрі опинилися у складних життєвих обставинах.</h2>
+                            </div>
+                            <div class="about-first-button mt-4">
+                                <a href="#"></a><button class="button-section">Підтримати фонд</button>
+                            </div>
+                            <div class="about-first-descriptiontext mt-4">
+                                <h3>Ми, благодійний фонд "Руки милості", створений при Чернівецькому обласному об'єднанні Української церкви християн віри євангельської, допомагаємо найбільш вразливим верствам населення: внутрішньопереміщеним особам, багатодітним та малозабезпеченим сім'ям, сім'ям із дітьми з інвалідністю та іншим.</h3>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Правая колонка с элементами -->
+                    <div class="col-md-6 d-flex justify-content-start">
+                        <div class="about-first-img-body d-flex">
+                            <img src="{% static 'image/slider/slider.jpg' %}" class="img-fluid align-self-start p-3" alt="about-ruki-milosty-image">
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <!-- about-first-section   -->
+        <!-- about-image-section   -->
+        <section class="about-image-section mt-5">
+            <div class="container">
+                <div class="row column-image">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="about-image-left-column d-flex justify-content-center align-items-center">
+                            <div class="about-image-item">
+                                <img src="{% static 'image/slider/slider2.jpg' %}"  alt="about-ruki-milosty">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 d-flex flex-column align-items-center">
+                        <div class="about-image-right-column">
+                            <div class="about-image-items">
+                                <img src="{% static 'image/slider/slider3.jpg' %}" class="img-fluid" alt="about-ruki-milosty">
+                            </div>
+                            <div class="about-image-text px-3 mt-3">
+                                <h4>Через наші ініціативи ми прагнемо не лише надати матеріальну допомогу, а й підтримати духовне відродження та відновлення людської гідності. Вся наша діяльність спрямована на те, щоб дарувати надію та підтримку тим, хто опинився у скрутній ситуації.Приєднуйтесь до нашої місії, допоможіть нам робити добро і приносити світло в житті тих, хто цього потребує..</h4>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+        <!-- about-image-section -->
+           <!-- text -->
+        <section class="text-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+                        <h2 class="main-text">Команда</h2>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- text -->
+    
+        <!-- team -->
+        <section class="team-section mt-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center g-2">
+                    <div class="col-md-6 d-flex flex-row justify-content-center flex-wrap gap-5 mt-4">
+                        <div class="team-card-mans justify-content-center align-items-center d-flex flex-column">
+                            <img src="{% static 'image/man1.jpg' %}" alt="">
+                            <div class="team-card--items mt-3">
+                                <p>Шевченко А.Г</p>
+                            </div>
+                            
+                        </div>
+                        <div class="team-card-mans justify-content-center align-items-center d-flex flex-column">
+                            <img src="{% static 'image/man1.jpg' %}" alt="">
+                            <div class="team-card--items mt-3">
+                                <p>Шевченко А.Г</p>
+                            </div>
+                            
+                        </div>
+                        <div class="team-card-mans justify-content-center align-items-center d-flex flex-column">
+                            <img src="{% static 'image/man1.jpg' %}" alt="">
+                            <div class="team-card--items mt-3">
+                                <p>Шевченко А.Г</p>
+                            </div>
+                        </div>
+                        <div class="team-card-mans justify-content-center align-items-center d-flex flex-column">
+                            <img src="{% static 'image/man1.jpg' %}" alt="">
+                            <div class="team-card--items mt-3">
+                                <p>Шевченко А.Г</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+        <!-- team -->
+    
+        <!-- about-image-full-->
+        <section class="about-image-full-section mt-3">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 text-center">
+                        <img src="{% static 'image/man1.jpg' %}" class="img-full-about-team" alt="team-riki-milosty">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-image-full-->
+        <section class="about-text-section mt-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 col-md-8">
+                        <div class="about-text-bady">
+                            <div class="about-text-description">
+                                <h3>Благодійний фонд Руки Милості</h3>
+                            </div>
+                            <div class="about-text-description-item mt-3">
+                                <h4>Приносити світло в житті тих, хто цього потребує.</h4>
+                            </div>
+                            <div class="about-text-description-items mt-4 text-md-start">
+                                <p>Ми — благодійний фонд "Руки милості", створений за Чернівецького обласного об'єднання Української церкви християн віри євангельської. Наша мета — підтримка тих, хто потребує допомоги, особливо в ці складні часи.
+                                    Ми допомагаємо найбільш уразливим верствам населення: внутрішньо переміщеним особам, багатодітним та малозабезпеченим сім'ям, сім'ям з дітьми з інвалідністю та іншим. Наша робота ґрунтується на принципах співчуття, віри та турботи про кожну людину.
+                                    Через наші ініціативи ми прагнемо не лише надати матеріальну допомогу, а й підтримати духовне відродження та відновлення людської гідності. Вся наша діяльність спрямована на те, щоб дарувати надію та підтримку тим, хто опинився у скрутній ситуації.Приєднуйтесь до нашої місії, допоможіть нам робити добро і приносити світло в житті тих, хто цього потребує.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <!-- oplata-section -->
+        <section class="pidtrimka-card-section mt-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <a href="">
+                        <div class="pidtrimka-card">
+                            <div class="pidtrimka-card-body d-flex justify-content-between flex-wrap-reverse">
+                                <div class="pidtrimka-card-body_text d-flex">
+                                    <h6>Підтримати благодійний фонд</h6>
+                                </div>
+                                <div class="pidtrimka-card-body_img d-flex justify-content-center align-items-center mx-auto"></div>
+                            </div>
+                            <div class="pidtrimka-card-oplata-body d-flex justify-content-between flex-wrap">
+        
+                                <div class="pidtrimka-card-oplata-body_items d-flex">
+                                    <h6>Руки Милості</h6>
+                                </div>
+                                <div class="pidtrimka-card-oplata-body_button d-flex">
+                                    <a href="#"></a><button class="button-section">Підтримати</button>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+                    </a>
+                    
+    
+                </div>
+            </div>
+    
+        </section>
+        <!-- oplata-section -->
+    
+        <!-- text -->
+        <section class="text-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+                        <h2 class="main-text">Напрямок нашої діяльності</h2>
+                        <p class="text-center description-text">Надаємо допомогу людям, надаючи тимчасове житло та підтримку.</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- text -->
+    
+        <!-- about-section-card -->
+        <section class="about-card-section mt-3">
+            <div class="container">
+                <div class="row align-items-center justify-content-center g-2">
+                    <div class="col-auto d-flex flex-column justify-content-center gap-3">
+                        <div class="about-card d-flex flex-column">
+    
+                            <div class="about-card-body d-flex justify-content-between">
+                                <div class="about-card-body-item">
+                                    <h5>Про нас</h5>
+                                </div>
+                                <div class="about-card-body-logo"></div>
+                            </div>
+    
+                            <div class="about-card-body-items d-flex justify-content-center px-5">
+                                <p>Наша команда налічує близько 50 волонтерів, серед яких практикуючі педагоги та вихователі, психологи, сертифіковані фасилітатори, а також активні студенти й молодь. У сфері захисту дітей ми співпрацюємо з місцевими школами, сімейними центрами та міською адміністрацією. Фасилітатори нашої ГО пройшли навчання від міжнародних організацій (World Vision, USAID, ACTED тощо) за темами: «Позитивне батьківство», «Психосоціальна підтримка дітей», «Самодопомога Плюс», «Управління проблемами» та ін.</p>
+                            </div>
+                        </div>
+                        <div class="about-card d-flex flex-column">
+    
+                            <div class="about-card-body d-flex justify-content-between">
+                                <div class="about-card-body-item">
+                                    <h5>Місія</h5>
+                                </div>
+                                <div class="about-card-body-logo"></div>
+                            </div>
+    
+                            <div class="about-card-body-items d-flex justify-content-center px-5">
+                                <p>Сприяти покращенню якості життя людей і розвитку суспільства через реалізацію проєктів у гуманітарній, соціальній та освітній сферах, спрямованих на допомогу, підтримку та просвіту. Наша команда реалізує на Дніпропетровщині самостійні проєкти, а також проєкти материнської організації БФ «Руки Милості».</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-auto d-flex flex-column justify-content-center gap-3">
+                        <div class="about-card d-flex flex-column ">
+    
+                            <div class="about-card-body d-flex justify-content-between">
+                                <div class="about-card-body-item">
+                                    <h5>Принципи</h5>
+                                </div>
+                                <div class="about-card-body-logo"></div>
+                            </div>
+    
+                            <div class="about-card-body-items d-flex justify-content-center px-5">
+                                <p>
+                                    Наша організація базується на таких основних цінностях, як відповідальність, служіння суспільству та гуманність. Ми прагнемо забезпечувати саморозвиток і самообслуговування суспільства, збалансувати власні та суспільні інтереси, орієнтуючись на вищі цілі. Важливими аспектами є партнерська співпраця, захист прав людини, прозорість та підзвітність. Ми сприяємо рівності, чесності, законності та незалежності у всіх сферах діяльності.</p>
+                            </div>
+                        </div>
+                        <div class="about-card d-flex flex-column ">
+    
+                            <div class="about-card-body d-flex justify-content-between">
+                                <div class="about-card-body-item">
+                                    <h5>Бачення</h5>
+                                </div>
+                                <div class="about-card-body-logo"></div>
+                            </div>
+    
+                            <div class="about-card-body-items d-flex justify-content-center px-5">
+                                <p>Надання допомоги людям, які опинилися у складних життєвих обставинах, включаючи постраждалих від війни.Сприяння організації відпочинку, розвитку спортивних, творчих та освітніх програм для дітей, підлітків, жінок та сімей громади.Формування у дітей і підлітків високих моральних цінностей, сприяння їх соціалізації, духовному та психологічному розвитку та підтримці.Залучення членів громади до активної участі у соціальному житті, розвитку громадських ініціатив та надання позитивного внеску у життя суспільства.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </section>
+        <!-- about-section-card -->
+    
+    
+        <!-- team-section -->
+        <section class="team-section mt-5">
+            <div class="container">
+    
+                <div class="row align-items-center justify-content-center g-2">
+                    <!-- section -->
+                    <div class="col-auto d-flex flex-column justify-content-center gap-3">
+                        <div class="team-card-man justify-content-center align-items-center d-flex flex-column">
+                            <img src="{%  static 'image/first-img.png' %}" alt="">
+                            <div class="team-card--items mt-3">
+                                <p>Шевченко А.Г</p>
+                            </div>
+                            <div class="team-card--item">
+                                <span>духовний лідер фонду "Руки милості"</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- section -->
+                    <div class="col-auto d-flex flex-column justify-content-center gap-3">
+                        <div class="team-card-right justify-content-center align-items-center d-flex flex-column">
+                            <div class="team-card-right-body">
+                                <p>"Наша команда має 10-річний досвід роботи (ще до створення ГО) з дітьми та підлітками різних категорій у сфері ментального здоров’я, психосоціальної підтримки та захисту дітей. Ми організували понад 20 тематичних дитячих таборів, заходів для дітей, профілактичних лекцій і створили кілька дружніх дитячих просторів."</p>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                    <!-- team-section -->
+                </div>
+            </div>
+    
+        </section>
+        <!-- team-section -->
+{% endblock%}

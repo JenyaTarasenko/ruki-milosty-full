@@ -1,0 +1,402 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}Всі новіні фонду Руки Милості - Дніпро{% endblock %}
+{% block content %}
+
+       <!-- text -->
+    <section class="text-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+                    <h2 class="main-text">Наші новини</h2>
+                    <p class="text-center description-text">Благодійний фонд "Руки милості" активно працює над безліччю ініціатив, спрямованих на допомогу тим, хто опинився у складній життєвій ситуації. Ми пишаємося тим, що можемо підтримувати людей, які потребують піклування та уваги, і прагнемо зробити наш світ трохи кращим. Ось деякі з наших проектів:</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- text -->
+    <!-- секция  button -->
+    <section class="section-button d-flex justify-content-center mt-5">
+        <a href="#"></a><button class="button-section">Підтримати фонд</button>
+    </section>
+    <!-- секция  button -->
+
+    <!-- секция   first-page-->
+    <section class="slaider-section">
+        <div id="carouselExampleInterval" class="carousel slide slider-container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="{% static 'image/slider/slider.jpg' %}" class="d-block w-100 slider-items" alt="Картинка Руки милости слайдер">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="{% static 'image/slider/slider.jpg' %}" class="d-block w-100 slider-items" alt="Картинка Руки милости слайдер">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'image/slider/slider2.jpg' %}" class="d-block w-100 slider-items" alt="Картинка Руки милости слайдер">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'image/slider/slider3.jpg' %}" class="d-block w-100 slider-items" alt="Картинка Руки милости слайдер">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- секция   first-page-->
+
+
+      <!-- text -->
+    <section class="text-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+                    <h2 class="main-text">Усі новини</h2>
+                    <p class="text-center description-text">Останні події та важливі новини нашого фонду. Дізнавайтеся про нові проєкти, акції допомоги та звіти про виконану роботу.</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- text -->
+
+    <!-- секция   Card -->
+    <section class="card-news-section">
+        <div class="container mt-2">
+            <div class="row justify-content-center gap-3">
+                {% for new in news %}
+                    <div class="news-card d-flex justify-content-center flex-column position-relative" style="background-image: url('{{ new.main_image.url }}'); background-repeat: no-repeat; background-size: cover;">
+                        <a href="{% url 'hands:news-detail' new.slug %}" class="news-card-style" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <!-- Слой затемнения -->
+                            <div class="overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);"></div>
+                            <!-- Текстовый контент сверху -->
+                            <div class="news-card-body text-light position-absolute">
+                                <div class="news-items">
+                                    <h5>{{new.name|truncatechars:20}}</h5>
+                                </div>
+                                <div class="news-description pt-2">
+                                    <h6>{{new.description|truncatechars:80}}</h6>
+                                </div>
+                                <div class="news-top mt-5 me-auto">
+                                    <p>Дивитись новину</p>
+                                </div>
+                            </div>
+                        </a> 
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- секция   Card -->
+    <section class="section-pagination mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex justify-content-center align-items-center">
+                    <nav aria-label="pagination">
+                        <ul class="pagination pagination-lg">
+                            {% for num in page_obj.paginator.page_range %}
+                                {% if page_obj.number == num %}
+                                    <li class="page-item active">
+                                        <span class="page-link">{{ num }}</span>
+                                    </li>
+                                {% else %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- text -->
+    <section class="text-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+                    <h2 class="main-text">Наша допомога</h2>
+                    <p class="text-center description-text">Тисячі людей отримали допомогу, підтримку та турботу</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- text -->
+
+    <!-- section-card-about -->
+    <section class="card-page-news-section">
+        <div class="container">
+            <div class="row align-items-center justify-content-center gap-2">
+                <div class="col-auto">
+                    <div class="card-page-new">
+                        <div class="card-page-news-body d-flex flex-column">
+                            <div class="card-page-news-body--circul">
+                                <img src="{% static 'image/circul-new.png' %}" alt="logo-style">
+                            </div>
+                            <div class="card-page-news-body--description d-flex flex-row">
+                                <div class="card-page-news-body--description-item">
+                                    <h3>Допомога дітям</h3>
+                                </div>
+                                <div class="card-page-news-body--description-img">
+                                    <img src="{% static 'image/news-icon-card1.png' %}" alt="logo-style">
+                                </div>
+                            </div>
+                            <div class="card-page-news-body--description-text px-4">
+                                <h4>Наш фонд надає матеріальну допомогу сім'ям з дітьми з інвалідністю, допомагаючи їм покривати необхідні витрати на лікування, реабілітацію та розвиток дітей. Ми організовуємо спеціальні заходи та програми, спрямовані на покращення якості життя цих дітей.</h4>
+                            </div>
+
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="card-page-new" style="background-color: #D8EBF6;">
+                        <div class="card-page-news-body d-flex flex-column">
+                            <div class="card-page-news-body--circul">
+                                <img src="{% static 'image/circul-new.png' %}" alt="logo-style">
+                            </div>
+                            <div class="card-page-news-body--description d-flex flex-row">
+                                <div class="card-page-news-body--description-item">
+                                    <h3>Фінансова допомога</h3>
+                                </div>
+                                <div class="card-page-news-body--description-imgs">
+                                    <img src="{% static 'image/news-icon-card2.png' %}" alt="logo-style" class="card-image-about-center">
+                                </div>
+                            </div>
+                            <div class="card-page-news-body--description-items px-4">
+                                <h4>Благодійний фонд "Руки милості" надає фінансову підтримку найбільш уразливим категоріям населення. Ми допомагаємо внутрішньо переміщеним особам, багатодітним та малозабезпеченим сім'ям</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mt-1">
+                    <div class="col-auto arctic-row">
+                        <div class="card-page-new-top">
+                            <div class="card-page-news-body d-flex flex-column">
+                                <div class="card-page-news-body--circul-top">
+                                    <img src="{% static 'image/circul-new.png' %}" alt="logo-style">
+                                </div>
+                                <div class="card-page-news-body--description d-flex flex-row">
+                                    <div class="card-page-news-body--description-item-top">
+                                        <h3>Гуманітарна допомога</h3>
+                                    </div>
+                                    <div class="card-page-news-body--description-imgs-top">
+                                        <img src="{% static 'image/news-icon-card3.png' %}" alt="logo-style">
+                                    </div>
+                                </div>
+                                <div class="card-page-news-body--description-items-top">
+                                    <h4>Благодійний фонд "Руки милості" активно надає підтримку нужденним, роздаючи гуманітарну допомогу тим, хто опинився у складній життєвій ситуації.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+        </div>
+    </section>
+    <!-- section-card-about -->
+
+   
+  
+    <!-- text -->
+    <section class="text-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+                    <h2 class="main-text">Напрямок нашої діяльності</h2>
+                    <p class="text-center description-text">Надаємо допомогу людям, надаючи тимчасове житло та підтримку.</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- text -->
+
+     <!-- detache-section -->
+    <section class="new-ditache-section mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="new-ditache-image mt-3">
+                        <img src="{% static 'image/slider/slider3.jpg' %}" alt="" class="image-fluid fixed-image-ditache">
+                    </div>
+                    <div class="new-ditache-item mt-4">
+                        <h5>Допомога та розвиток</h5>
+                    </div>
+                   
+                    <div class="new-ditache-item-description mt-4">
+                        <h6>Наша команда має 10-річний досвід роботи (ще до створення ГО) з дітьми та підлітками різних категорій у сфері ментального здоров’я, психосоціальної підтримки та захисту дітей. Ми організували понад 20 тематичних дитячих таборів, заходів для дітей, профілактичних лекцій і створили кілька дружніх дитячих просторів.</h6>
+                    </div>
+                    <div class="new-ditache-item-description mt-4">
+                        <h6>Ми проводимогуманітарні, освітні та соціальні проєкти для всіх, хто потребує підтримки. Це ініціативи, де діти та батьки отримують необхідну допомогу, беруть участь у семінарах, дитячих таборах і клубах, що сприяють їхньому розвитку та соціальній адаптації.</h6>
+                    </div>
+                    <div class="new-ditache-item-description mt-4">
+                        <a href="#"></a><button class="button-section">Переглянути проекти</button>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="new-ditache-card mt-3">
+                        <div class="new-ditache-body">
+                            <div class="new-ditache-card-column d-flex flex-row align-items-center gap-3">
+                                <div class="circle">
+                                    <img src="{% static 'image/soc2.svg' %}" alt="">
+                                </div>
+                                <div class="new-ditache-card-text-first d-flex mt-2">
+                                    <h6>Гуманітарні проєкти </h6>
+                                </div>
+                            </div>
+                            <div class="new-ditache-card-text mt-4">
+                                <h6>Наші гуманітарні проєкти спрямовані на соціальний розвиток різних верств населення – як дітей, так і дорослих. Ми реалізуємо програми для сімей, психологічні та пізнавальні тренінги, підтримку в кризових ситуаціях, а також допомогу військовим і їхнім родинам.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-ditache-card mt-3">
+                        <div class="new-ditache-body">
+                            <div class="new-ditache-card-column d-flex flex-row align-items-center gap-3">
+                                <div class="circle">
+                                    <img src="{% static 'image/soc3.svg' %}" alt="">
+                                </div>
+                                <div class="new-ditache-card-text-first d-flex mt-2">
+                                    <h6>Соціальні проєкти </h6>
+                                </div>
+                            </div>
+                            <div class="new-ditache-card-text mt-4">
+                                <h6>Наші соціальні проєкти спрямовані на підтримку сімей, дітей і всіх, хто потребує допомоги. Ми проводимо освітні, гуманітарні та психологічні ініціативи, створюємо простори для розвитку, взаємодії та соціальної адаптації.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-ditache-card mt-3">
+                        <div class="new-ditache-body">
+                            <div class="new-ditache-card-column d-flex flex-row align-items-center gap-3">
+                                <div class="circle">
+                                    <img src="{% static 'image/soc1.svg' %}" alt="">
+                                </div>
+                                <div class="new-ditache-card-text-first d-flex mt-2">
+                                    <h6>Освітні проєкти</h6>
+                                </div>
+                            </div>
+                            <div class="new-ditache-card-text mt-4">
+                                <h6>Наші освітні проєкти спрямовані на розвиток знань та навичок у різних вікових групах. Ми організовуємо тренінги, майстер-класи, курси для дітей і дорослих, допомагаючи кожному досягти свого потенціалу. В рамках проєктів проводимо навчання з психології, соціальної адаптації та розвитку особистості, а також забезпечуємо доступ до ресурсів для підвищення кваліфікації. Наші програми сприяють розвитку критичного мислення, покращенню комунікативних навичок і формуванню здорових соціальних зв'язків.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- detache-section -->
+     <!-- text -->
+    <section class="text-section">
+        <div class="container">
+            <div class="row d-flex flex-column justify-content-center gap-3">
+                <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+                    <h2 class="main-text">Часті питання</h2>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- text -->
+    <!-- chasty-pitannia-section -->
+    <section class="chasty-pitannia-section mt-5 p-4">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-1">
+                <div class="col-auto">
+                    <div class="chasty-pitannia-card-one">
+                        <div class="chasty-pitannia-card-one--bady d-flex flex-column gap-3">
+                            <div class="chasty-pitannia-card-one--bady-text">
+                                <h5>Як з нами зв'язатися?</h5>
+                            </div>
+                            <div class="chasty-pitannia-card-one--bady-description px-4">
+                                <h6>Ми завжди на зв'язку та готові вислухати вас. Фонд "Руки Милості" відкритий для питань, пропозицій та підтримки тим, хто потребує допомоги. Зв'яжіться з нами у будь-який час!</h6>
+                            </div>
+                            <div class="chasty-pitannia-card-one--bady-description-item px-4">
+                                <p>м  Днипро</p>
+                                <p>097 767 878 00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+
+                    <div class="chasty-pitannia-card-two d-flex">
+                        <div class="chasty-pitannia-card-two--bady d-flex flex-column gap-3">
+                            <div class="chasty-pitannia-card-two--bady-text">
+                                <h5>Як отримати допомогу?</h5>
+                            </div>
+                            <div class="chasty-pitannia-card-two--bady-description px-4">
+                                <h6>Ми завжди на зв'язку та готові вислухати вас. Фонд "Руки Милості" відкритий для питань, пропозицій та підтримки тим, хто потребує допомоги. Зв'яжіться з нами у будь-який час!</h6>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center g-1 mt-1">
+              
+                <div class="col-auto">
+
+                    <div class="chasty-pitannia-card-three d-flex">
+                        <div class="chasty-pitannia-card-two--bady d-flex flex-column">
+                            <div class="chasty-pitannia-card-two--bady-text">
+                                <h5>Як надати матеріальну допомогу фонду ??</h5>
+                            </div>
+                            <div class="chasty-pitannia-card-two--bady-description px-4">
+                                <h6>Ви можете надати грошову допомогу, переказуючи будь-яку суму на реквізити, зазначені на банківських картках. Ваша підтримка допоможе нам продовжувати надавати допомогу тим, хто її потребує</h6>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-auto">
+                    <div class="chasty-pitannia-card-four">
+                        <div class="chasty-pitannia-card-one--bady d-flex flex-column gap-3">
+                            <div class="chasty-pitannia-card-one--bady-text">
+                                <h5>Скільки існує фонд ??</h5>
+                            </div>
+                            <div class="chasty-pitannia-card-one--bady-description px-4">
+                                <h6>Створення ініціативної групи для допомоги постраждалим від анексії Криму та військової агресії РФ на Сході України з 2014 року</h6>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- chasty-pitannia-section -->
+
+      <!-- section ruki-->
+    <section class="ruki-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+
+                    <div class="ruki-body-column d-flex justify-content-center flex-column align-items-center">
+                        <div class="ruki-text">
+                            <h3>Підтримати благодійний фонд</h3>
+                        </div>
+                        <div class="ruki-item mt-2">
+                            <p>Руки Милості</p>
+                        </div>
+                        <div class="ruki-description d-flex  justify-content-center  mt-2">
+                            <h6>Руки Милості невтомно працюють.І лише ваша підтримка дозволяє рухатися вперед</h6>
+                        </div>
+                        <div class="ruki-button mt-3">
+                            <a href="#"></a><button class="button-section">Підтримати</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section ruki-->
+{% endblock%}

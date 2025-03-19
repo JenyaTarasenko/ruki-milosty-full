@@ -1,0 +1,55 @@
+{% load static %}    
+<!-- меню  -->
+<section class="navigation-section">
+    <nav class="navbar navbar-expand-lg custom-nuvbar">
+        <div class="container">
+            <!-- Логотип -->
+            <a class="navbar-brand logo-text" href="/">
+                <img src="{% static 'image/logo-ruki.jpeg' %}" alt="Лого руки милости" width="70" height="60">
+                <span class="ms-2 d-inline d-lg-none text-decor-mobile">Руки милості</span>
+            </a>
+    
+            <!-- Кнопка для мобильного меню -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+               
+            </button>
+    
+            <!-- Меню -->
+            <div class="collapse navbar-collapse full-screen-menu" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-center" style="display: flex; gap: 30px;">
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'hands:index' %}" style="font-size: 14px;">Головна</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/about-ruki-milosty-team/' %}active{% endif %}" href="{% url 'hands:about' %}" style="font-size: 14px;">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/all-projects-ruki-milosty/' %}active{% endif %}" href="{% url 'hands:projects' %}" style="font-size: 14px;">Проєкти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/all-news-ruki-milosty/' %}active{% endif %}" href="{% url 'hands:news' %}" style="font-size: 14px;">Новини</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/contacti-ta-partneri/' %}active{% endif %}" href="{% url 'hands:contact' %}" style="font-size: 14px;">Контакти</a>
+                    </li>
+                    
+                </ul>
+    
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-size: 14px;">Українська</a>
+                    </li>
+                    <li class="nav-item">
+                        <div style="border-left: 1px solid rgb(65, 59, 59); height: 20px; margin: 0 10px;"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-size: 14px;">English</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+<!-- меню  -->
