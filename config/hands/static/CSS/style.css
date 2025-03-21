@@ -19,7 +19,8 @@ a {
 html,body {
    
     font-family:  'Inter', 'Unbounded', sans-serif;
-    font-size: 16px; 
+    font-size: 14px;
+    font-weight: 400;
     /* color: #CCC5B9;  */
 
     overflow-x: hidden;
@@ -32,9 +33,18 @@ html,body {
 
 
 /* ---------------------меню--------------*/
-.navbar-expand-lg .navbar-collapse {
+/* .navbar-expand-lg .navbar-collapse {
 
     margin-left: 90px;
+} */
+
+
+
+
+.navbar-toggler-icon {
+
+    width: 2em;
+    height: 2em;
 }
 
 
@@ -57,12 +67,22 @@ html,body {
     color: #FFB202;
    
 } 
+.navbar {
 
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    color: #000000;
+
+
+
+
+}
 .text-decor-mobile {
 
-    font-family: 'Inter',sans-serif;
-    font-size: 15px;
-    color: rgb(53, 53, 53);
+    font-family: 'Jost',sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #033069;
 
 
 }
@@ -74,11 +94,16 @@ html,body {
 }
 /* ---------------------меню--------------*/
 /* -----------------first section------------------*/
+.first-image-section {
+
+    margin-top: 100px;
+}
 .first-color-section {
 
    
     background-color: #F5F9FF;
     border-radius: 40px;
+    margin-top: 100px;
 }
 .first-text h2 {
     font-family: "Jost",sans-serif;
@@ -154,30 +179,35 @@ html,body {
 /* -----------------first section------------------*/
 /* -----------------slider section------------------*/
 .slider-container {
-    width: 1100px;
-    margin: 0 auto; /* Центрирование */
+   max-width: 1100px;
+    margin: 0 auto; 
     padding: 20px;
-    border-radius: 20px;
     overflow: hidden;
     border-radius: 30px;
-}
+ 
+} 
+.slider-img{ 
+
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+} 
+
 .slider-items {
+    
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
     border-radius: 30px;
 }
-.slaider-section {
-    display: flex;
-    justify-content: center; /* Центрирует контейнер по горизонтали */
-    align-items: center; /* Центрирует контейнер по вертикали */
-  
 
-}
 /* -----------------slider section------------------*/
 /* -----------------Text section------------------*/
 .text-section {
 
   
    
-    margin-top: 40px;
+    margin-top: 150px;
     display: flex;
     justify-content: center; /* Центрирует по горизонтали */
     align-items: center; /* Центрирует по вертикали */
@@ -220,7 +250,7 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ddd;
+    background-color:#406bd8;
 
 
 
@@ -341,7 +371,7 @@ html,body {
     font-family: "Unbounded",sans-serif;
     color: #000000;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 13px;
     margin-top: 20px;
 }
 
@@ -1004,16 +1034,16 @@ html,body {
 
     font-family: "Unbounded",sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     color: #040404;
 
 
 }
 .nasha-dialnist-card-description p {
 
-    font-family: "Unbounded",sans-serif;
+    font-family: "Jost",sans-serif;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
     color: #373737;
 
 
@@ -1418,6 +1448,11 @@ html,body {
 /* -----------------footer-section-----------------*/
 /* -----------------about-page-----------------*/
 /* -----------------about-first-section-----------------*/
+.about-first-section {
+
+    margin-top: 150px;
+
+}
 
 .about-first-text h1 {
 
@@ -1489,7 +1524,7 @@ html,body {
 .about-image-text  h4{
 
     font-family: "Jost",sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #373737;
 }
@@ -2190,6 +2225,12 @@ html,body {
     font-size: 30px;
     font-weight: 600;
     color: #373737;
+
+
+}
+.contact-ruki-milosty {
+
+    margin-top: 150px;
 
 
 }
