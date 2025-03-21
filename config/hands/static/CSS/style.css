@@ -105,6 +105,15 @@ html,body {
     border-radius: 40px;
     margin-top: 100px;
 }
+
+.small-text-first {
+
+    font-family: "Jost",sans-serif;
+    font-size: 13px;
+    
+
+
+}
 .first-text h2 {
     font-family: "Jost",sans-serif;
     font-size: 20px;
@@ -1015,7 +1024,7 @@ html,body {
 
     width: 350px;
     height: 400px;
-    background: linear-gradient(to bottom, #daf3fa, #97d3e4);
+    background-color: #E3EFF3;
     /* background-color: #d5f6fe; */
     border-radius: 40px;
 
@@ -1023,12 +1032,10 @@ html,body {
 .nasha-dialnist-card-logo img{
 
  
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-top: 40px;
     margin-left: 40px;
-
-
 }
 .nasha-dialnist-card_text h6 {
 
@@ -1359,6 +1366,32 @@ html,body {
     color: #9d9999;
 
 }
+.footer-item-top {
+
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    color: #ffff;
+    opacity: 50%;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.location-footer {
+
+    width: 25px;
+    height: 25px;
+    opacity: 50%;
+}
+.footer-item-top-style {
+
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    color: #ffff;
+ 
+    font-weight: 400;
+
+
+}
 .footer-item-rigth-text h6{
 
     font-family: "Unbounded",sans-serif;
@@ -1366,28 +1399,21 @@ html,body {
     font-weight: 600;
     color: #9d9999;
 }
+
 .footer-item-rigth-text {
 
     width: 250px;
 }
 
-.footer-item-rigth-description p{
 
-
-    font-family:"Unbounded",sans-serif;
-    font-size: 14px;
-    font-weight: 200;
-    color: #ffffff;
-
-
-}
 .mars-studio p{
 
     font-family: "Jost",sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color:#444444;
-    opacity: 60%;
+    color:#ffff;
+    opacity: 30%;
+
  
 
 }
@@ -2426,19 +2452,63 @@ html,body {
 
 /* -----------------contact-ruki-milosty-----------------*/
 /* -----------------contact-page-----------------*/
+.card-new-three {
+
+    width: 700px;
+    height: 320px;
+    background: linear-gradient(to bottom, #A0EBCB, #ceffea);
+    border-radius: 40px;
+    transition: all 0.2s ease; /* Плавный переход */
 
 
+}
+.card-new-two:hover,
+.card-new-one:hover,
+.card-new-three:hover {
+    transform: scale(1.00); /* Увеличение размера */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Добавление тени */
+}
+.card-new-one {
+
+    width: 300px;
+    height: 320px;
+    background: linear-gradient(to bottom, #93b8f0, #d0e3ff);
+    border-radius: 40px;
+    transition: all 0.2s ease; /* Плавный переход */
+
+}   
+.card-new-two {
+
+    width: 400px;
+    height: 320px;
+    background: linear-gradient(to bottom, #FFC541, #fbebc5);
+    border-radius: 40px;
+    transition: all 0.2s ease; /* Плавный переход */
+}
+.card-new-three-description h5,
+.card-new-two-description h5,
+.card-new-one-description h5{
+
+    font-family: "Unbounded", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #373737;
+}
+
+.card-new-three-description-text h6,
+.card-new-two-description-text h6,
+.card-new-one-description-text h6 {
+
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #373737;
 
 
+}
+.card-new-three-body ,
+.card-new-two-body,
+.card-new-one-body {
 
-
-
-
-
-/* font-family: "Unbounded", "Jost",'Inter',sans-serif;
-font-optical-sizing: auto;
-font-weight: <weight>;
-font-style: normal; */
-/* #040404 */
-/* color: #373737; */
-/* background: linear-gradient(to bottom, #B1C7D2, #70b1d1); */
+    margin-top: 40px;
+}

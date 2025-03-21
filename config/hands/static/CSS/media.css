@@ -181,6 +181,20 @@
 
 }
 @media (max-width: 767px){
+
+    .card-new-two {
+        width: 300px;
+        height: 350px;
+    }
+    .card-new-three {
+        width: 300px;
+        height: 550px;    
+    }    
+
+    .contact-body-col-rows p {
+
+        font-size: 16px;
+    }
     .contact-card-tree,
     .contact-card  {
 
