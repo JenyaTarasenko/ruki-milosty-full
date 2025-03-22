@@ -224,7 +224,7 @@
     <!-- секция   Text -->
 
     <!-- секция   Project -->
-    <section class="card-project-section">
+    <section class="card-project-section mt-5">
         <div class="container mt-2">
             <div class="row justify-content-center gap-3">
                 <!-- секция   Project -->
@@ -257,7 +257,7 @@
 
     <!-- секция  button -->
     <section class="section-button d-flex justify-content-center mt-5">
-        <a href="{%  url 'hands:projects' %}"><button class="button-section">Переглянути проекти</button></a>
+        <a href="{%  url 'hands:projects' %}"><button class="button-section">Переглянути всі проекти</button></a>
     </section>
     <!-- секция  button -->
     <!-- секция   Text -->
@@ -272,7 +272,7 @@
         </div>
     </section>
     <!-- секция   Card -->
-    <section class="card-news-section">
+    <section class="card-news-section mt-5">
         <div class="container mt-2">
             <div class="row justify-content-center gap-3">
                 {% for items in latest_new %}
@@ -302,7 +302,7 @@
 
      <!-- секция  button -->
     <section class="section-button d-flex justify-content-center mt-5">
-        <a href="{%  url 'hands:news' %}"><button class="button-section">Переглянути новини</button></a>
+        <a href="{%  url 'hands:news' %}"><button class="button-section">Переглянути всі новини</button></a>
     </section>
     <!-- секция  button -->
 
@@ -787,9 +787,70 @@
                 </div>
             </div>
         </div>
-
     </section>
     <!-- sponsor-galler-sectiony -->
 
+        <!-- text -->
+        <section class="text-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+                        <h2 class="main-text">Часті питання</h2>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- text -->
+
+    <!-- new card -section-->
+    <section class="new-style mt-3 pb-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center gap-2">
+                <div class="card-new-one" style="background:linear-gradient(to bottom, #D9D9D9, #F2F2F2);">
+                    <div class="card-new-one-body d-flex flex-column ms-2">
+                        <div class="card-new-one-description">
+                            <h5>Як з нами зв'язатися?</h5>
+                        </div>
+                        <div class="card-new-one-description-text mt-4 p-2">
+                            <h6>Ми завжди на зв'язку та готові вислухати вас. Фонд "Руки Милості" відкритий для питань, пропозицій та підтримки тим, хто потребує допомоги. Зв'яжіться з нами у будь-який час!</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-new-two" style="background:linear-gradient(to bottom, #FFE6AD, #FFF0CF);">
+                    <div class="card-new-two-body d-flex flex-column ms-2">
+                        <div class="card-new-two-description">
+                            <h5>Соціальний центр</h5>
+                        </div>
+                        <div class="card-new-two-description-text mt-5 p-2">
+                            <h6>Ми завжди готові прийти на допомогу тим, хто потребує. Фонд "Руки Милості" підтримує людей у ​​складних ситуаціях, даруючи турботу, тепло та надію на краще.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center gap-2 mt-2">
+                <div class="card-new-two"  style="background:linear-gradient(to bottom, #DCEDF6, #ECF9FF);">
+                    <div class="card-new-two-body d-flex flex-column ms-2">
+                        <div class="card-new-two-description">
+                            <h5>Фінансова допомогу фонду</h5>
+                        </div>
+                        <div class="card-new-two-description-text mt-5 p-2">
+                            <h6>Ви можете надати грошову допомогу, переказуючи будь-яку суму на реквізити, зазначені на банківських картках. Ваша підтримка допоможе нам продовжувати надавати допомогу тим, хто її потребує</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-new-one" style="background:linear-gradient(to bottom, #CFF5E5, #E5FDF3);">
+                    <div class="card-new-one-body d-flex flex-column ms-2">
+                        <div class="card-new-one-description">
+                            <h5>Де слідкуват за новінами та проєктами</h5>
+                        </div>
+                        <div class="card-new-one-description-text mt-4 p-2">
+                            <h6>Ви можете стежити за нашими проєктами на нашому сайті та у наших соц мережах, де ми публікуємо всі актуальні новини та оновлення.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- new card -section-->
 
 {% endblock%}

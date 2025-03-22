@@ -88,19 +88,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
+LANGUAGE_CODE = 'uk'  # Украинский язык
+TIME_ZONE = 'Europe/Kiev'  # Часовой пояс Украины
 USE_I18N = True
-
 USE_TZ = True
 
 
 
 STATIC_URL = 'static/'
 
-
+ALLOWED_HOSTS = ['Bonderenko.pythonanywhere.com','localhost', '127.0.0.1']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = '/static/'

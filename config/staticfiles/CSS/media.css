@@ -1,0 +1,642 @@
+@media (max-width: 1199px){
+
+    
+    .dialnist-new-card-four,
+    .dialnist-new-card-three,
+    .dialnist-new-card-one,
+    .dialnist-new-card-two {
+        width: 500px;
+    }
+    .dialnist-new-card-five{
+
+        width: 500px;
+        height: 400px;
+    }
+    .dialnist-new-card-two--description {
+
+        width: 500px;
+        margin-top: 120px;
+    }
+    .dialnist-new-card-img {
+
+        margin-left: 150px;
+    }
+    .dialnist-new-card-two--text  {
+
+        margin-left: 20px;
+    }
+    .dialnist-new-card-two--description p {
+
+        padding: 40px;
+    }
+    .dialnist-new-card-three--text p {
+
+        width: 300px;
+
+    }
+
+    .dialnist-new-card-three--body  {
+
+        margin-left: 70px;
+    }
+    .dialnist-new-card-two--text h6 {
+
+        font-size: 35px;
+        width: 300px;
+    }
+    .dialnist-new-card-four--img img {
+
+        margin-left: 240px;
+    }
+    .dialnist-new-card-four--text p  {
+
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 1100px){
+    .column-image{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .about-image-item img {
+        width: calc(100vw - 20px); /* Учитываем паддинги по 10px с каждой стороны */
+        height: calc(100vh - 20px); /* Учитываем паддинги по 10px сверху и снизу */
+        object-fit: cover; /* Растягиваем картинку, сохраняя пропорции */
+    }
+    .about-image-right-column {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap:30px;
+
+
+    }
+}
+
+@media (max-width: 1027px){
+
+    .chasty-pitannia-card-four,
+    .videio-card {
+        width: 500px;
+    }   
+
+}
+
+@media (max-width: 991px){
+    .chasty-pitannia-card-one {
+
+        width: 500px;
+    }
+}
+@media (max-width: 992px){
+
+    .contact-rukimilosty-text h2 {
+        font-size: 50px;
+    }
+    .arctic-row {
+
+        margin-top: 0;
+    }
+    .card-page-news-body--description-item-top h3  {
+
+        margin-left: 20px;
+    }
+
+    .card-page-new-top {
+        width: 450px;
+        height: 450px
+    }
+    .card-page-news-body--description-item-top {
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    .card-page-news-body--description-imgs-top img{
+        margin-left: 210px;
+    }
+    .card-page-news-body--description-items-top  {
+
+        margin-top: 40px;
+    }
+    .img-first-section,
+    .image-section {
+        display: none;
+
+    } 
+    .image-first-mobile,  
+    .img-first-page-mobile{
+
+        display: block;
+    }
+    .first-item h1{
+        
+        text-align: left;
+        display: flex;
+        justify-content: center;
+
+    }
+    .first-text {
+        text-align: left;
+        display: flex;
+        justify-content: center;
+
+    }
+    .first-text-description  {
+
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+
+
+    }
+} 
+
+@media (max-width: 650px){
+
+    .about-text-description h3{
+
+        font-size: 20px;
+    }
+    .about-text-description-item h4  {
+
+        font-size: 50px;
+        width: 500px;
+
+    }
+    .about-image-items img {
+
+        width: calc(100vw - 20px);
+        height: calc(100vh - 20px);
+        object-fit: cover;
+    }
+
+
+
+}
+@media (max-width: 767px){
+
+    .card-new-two {
+        width: 300px;
+        height: 350px;
+    }
+    .card-new-three {
+        width: 300px;
+        height: 550px;    
+    }    
+
+    .contact-body-col-rows p {
+
+        font-size: 16px;
+    }
+    .contact-card-tree,
+    .contact-card  {
+
+        width: 340px;
+    }
+    .footer-colum-right {
+
+        margin-left: 0;
+    }
+    .footer-item-text h6 {
+        width: 270px;
+    }
+    .pidtrimka-card-oplata-body_items,
+    .pidtrimka-card-body_text {
+
+        padding: 0 30px;
+    }
+    .pidtrimka-card-oplata-body_button {
+
+        padding-left: 70px;
+    }
+    .pidtrimka-card {
+
+        width: 400px;
+        height: 600px;
+    }
+    .team-lider {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .team-card-right {
+
+        border-radius: 0 30px 30px 30px;
+    }
+}
+@media (max-width: 550px){
+    .contact-rukimilosty-item h1 {
+
+        font-size: 20px;
+    }
+    .contact-rukimilosty-description h3 {
+
+        font-size: 18px;
+    }
+    .contact-rukimilosty-text h2 {
+        font-size: 40px;
+    }
+    .chasty-pitannia-card-four,
+    .chasty-pitannia-card-three,
+    .chasty-pitannia-card-two,
+    .chasty-pitannia-card-one{
+
+        width: 310px;
+    }
+    .chasty-pitannia-card-two--bady-text h5,
+    .chasty-pitannia-card-one--bady-text h5 {
+
+        font-size: 20px;
+        width: 250px;
+    }
+    .chasty-pitannia-card-one--bady-description h6  {
+
+        width: 250px;
+    }
+
+
+}
+@media (max-width: 500px){
+ 
+    .card-page-news-body--description-item-top h3{
+       font-size: 25px;
+    }
+    .card-page-news-body--description-imgs {
+        margin-top: -30px;
+        margin-left: 80px;
+
+    }
+    .card-page-news-body--description-imgs-top img {
+        margin-left: 110px;
+    }
+    .card-page-new-top,    
+    .card-page-new  {
+
+        width: 300px;
+    }
+    .card-page-news-body--description-item h3  {
+
+        font-size: 30px;
+        width: 200px;
+    }
+    .card-page-news-body--description-img {
+
+        margin-left: 100px;
+        margin-top: -40px;
+    }
+    .ruki-body-column {
+
+        margin-bottom: 50px;
+
+
+    }
+
+    .ruki-text h3 {
+
+        font-size: 20px;
+        width: 300px;
+    }
+    .ruki-item {
+
+        font-size: 30px;
+
+    }
+    .ruki-description h6 {
+
+        font-size: 14px;
+    }
+    .ruki-description  {
+
+        width: 300px;
+    }
+    .image-about-style img {
+
+        width: 320px;
+        height: auto;
+      
+    }
+  
+
+    .card-left-item {
+
+        width: 320px;
+    }
+    .conteiner-left-item h4 {
+
+        font-size: 30px;
+    }
+    .conteiner-left-item p{
+
+        font-size: 14px;
+    }
+    .card-right-description,
+    .card-right-item,
+    .card-column-item-left,
+    .card-column-item-right {
+
+        width: 150px;
+    }
+    .column-item-left-container,
+    .card-right-description-row,
+    .card-right-description-rows {
+
+        margin-left: 0;
+    }
+    .card-right-description-row h4,
+    .column-item-right-container h4,
+    .column-item-left-container h4 {
+
+        font-size: 20px;
+    }
+    .card-right-description-rows h4,
+    .card-right-description-row h5 {
+
+        font-size: 18px;
+
+
+    }
+
+    .main-text {
+        font-size: 30px;
+        line-height: 1;
+    }
+    .description-text {
+
+        font-size: 14px;
+    }
+
+
+    .img-first-page {
+
+        width: 350px;
+        height: 350px;
+
+    }
+    .first-text-description h3 {
+
+        font-size: 14px;
+    }
+    .first-item h1  {
+
+        font-size: 50px;
+    }
+
+}
+@media (max-width: 580px){
+    
+
+    .videio-card {
+        width: 320px;
+        height: 400px;
+    } 
+    .video-card-content {
+        width: 320px;  
+    }    
+}
+@media (max-width: 520px){
+    .detail-random-img {
+        width: 400px;
+    }
+    .dialnist-new-card-one{
+
+        width: 300px;
+    }
+    .dialnist-one-card-bady {
+        margin-top: 80px;
+        padding: 0;
+        margin-left: 14px;
+    }    
+    .dialnist-new-card-two--description p {
+
+        padding: 0;
+
+    }
+    .dialnist-new-card-two {
+
+        width: 300px;
+        padding: 20px;
+        height: 320px;
+       
+    }
+    .dialnist-new-card-two--text h6 {
+
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .dialnist-new-card-two--text {
+
+        margin-left: 0;
+    }
+
+    .dialnist-new-card-img {
+        margin-left: 0px;
+    }
+    .dialnist-new-card-two--description {
+        width: 280px;
+    }    
+
+    .dialnist-one-card-bady-text h6 {
+
+        font-size: 20px;
+        width: 300px;
+    }
+    .dialnist-new-card-three{
+
+        width: 300px;
+
+
+    }
+    .dialnist-new-card-three--description,
+    .dialnist-new-card-three--body {
+
+        margin-left: 0;
+    }
+    .dialnist-new-card-three--body {
+
+        padding: 0;
+    }
+    .dialnist-new-card-three--text {
+
+        margin-left: 0;
+    }
+    
+
+
+}
+@media (max-width: 500px){
+    .new-ditache-item h5 {
+
+        line-height: 1;
+    }
+
+    .about-text-bady {
+        padding: 10px;
+    }
+    .about-text-description-item h4 {
+        font-size: 40px;
+        width: 350px;
+    }
+    .about-text-description-items {
+
+        width: 400px;
+
+    }    
+
+}
+@media (max-width: 480px){
+    .project-card  {
+
+        width: 300px;
+    }
+    .contact-rukimilosty-text h2{
+
+        font-size: 25px;
+    }
+
+    .recvizit-card-item h6, 
+    .card-oplata-recvizit-top-item h6{
+
+        font-size: 12px;
+    }
+    .card-contact-oplata {
+
+        width: 300px;
+    }
+    .card-contact-oplata-body-top {
+        margin-left: 20px;
+    }    
+
+    .contact-card-two,
+    .contact-card-tree,
+    .contact-card  {
+
+        width: 300px;
+    }
+
+    .about-first-bady {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about-first-descriptiontext {
+        width: 300px;
+    }
+    .about-image-text {
+        width: 300px;
+
+
+    }    
+
+    .about-first-text h1  {
+
+        font-size: 25px
+    }
+    .about-first-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+    }
+    .about-first-description h2 {
+
+        font-size: 15px;
+    }
+
+
+    .team-card-right {
+
+        width: 300px;
+        height: 200px;
+    }
+
+    .about-card {
+
+        width: 300px;
+        height: 500px;
+    }
+    .about-card-body-item h5 {
+
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 430px){
+    .detail-random-img {
+        width: 300px;
+    }    
+
+    .first-text-description  {
+
+        width: 300px;
+    }
+
+    .first-item h1 {
+
+        font-size: 30px;
+    }
+}
+@media (max-width: 400px){
+    .about-text-description-items {
+        width: 300px;
+    }
+    .about-text-description-items p {
+        font-size: 18px;
+    }
+
+    .about-text-description-item h4{
+
+        width: 300px;
+    }
+
+    .nasha-dialnist-card {
+        width: 320px;
+    }    
+
+    .pidtrimka-card {
+
+        width: 300px;
+        height: 550px;
+        
+    }
+    .pidtrimka-card-oplata-body_items,
+    .pidtrimka-card-body_text {
+        padding: 0; 
+
+    }
+    .pidtrimka-card-body_text h6 {
+
+        font-size: 25px;
+    }
+    .pidtrimka-card-oplata-body_items h6 {
+
+        font-size: 25px;
+    }
+    .pidtrimka-card-oplata-body_button {
+        padding-left: 30px;
+        margin-top: 60px;
+    }    
+
+   
+
+    .img-first-page {
+
+        width: 300px;
+        height: 300px;
+
+    } 
+    .main-text {
+        font-size: 20px;
+    }
+
+}
