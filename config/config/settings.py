@@ -97,7 +97,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-ALLOWED_HOSTS = ['Bonderenko.pythonanywhere.com','localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['Handsmercy.pythonanywhere.com','localhost', '127.0.0.1']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = '/static/'
