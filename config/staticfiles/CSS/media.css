@@ -97,6 +97,10 @@
 }
 @media (max-width: 992px){
 
+    .nav-link {
+        font-size: 18px;
+    }
+
     .contact-rukimilosty-text h2 {
         font-size: 50px;
     }
@@ -313,7 +317,7 @@
     }
     .ruki-description h6 {
 
-        font-size: 14px;
+        font-size: 16px;
     }
     .ruki-description  {
 
@@ -321,7 +325,7 @@
     }
     .image-about-style img {
 
-        width: 320px;
+        width: 100%;
         height: auto;
       
     }
@@ -372,7 +376,7 @@
     }
     .description-text {
 
-        font-size: 14px;
+        font-size: 16px;
     }
 
 
@@ -384,7 +388,7 @@
     }
     .first-text-description h3 {
 
-        font-size: 14px;
+        font-size: 17px;
     }
     .first-item h1  {
 
@@ -494,10 +498,10 @@
 
 }
 @media (max-width: 480px){
-    .project-card  {
+    /* .project-card  {
 
         width: 300px;
-    }
+    } */
     .contact-rukimilosty-text h2{
 
         font-size: 25px;
@@ -583,7 +587,7 @@
 
     .first-item h1 {
 
-        font-size: 30px;
+        font-size: 35px;
     }
 }
 @media (max-width: 400px){
