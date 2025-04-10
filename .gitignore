@@ -18,3 +18,4 @@ Thumbs.db
 
 # Игнорировать временные файлы
 *.swp
+config/db.sqlite3
