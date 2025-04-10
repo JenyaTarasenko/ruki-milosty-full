@@ -1,6 +1,6 @@
 {% extends "app/base.html" %}
-{% load static %}
-{% block title %}Головна Руки Милості - Дніпро{% endblock %}
+{% load static  i18n %}
+{% block title %}{% trans 'Головна Руки Милості - Дніпро' %}{% endblock %}
 {% block content %}
 
     <!-- секция   first-page-->
@@ -9,19 +9,19 @@
             <!-- текст  -->
             <div class="col-lg-4 text-center text-lg-start">
                 <div class="first-text">
-                    <h2><span class="small-text-first">Громадська організація</span><br>Руки Милості - Дніпро</h2>
+                    <h2><span class="small-text-first">{% trans "Громадська організація" %}</span><br>{% trans "Руки Милості - Дніпро" %}</h2>
                 </div>
                 <div class="first-item">
-                    <h1>Змінюємо<br>&nbsp;&nbsp;&nbsp;життя на<br>краще</h1>
+                    <h1>{% trans 'Змінюємо' %}<br>&nbsp;&nbsp;&nbsp;{% trans 'життя на' %}<br>{% trans 'краще' %}</h1>
                 </div>
                 <div class="d-flex justify-content-center image-first-mobile mt-3">
                     <img src="{% static 'image/ruki-first.png' %}" class="img-first-page-mobile img-fluid" alt="Картинка Руки милости"/>
                 </div>
                 <div class="first-text-description d-flex justify-content-center mt-2">
-                    <h3>Надання допомоги людям, які опинилися у складних життєвих обставинах, включаючи постраждалих від війни.</h3>
+                    <h3>{% trans 'Надання допомоги людям, які опинилися у складних життєвих обставинах, включаючи постраждалих від війни.' %}</h3>
                 </div>
                 <div class="first-button p-2">
-                   <a href="#"></a><button class="rounded-button">Підтримати</button>
+                   <a href="#"></a><button class="rounded-button">{% trans 'Підтримати' %}</button>
                 </div>
             </div>
             <!-- текст  -->
@@ -135,7 +135,7 @@
   
 
     <!-- секция   Text -->
-    <section class="text-section">
+    {% comment %} <section class="text-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
@@ -144,7 +144,7 @@
                 </div>
             </div> 
         </div>
-    </section>
+    </section> {% endcomment %}
     <!-- секция   Text -->
     <!-- секция   card-dialnist -->
     <section class="dialnist-card">
@@ -215,8 +215,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Наші проекти</h2>
-                    <p class="text-center description-text">Наші проекти – реальна допомога тим, хто її потребує.</p>
+                    <h2 class="main-text">{% trans "Наші проекти" %}</h2>
+                    <p class="text-center description-text">{% trans "Наші проекти – реальна допомога тим, хто її потребує." %}</p>
                 </div>
             </div> 
         </div>
@@ -233,7 +233,7 @@
                             <a href="{% url "hands:projects-detail" project.slug %}" class="project-card-link">
                                 <img src="{{ project.main_image.url }}" class="imag-projects-card" alt="card">
                                 <div class="card-body mt-3">
-                                    <h5>{{project.name|truncatechars:20}}</h5>
+                                    <h5>{{project.name|truncatechars:28}}</h5>
                                 </div>
                                 <div class="card-description">
                                     <h6>{{project.description|truncatechars:100}}</h6>
@@ -242,9 +242,9 @@
                                     {% if project.status == 'open' %}
                                         <span class="project-close">{{ project.get_status_display }}</span>
                                     {% else %}
-                                        <span class="project-close">Закритий</span>
+                                        <span class="project-close">{% trans "Закритий" %}</span>
                                     {% endif %}
-                                    <span class="project-month">{{project.created_at|date:"Y-m-d"}}</span>
+                                    <span class="project-month">{{project.created_at|date:"Y-m"}}</span>
                                 </div>
                             </a>
                         </div>
@@ -257,7 +257,7 @@
 
     <!-- секция  button -->
     <section class="section-button d-flex justify-content-center mt-5">
-        <a href="{%  url 'hands:projects' %}"><button class="button-section">Переглянути всі проекти</button></a>
+        <a href="{%  url 'hands:projects' %}"><button class="button-section">{% trans "Переглянути всі проекти" %}</button></a>
     </section>
     <!-- секция  button -->
     <!-- секция   Text -->
@@ -265,8 +265,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Наші новини</h2>
-                    <p class="text-center description-text">Ми, благодійний фонд 'Руки милості', допомагаємо найбільш уразливим: внутрішньопереміщеним особам</p>
+                    <h2 class="main-text">{% trans "Наші новини" %}</h2>
+                    <p class="text-center description-text">{% trans "Ми, благодійний фонд 'Руки милості', допомагаємо найбільш уразливим: внутрішньопереміщеним особам" %}</p>
                 </div>
             </div> 
         </div>
@@ -289,7 +289,7 @@
                                     <h6>{{items.description|truncatechars:80}}</h6>
                                 </div>
                                 <div class="news-top mt-5 me-auto">
-                                    <p>Дивитись новину</p>
+                                    <p>{% trans "Дивитись новину" %}</p>
                                 </div>
                             </div>
                         </a> 
@@ -302,7 +302,7 @@
 
      <!-- секция  button -->
     <section class="section-button d-flex justify-content-center mt-5">
-        <a href="{%  url 'hands:news' %}"><button class="button-section">Переглянути всі новини</button></a>
+        <a href="{%  url 'hands:news' %}"><button class="button-section">{% trans "Переглянути всі новини" %}</button></a>
     </section>
     <!-- секция  button -->
 
@@ -311,8 +311,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Про нас</h2>
-                    <p class="text-center description-text">Ми — команда професіоналів, яка об'єднала свої зусилля для того, щоб приносити реальну допомогу тим, хто цього потребує</p>
+                    <h2 class="main-text">{% trans "Про нас" %}</h2>
+                    <p class="text-center description-text">{% trans "Ми — команда професіоналів, яка об'єднала свої зусилля для того, щоб приносити реальну допомогу тим, хто цього потребує" %}</p>
                 </div>
             </div> 
         </div>
@@ -323,11 +323,9 @@
     <section class="section-about-image">
         <div class="container mt-4">
             <div class="row justify-content-center">
-       
                     <div class="d-flex justify-content-center image-about-style">
                         <img src="{% static 'image/team/team2.jpg' %}" alt="about">
                     </div>
-         
             </div>
 
         </div>
@@ -343,28 +341,27 @@
 
                         <div class="about-card-body d-flex justify-content-between">
                             <div class="about-card-body-item">
-                                <h5>Про нас</h5>
+                                <h5>{% trans "Про нас" %}</h5>
                             </div>
                             <div class="about-card-body-logo">
-                            
                             </div>
                         </div>
 
                         <div class="about-card-body-items d-flex justify-content-center px-5">
-                            <p>Наша команда налічує близько 50 волонтерів, серед яких практикуючі педагоги та вихователі, психологи, сертифіковані фасилітатори, а також активні студенти й молодь. У сфері захисту дітей ми співпрацюємо з місцевими школами, сімейними центрами та міською адміністрацією. Фасилітатори нашої ГО пройшли навчання від міжнародних організацій (World Vision, USAID, ACTED тощо) за темами: «Позитивне батьківство», «Психосоціальна підтримка дітей», «Самодопомога Плюс», «Управління проблемами» та ін.</p>
+                            <p>{% trans "Наша команда налічує близько 50 волонтерів, серед яких практикуючі педагоги та вихователі, психологи, сертифіковані фасилітатори, а також активні студенти й молодь. У сфері захисту дітей ми співпрацюємо з місцевими школами, сімейними центрами та міською адміністрацією. Фасилітатори нашої ГО пройшли навчання від міжнародних організацій (World Vision, USAID, ACTED тощо) за темами: «Позитивне батьківство», «Психосоціальна підтримка дітей», «Самодопомога Плюс», «Управління проблемами» та ін." %}</p>
                         </div>
                     </div>
                     <div class="about-card d-flex flex-column">
 
                         <div class="about-card-body d-flex justify-content-between">
                             <div class="about-card-body-item">
-                                <h5>Місія</h5>
+                                <h5>{% trans "Місія" %}</h5>
                             </div>
                             <div class="about-card-body-logo"></div>
                         </div>
 
                         <div class="about-card-body-items d-flex justify-content-center px-5">
-                            <p>Сприяти покращенню якості життя людей і розвитку суспільства через реалізацію проєктів у гуманітарній, соціальній та освітній сферах, спрямованих на допомогу, підтримку та просвіту. Наша команда реалізує на Дніпропетровщині самостійні проєкти, а також проєкти материнської організації БФ «Руки Милості».</p>
+                            <p>{% trans "Сприяти покращенню якості життя людей і розвитку суспільства через реалізацію проєктів у гуманітарній, соціальній та освітній сферах, спрямованих на допомогу, підтримку та просвіту. Наша команда реалізує на Дніпропетровщині самостійні проєкти, а також проєкти материнської організації БФ «Руки Милості»." %}</p>
                         </div>
                     </div>
                     
@@ -374,35 +371,32 @@
 
                         <div class="about-card-body d-flex justify-content-between">
                             <div class="about-card-body-item">
-                                <h5>Принципи</h5>
+                                <h5>{% trans "Принципи" %}</h5>
                             </div>
                             <div class="about-card-body-logo"></div>
                         </div>
 
                         <div class="about-card-body-items d-flex justify-content-center px-5">
-                            <p>
-                                Наша організація базується на таких основних цінностях, як відповідальність, служіння суспільству та гуманність. Ми прагнемо забезпечувати саморозвиток і самообслуговування суспільства, збалансувати власні та суспільні інтереси, орієнтуючись на вищі цілі. Важливими аспектами є партнерська співпраця, захист прав людини, прозорість та підзвітність. Ми сприяємо рівності, чесності, законності та незалежності у всіх сферах діяльності.</p>
+                            <p>{% trans "Наша організація базується на таких основних цінностях, як відповідальність, служіння суспільству та гуманність. Ми прагнемо забезпечувати саморозвиток і самообслуговування суспільства, збалансувати власні та суспільні інтереси, орієнтуючись на вищі цілі. Важливими аспектами є партнерська співпраця, захист прав людини, прозорість та підзвітність. Ми сприяємо рівності, чесності, законності та незалежності у всіх сферах діяльності." %}</p>
                         </div>
                     </div>
                     <div class="about-card d-flex flex-column ">
 
                         <div class="about-card-body d-flex justify-content-between">
                             <div class="about-card-body-item">
-                                <h5>Бачення</h5>
+                                <h5>{% trans "Бачення" %}</h5>
                             </div>
                             <div class="about-card-body-logo"></div>
                         </div>
 
                         <div class="about-card-body-items d-flex justify-content-center px-5">
-                            <p>Надання допомоги людям, які опинилися у складних життєвих обставинах, включаючи постраждалих від війни.Сприяння організації відпочинку, розвитку спортивних, творчих та освітніх програм для дітей, підлітків, жінок та сімей громади.Формування у дітей і підлітків високих моральних цінностей, сприяння їх соціалізації, духовному та психологічному розвитку та підтримці.Залучення членів громади до активної участі у соціальному житті, розвитку громадських ініціатив та надання позитивного внеску у життя суспільства.</p>
+                            <p>{% trans "Надання допомоги людям, які опинилися у складних життєвих обставинах, включаючи постраждалих від війни.Сприяння організації відпочинку, розвитку спортивних, творчих та освітніх програм для дітей, підлітків, жінок та сімей громади.Формування у дітей і підлітків високих моральних цінностей, сприяння їх соціалізації, духовному та психологічному розвитку та підтримці.Залучення членів громади до активної участі у соціальному житті, розвитку громадських ініціатив та надання позитивного внеску у життя суспільства." %}</p>
                         </div>
                     </div>
                 </div>
             </div>
             
         </div>
-
-
     </section>
     <!-- about-section-card -->
 
@@ -411,8 +405,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Наші проєкти</h2>
-                    <p class="text-center description-text">Наші соціальні та гуманітарні проєкти спрямовані на підтримку населення, надання допомоги сім’ям, дітям і всім, хто потребує. Ми реалізуємо ініціативи для соціального розвитку, освіти, психологічної підтримки та гуманітарної допомоги.</p>
+                    <h2 class="main-text">{% trans "Наші проєкти" %}</h2>
+                    <p class="text-center description-text">{% trans "Наші соціальні та гуманітарні проєкти спрямовані на підтримку населення, надання допомоги сім’ям, дітям і всім, хто потребує. Ми реалізуємо ініціативи для соціального розвитку, освіти, психологічної підтримки та гуманітарної допомоги." %}</p>
                 </div>
             </div> 
         </div>
@@ -429,17 +423,17 @@
                         <img src="{% static 'image/raznoe/raznoe-hand.jpg' %}" alt="" class="image-fluid fixed-image-ditache">
                     </div>
                     <div class="new-ditache-item mt-4">
-                        <h5>Допомога та розвиток</h5>
+                        <h5>{% trans "Допомога та розвиток" %}</h5>
                     </div>
                    
                     <div class="new-ditache-item-description mt-4">
-                        <h6>Наша команда має 10-річний досвід роботи (ще до створення ГО) з дітьми та підлітками різних категорій у сфері ментального здоров’я, психосоціальної підтримки та захисту дітей. Ми організували понад 20 тематичних дитячих таборів, заходів для дітей, профілактичних лекцій і створили кілька дружніх дитячих просторів.</h6>
+                        <h6>{% trans "Наша команда має 10-річний досвід роботи (ще до створення ГО) з дітьми та підлітками різних категорій у сфері ментального здоров’я, психосоціальної підтримки та захисту дітей. Ми організували понад 20 тематичних дитячих таборів, заходів для дітей, профілактичних лекцій і створили кілька дружніх дитячих просторів." %}</h6>
                     </div>
                     <div class="new-ditache-item-description mt-4">
-                        <h6>Ми проводимогуманітарні, освітні та соціальні проєкти для всіх, хто потребує підтримки. Це ініціативи, де діти та батьки отримують необхідну допомогу, беруть участь у семінарах, дитячих таборах і клубах, що сприяють їхньому розвитку та соціальній адаптації.</h6>
+                        <h6>{% trans "Ми проводимогуманітарні, освітні та соціальні проєкти для всіх, хто потребує підтримки. Це ініціативи, де діти та батьки отримують необхідну допомогу, беруть участь у семінарах, дитячих таборах і клубах, що сприяють їхньому розвитку та соціальній адаптації." %}</h6>
                     </div>
                     <div class="new-ditache-item-description mt-4">
-                        <a href="{% url 'hands:projects' %}"><button class="button-section">Переглянути проєкти</button></a>
+                        <a href="{% url 'hands:projects' %}"><button class="button-section">{% trans "Переглянути проєкти" %}</button></a>
                     </div>
 
                 </div>
@@ -451,11 +445,11 @@
                                     <img src="{% static 'image/soc2.svg' %}" alt="">
                                 </div>
                                 <div class="new-ditache-card-text-first d-flex mt-2">
-                                    <h6>Гуманітарні проєкти </h6>
+                                    <h6>{% trans "Гуманітарні проєкти" %}</h6>
                                 </div>
                             </div>
                             <div class="new-ditache-card-text mt-4">
-                                <h6>Наші гуманітарні проєкти спрямовані на соціальний розвиток різних верств населення – як дітей, так і дорослих. Ми реалізуємо програми для сімей, психологічні та пізнавальні тренінги, підтримку в кризових ситуаціях, а також допомогу військовим і їхнім родинам.</h6>
+                                <h6>{% trans "Наші гуманітарні проєкти спрямовані на соціальний розвиток різних верств населення – як дітей, так і дорослих. Ми реалізуємо програми для сімей, психологічні та пізнавальні тренінги, підтримку в кризових ситуаціях, а також допомогу військовим і їхнім родинам." %}</h6>
                             </div>
                         </div>
                     </div>
@@ -466,11 +460,11 @@
                                     <img src="{% static 'image/soc3.svg' %}" alt="">
                                 </div>
                                 <div class="new-ditache-card-text-first d-flex mt-2">
-                                    <h6>Соціальні проєкти </h6>
+                                    <h6>{% trans "Соціальні проєкти" %}</h6>
                                 </div>
                             </div>
                             <div class="new-ditache-card-text mt-4">
-                                <h6>Наші соціальні проєкти спрямовані на підтримку сімей, дітей і всіх, хто потребує допомоги. Ми проводимо освітні, гуманітарні та психологічні ініціативи, створюємо простори для розвитку, взаємодії та соціальної адаптації.</h6>
+                                <h6>{% trans "Наші соціальні проєкти спрямовані на підтримку сімей, дітей і всіх, хто потребує допомоги. Ми проводимо освітні, гуманітарні та психологічні ініціативи, створюємо простори для розвитку, взаємодії та соціальної адаптації" %}.</h6>
                             </div>
                         </div>
                     </div>
@@ -481,11 +475,11 @@
                                     <img src="{% static 'image/soc1.svg' %}" alt="">
                                 </div>
                                 <div class="new-ditache-card-text-first d-flex mt-2">
-                                    <h6>Освітні проєкти</h6>
+                                    <h6>{% trans "Освітні проєкти" %}</h6>
                                 </div>
                             </div>
                             <div class="new-ditache-card-text mt-4">
-                                <h6>Наші освітні проєкти спрямовані на розвиток знань та навичок у різних вікових групах. Ми організовуємо тренінги, майстер-класи, курси для дітей і дорослих, допомагаючи кожному досягти свого потенціалу. В рамках проєктів проводимо навчання з психології, соціальної адаптації та розвитку особистості, а також забезпечуємо доступ до ресурсів для підвищення кваліфікації. Наші програми сприяють розвитку критичного мислення, покращенню комунікативних навичок і формуванню здорових соціальних зв'язків.</h6>
+                                <h6>{% trans "Наші освітні проєкти спрямовані на розвиток знань та навичок у різних вікових групах. Ми організовуємо тренінги, майстер-класи, курси для дітей і дорослих, допомагаючи кожному досягти свого потенціалу. В рамках проєктів проводимо навчання з психології, соціальної адаптації та розвитку особистості, а також забезпечуємо доступ до ресурсів для підвищення кваліфікації. Наші програми сприяють розвитку критичного мислення, покращенню комунікативних навичок і формуванню здорових соціальних зв'язків." %}</h6>
                             </div>
                         </div>
                     </div>
@@ -504,28 +498,23 @@
                     <div class="pidtrimka-card">
                         <div class="pidtrimka-card-body d-flex justify-content-between flex-wrap-reverse">
                             <div class="pidtrimka-card-body_text d-flex">
-                                <h6>Підтримати благодійний фонд</h6>
+                                <h6>{% trans "Підтримати благодійний фонд" %}</h6>
                             </div>
                             <div class="pidtrimka-card-body_img d-flex justify-content-center align-items-center mx-auto"></div>
                         </div>
                         <div class="pidtrimka-card-oplata-body d-flex justify-content-between flex-wrap">
     
                             <div class="pidtrimka-card-oplata-body_items d-flex">
-                                <h6>Руки Милості</h6>
+                                <h6>{% trans "Руки Милості" %}</h6>
                             </div>
                             <div class="pidtrimka-card-oplata-body_button d-flex">
-                                <a href="#"></a><button class="button-section">Підтримати</button>
+                                <a href="#"></a><button class="button-section">{% trans "Підтримати" %}</button>
                             </div>
-    
                         </div>
-    
                     </div>
                 </a>
-                
-
             </div>
         </div>
-
     </section>
     <!-- oplata-section -->
      <!-- text -->
@@ -533,8 +522,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Напрямок нашої діяльності</h2>
-                    <p class="text-center description-text">Надаємо допомогу людям, надаючи тимчасове житло та підтримку.</p>
+                    <h2 class="main-text">{% trans "Напрямок нашої діяльності" %}</h2>
+                    <p class="text-center description-text">{% trans "Надаємо допомогу людям, надаючи тимчасове житло та підтримку." %}</p>
                 </div>
             </div> 
         </div>
@@ -552,10 +541,10 @@
                         </div>
                         <div class="nasha-dialnist-card-body">
                             <div class="nasha-dialnist-card_text">
-                                <h6>Продовольча/не продовольча, допомога</h6>
+                                <h6>{% trans "Продовольча/не продовольча, допомога" %}</h6>
                             </div>
                             <div class="nasha-dialnist-card-description mt-4">
-                                <p>Ми надаємо фінансову, продовольчу та дитячу допомогу сім’ям у складних обставинах, підтримуючи їхню стабільність і безпеку.</p>
+                                <p>{% trans "Ми надаємо фінансову, продовольчу та дитячу допомогу сім’ям у складних обставинах, підтримуючи їхню стабільність і безпеку." %}</p>
                             </div>
                         </div>
 
@@ -566,10 +555,10 @@
                         </div>
                         <div class="nasha-dialnist-card-body">
                             <div class="nasha-dialnist-card_text">
-                                <h6>Психологічний захист</h6>
+                                <h6>{% trans "Психологічний захист" %}</h6>
                             </div>
                             <div class="nasha-dialnist-card-description mt-4">
-                                <p>Психологічна допомога для сімей, дітей і батьків – підтримка, адаптація та розвиток у складних життєвих ситуаціях.</p>
+                                <p>{% trans "Психологічна допомога для сімей, дітей і батьків – підтримка, адаптація та розвиток у складних життєвих ситуаціях." %}</p>
                             </div>
                         </div>
 
@@ -582,10 +571,10 @@
                         </div>
                         <div class="nasha-dialnist-card-body">
                             <div class="nasha-dialnist-card_text">
-                                <h6>Притулок</h6>
+                                <h6>{% trans "Притулок" %}</h6>
                             </div>
                             <div class="nasha-dialnist-card-description mt-5">
-                                <p>Надаємо притулок людям та допомагаємо в різних життєвих ситуаціях – фінансово, психологічно та соціально.</p>
+                                <p>{% trans "Надаємо притулок людям та допомагаємо в різних життєвих ситуаціях – фінансово, психологічно та соціально." %}</p>
                             </div>
                         </div>
 
@@ -596,10 +585,10 @@
                         </div>
                         <div class="nasha-dialnist-card-body">
                             <div class="nasha-dialnist-card_text">
-                                <h6>Освіта та треннінги</h6>
+                                <h6>{% trans "Освіта та треннінги" %}</h6>
                             </div>
                             <div class="nasha-dialnist-card-description mt-4">
-                                <p>Ми допомагаємо всім верствам населення, дітям і сім’ям через тренінги, що сприяють розвитку, адаптації та підтримці в складних життєвих ситуаціях.</p>
+                                <p>{% trans "Ми допомагаємо всім верствам населення, дітям і сім’ям через тренінги, що сприяють розвитку, адаптації та підтримці в складних життєвих ситуаціях." %}</p>
                             </div>
                         </div>
 
@@ -615,8 +604,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Дивитися нас на YouTube</h2>
-                    <p class="text-center description-text">Дивіться наші новини та звіти на YouTube-каналі благодійного фонду!</p>
+                    <h2 class="main-text">{% trans "Дивитися нас на YouTube" %}</h2>
+                    <p class="text-center description-text">{% trans "Дивіться наші новини та звіти на YouTube-каналі благодійного фонду!" %}</p>
                 </div>
             </div> 
         </div>
@@ -631,21 +620,19 @@
                     <div class="videio-card d-flex flex-column">
                         <div class="videio-card-body">
                             <div class="videio-card_items">
-                                <h4>Наш відео канал</h4>
+                                <h4>{% trans "Наш відео канал" %}</h4>
                             </div>
                             <div class="videio-card_text mt-3">
-                                <h5>Наш YouTube-канал – тут ви знайдете всі наші відео, де ми ділимося нашими досягненнями!</h5>
+                                <h5>{% trans "Наш YouTube-канал – тут ви знайдете всі наші відео, де ми ділимося нашими досягненнями!" %}</h5>
                             </div>
                             <div class="videio-card_button mt-4">
-                                <a href="#"></a><button class="button-section-video">Переглянути</button>
+                                <a href="https://www.youtube.com/@armsofmercy.dnipro" target="_blank"><button class="button-section-video">{% trans "Переглянути" %}</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-auto">
-                    <div class="video-card-content">
-
-                    </div>
+                    <a href="https://www.youtube.com/@armsofmercy.dnipro" target="_blank"><div class="video-card-content"></div></a>
                 </div>
             </div>
         </div>
@@ -657,8 +644,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Наш шлях</h2>
-                    <p class="text-center description-text">Наш шлях – це роки допомоги, підтримки та добрих справ на благо людей</p>
+                    <h2 class="main-text">{% trans "Наш шлях" %}</h2>
+                    <p class="text-center description-text">{% trans "Наш шлях – це роки допомоги, підтримки та добрих справ на благо людей" %}</p>
                 </div>
             </div> 
         </div>
@@ -682,7 +669,7 @@
                         </div>
                         <div class="shlah-card-one-body">
                             <div class="shlah-card-one-body_items">
-                                <p>Створення ініціативної групи для допомоги постраждалим від анексії Криму та військової агресії РФ на Сході України</p>
+                                <p>{% trans "Створення ініціативної групи для допомоги постраждалим від анексії Криму та військової агресії РФ на Сході України" %}</p>
                             </div>
                         </div>
                     </div>
@@ -699,7 +686,7 @@
                         </div>
                         <div class="shlah-card-one-body">
                             <div class="shlah-card-one-body_items">
-                                <p>Державна реєстрація БФ «Руки милості» як організації, яка спрямовує гуманітарну допомогу в зону бойових дій, відкриття соціального центру для ВПО та створення дитячих таборів</p>
+                                <p>{% trans "Державна реєстрація БФ «Руки милості» як організації, яка спрямовує гуманітарну допомогу в зону бойових дій, відкриття соціального центру для ВПО та створення дитячих таборів" %}</p>
                             </div>
                         </div>
                     </div>
@@ -716,7 +703,7 @@
                         </div>
                         <div class="shlah-card-one-body">
                             <div class="shlah-card-one-body_items">
-                                <p>Державна реєстрація БФ «Руки милості» як організації, яка спрямовує гуманітарну допомогу в зону бойових дій, відкриття соціального центру для ВПО та створення дитячих таборів</p>
+                                <p>{% trans "Державна реєстрація БФ «Руки милості» як організації, яка спрямовує гуманітарну допомогу в зону бойових дій, відкриття соціального центру для ВПО та створення дитячих таборів" %}</p>
                             </div>
                         </div>
                     </div>
@@ -734,16 +721,16 @@
 
                     <div class="ruki-body-column d-flex justify-content-center flex-column align-items-center">
                         <div class="ruki-text">
-                            <h3>Підтримати благодійний фонд</h3>
+                            <h3>{% trans "Підтримати благодійний фонд" %}</h3>
                         </div>
                         <div class="ruki-item mt-2">
-                            <p>Руки Милості</p>
+                            <p>{% trans "Руки Милості" %}</p>
                         </div>
                         <div class="ruki-description d-flex  justify-content-center  mt-2">
-                            <h6>Руки Милості невтомно працюють.І лише ваша підтримка дозволяє рухатися вперед</h6>
+                            <h6>{% trans "Руки Милості невтомно працюють.І лише ваша підтримка дозволяє рухатися вперед" %}</h6>
                         </div>
                         <div class="ruki-button mt-3">
-                            <a href="#"></a><button class="button-section">Підтримати</button>
+                            <a href="#"></a><button class="button-section">{% trans "Підтримати" %}</button>
                         </div>
                     </div>
                 </div>
@@ -757,9 +744,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Наші спонсори</h2>
-                    <p class="text-center description-text">
-                        Спонсорська допомога для благодійного фонду — це можливість підтримати тих, хто потребує захисту</p>
+                    <h2 class="main-text">{% trans "Наші спонсори" %}</h2>
+                    <p class="text-center description-text">{% trans "Спонсорська допомога для благодійного фонду — це можливість підтримати тих, хто потребує захисту" %}</p>
                 </div>
             </div> 
         </div>
@@ -795,7 +781,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                        <h2 class="main-text">Часті питання</h2>
+                        <h2 class="main-text">{% trans "Часті питання" %}</h2>
                     </div>
                 </div> 
             </div>
@@ -809,20 +795,20 @@
                 <div class="card-new-one" style="background:linear-gradient(to bottom, #D9D9D9, #F2F2F2);">
                     <div class="card-new-one-body d-flex flex-column ms-2">
                         <div class="card-new-one-description">
-                            <h5>Як з нами зв'язатися?</h5>
+                            <h5>{% trans "Як з нами зв'язатися?" %}</h5>
                         </div>
                         <div class="card-new-one-description-text mt-4 p-2">
-                            <h6>Ми завжди на зв'язку та готові вислухати вас. Фонд "Руки Милості" відкритий для питань, пропозицій та підтримки тим, хто потребує допомоги. Зв'яжіться з нами у будь-який час!</h6>
+                            <h6>{% trans "Ми завжди на зв'язку та готові вислухати вас. Фонд Руки Милості відкритий для питань, пропозицій та підтримки тим, хто потребує допомоги. Зв'яжіться з нами у будь-який час!" %}</h6>
                         </div>
                     </div>
                 </div>
                 <div class="card-new-two" style="background:linear-gradient(to bottom, #FFE6AD, #FFF0CF);">
                     <div class="card-new-two-body d-flex flex-column ms-2">
                         <div class="card-new-two-description">
-                            <h5>Соціальний центр</h5>
+                            <h5>{% trans "Соціальний центр" %}</h5>
                         </div>
                         <div class="card-new-two-description-text mt-5 p-2">
-                            <h6>Ми завжди готові прийти на допомогу тим, хто потребує. Фонд "Руки Милості" підтримує людей у ​​складних ситуаціях, даруючи турботу, тепло та надію на краще.</h6>
+                            <h6>{% trans "Ми завжди готові прийти на допомогу тим, хто потребує. Фонд Руки Милості підтримує людей у ​​складних ситуаціях, даруючи турботу, тепло та надію на краще." %}</h6>
                         </div>
                     </div>
                 </div>
@@ -831,20 +817,20 @@
                 <div class="card-new-two"  style="background:linear-gradient(to bottom, #DCEDF6, #ECF9FF);">
                     <div class="card-new-two-body d-flex flex-column ms-2">
                         <div class="card-new-two-description">
-                            <h5>Фінансова допомогу фонду</h5>
+                            <h5>{% trans "Фінансова допомогу фонду" %}</h5>
                         </div>
                         <div class="card-new-two-description-text mt-5 p-2">
-                            <h6>Ви можете надати грошову допомогу, переказуючи будь-яку суму на реквізити, зазначені на банківських картках. Ваша підтримка допоможе нам продовжувати надавати допомогу тим, хто її потребує</h6>
+                            <h6>{% trans "Ви можете надати грошову допомогу, переказуючи будь-яку суму на реквізити, зазначені на банківських картках. Ваша підтримка допоможе нам продовжувати надавати допомогу тим, хто її потребує" %}</h6>
                         </div>
                     </div>
                 </div>
                 <div class="card-new-one" style="background:linear-gradient(to bottom, #CFF5E5, #E5FDF3);">
                     <div class="card-new-one-body d-flex flex-column ms-2">
                         <div class="card-new-one-description">
-                            <h5>Де слідкуват за новінами та проєктами</h5>
+                            <h5>{% trans "Де слідкуват за новінами та проєктами" %}</h5>
                         </div>
                         <div class="card-new-one-description-text mt-4 p-2">
-                            <h6>Ви можете стежити за нашими проєктами на нашому сайті та у наших соц мережах, де ми публікуємо всі актуальні новини та оновлення.</h6>
+                            <h6>{% trans "Ви можете стежити за нашими проєктами на нашому сайті та у наших соц мережах, де ми публікуємо всі актуальні новини та оновлення." %}</h6>
                         </div>
                     </div>
                 </div>

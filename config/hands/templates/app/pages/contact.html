@@ -1,6 +1,6 @@
 {% extends "app/base.html" %}
-{% load static %}
-{% block title %}Контакти фонду Руки Милості - Дніпро{% endblock %}
+{% load static i18n %}
+{% block title %}{% trans "Контакти фонду Руки Милості - Дніпро" %}{% endblock %}
 {% block content %}
 
     <!-- section description-ruki-milosty-->
@@ -9,16 +9,16 @@
             <div class="row justify-content-center align-items-center text-center">
                 <div class="contact-rukimilosty-bady d-flex justify-content-center align-items-center text-center flex-column">
                     <div class="contact-rukimilosty-item">
-                        <h1>Благодійний фонд Руки Милості</h1>
+                        <h1>{% trans "Благодійний фонд Руки Милості" %}</h1>
                     </div>
                     <div class="contact-rukimilosty-text mt-3">
-                        <h2>Зараз саме час допомогти тим, хто цього потребує</h2>
+                        <h2>{% trans "Зараз саме час допомогти тим, хто цього потребує" %}</h2>
                     </div>
                     <div class="contact-rukimilosty-description mt-4">
-                        <h3>Допомагаємо людям, котрі опинилися у складних життєвих обставинах.</h3>
+                        <h3>{% trans "Допомагаємо людям, котрі опинилися у складних життєвих обставинах."%}</h3>
                     </div>
                     <div class="contact-rukimilosty-button mt-5">
-                        <a href="#"></a><button class="button-section">Підтримати фонд</button>
+                        <a href="#"></a><button class="button-section">{% trans "Підтримати фонд" %}</button>
                     </div>
                 </div>
             </div>
@@ -31,8 +31,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Наші спонсори</h2>
-                    <p class="text-center description-text">Спонсорська допомога для благодійного фонду — це можливість підтримати тих, хто потребує захисту</p>
+                    <h2 class="main-text">{% trans "Наші спонсори" %}</h2>
+                    <p class="text-center description-text">{% trans "Спонсорська допомога для благодійного фонду — це можливість підтримати тих, хто потребує захисту" %}</p>
                 </div>
             </div> 
         </div>
@@ -68,8 +68,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Наші контакти</h2>
-                    <p class="text-center description-text">Наші адреси, за якими ви можете нас знайти, а також соціальні мережі.</p>
+                    <h2 class="main-text">{% trans "Наші контакти" %}</h2>
+                    <p class="text-center description-text">{% trans "Наші адреси, за якими ви можете нас знайти, а також соціальні мережі." %}</p>
                 </div>
             </div> 
         </div>
@@ -84,7 +84,7 @@
                     <div class="contact-card d-flex flex-column justify-content-start">
                         <div class="contact-card-two-body">
                             <div class="contact-text">
-                                <h6>Наші coц. мережі</h6>
+                                <h6>{% trans "Наші coц. мереж" %}і</h6>
                             </div>
                             <div class="contact-body-column d-flex flex-row">
                                 <div class="contact-body-col-row d-flex align-items-center gap-3 mt-5">
@@ -102,7 +102,7 @@
                     <div class="contact-card-two d-flex flex-column justify-content-start">
                         <div class="contact-card-two-body">
                             <div class="contact-text">
-                                <h6>Наші адреси</h6>
+                                <h6>{% trans "Наші адреси" %}</h6>
                             </div>
                             <div class="contact-body-column d-flex flex-row">
                                 <div class="contact-body-col-row d-flex align-items-center gap-3 mt-5">
@@ -123,7 +123,7 @@
                         <div class="contact-card-tree d-flex flex-column justify-content-start">
                             <div class="contact-card-body">
                             <div class="contact-text">
-                                <h6>Наші контакти</h6>
+                                <h6>{% trans "Наші контакти" %}</h6>
                             </div>
                             <div class="contact-body-column d-flex flex-column gap-1 mt-4">
                                 <div class="contact-body-col-row d-flex align-items-center gap-2 flex-row">
@@ -148,8 +148,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">Наші реквiзити</h2>
-                    <p class="text-center description-text">Наші реквізити для того, щоб ви могли фінансово підтримати наш фонд.</p>
+                    <h2 class="main-text">{% trans "Наші реквiзити" %}</h2>
+                    <p class="text-center description-text">{% trans "Наші реквізити для того, щоб ви могли фінансово підтримати наш фонд." %}</p>
                 </div>
             </div> 
         </div>
@@ -165,7 +165,7 @@
                             <div class="card-contact-oplata-body">
                                 <div class="card-contact-oplata-items d-flex flex-column">
                                     <div class="recvizit-card">
-                                        <h5>Получатель</h5>
+                                        <h5>{% trans "Получатель" %}</h5>
                                     </div>
                                     <div class="recvizit-card-item">
                                         <h6>UA833052990000026002021807346</h6>
@@ -173,7 +173,7 @@
                                     <div class="card-contact-oplata-items-top d-flex flex-row justify-content-between gap-5">
                                         <div class="card-contact-oplata-items-column d-flex flex-column justify-content-center">
                                             <div class="card-oplata-recvizit-top">
-                                                <h5>ЕГРПОУ</h5>
+                                                <h5>{% trans "ЕГРПОУ" %}</h5>
                                             </div>
                                             <div class="card-oplata-recvizit-top-item">
                                                 <h6>40334905</h6>
@@ -196,7 +196,7 @@
                             <div class="card-contact-oplata-body">
                                 <div class="card-contact-oplata-items d-flex flex-column">
                                     <div class="recvizit-card">
-                                        <h5>Получатель</h5>
+                                        <h5>{% trans "Получатель" %}</h5>
                                     </div>
                                     <div class="recvizit-card-item">
                                         <h6>UA833052990000026002021807346</h6>
@@ -204,7 +204,7 @@
                                     <div class="card-contact-oplata-items-top d-flex flex-row justify-content-between gap-5">
                                         <div class="card-contact-oplata-items-column d-flex flex-column justify-content-center">
                                             <div class="card-oplata-recvizit-top">
-                                                <h5>ЕГРПОУ</h5>
+                                                <h5>{% trans "ЕГРПОУ" %}</h5>
                                             </div>
                                             <div class="card-oplata-recvizit-top-item">
                                                 <h6>40334905</h6>
@@ -227,7 +227,7 @@
                             <div class="card-contact-oplata-body-top">
                                 <div class="card-contact-oplata-items d-flex flex-column">
                                     <div class="recvizit-card">
-                                        <h5>Получатель</h5>
+                                        <h5>{% trans "Получатель" %}</h5>
                                     </div>
                                     <div class="recvizit-card-item">
                                         <h6>armsofmercy.dnipro@gmail.com</h6>

@@ -1,0 +1,52 @@
+{% comment %} {% extends "app/base.html" %}
+{% load static  i18n %}
+{% block title %}Головна Руки Милості - Дніпро{% endblock %}
+{% block content %}
+
+            <p>Количество новостей: {{ new_item|length }}</p>
+            <p>Количество новостей: {{ project_item|length }}</p>
+            <p>Список обьектов{{ project_item }}</p>
+            {% for news in new_item %}
+                <h1>{{ news.name }}</h1>
+                <p>{{ news.description }}</p>
+            {% endfor%}
+
+            {% for project in project_item %}
+                <h1>{{  project.name }}</h1>
+                <p>{{  project.description }}</p>
+            {% endfor%}     
+
+
+         
+
+{% endblock %}     {% endcomment %}
+
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    {% for news in new_item %}
+        <h1>{{ news.name }}</h1>
+        <p>{{ news.description }}</p>
+    {% endfor%}
+
+
+
+    <form method="post" action="{% url 'hands:set_language' %}">
+        {% csrf_token %}
+        <select name="language">
+            <option value="en">English</option>
+            <option value="uk">Українська</option>
+        </select>
+        <button type="submit">Switch Language</button>
+    </form>
+
+    <!-- Ссылки для переключения языка -->
+    <a href="{% url 'hands:set_language' %}?language=en">English</a>
+    <a href="{% url 'hands:set_language' %}?language=uk">Українська</a>
+</body>
+</html>

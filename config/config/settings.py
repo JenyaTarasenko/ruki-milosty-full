@@ -1,4 +1,4 @@
-
+from django.utils.translation import gettext_lazy as _
 import os
 from pathlib import Path
 
@@ -24,12 +24,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'hands.apps.HandsConfig',
+    'modeltranslation',    #переводчик model   pip install django-modeltranslation
+    'hands.apps.HandsConfig', #приложение
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',  #перевод
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -85,13 +87,28 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LANGUAGES = [
+    ('uk', _('Українська')),
+    ('en', _('English')),
+]
 
+LANGUAGE_CODE = 'uk'
 
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 
-LANGUAGE_CODE = 'uk'  # Украинский язык
-TIME_ZONE = 'Europe/Kiev'  # Часовой пояс Украины
 USE_I18N = True
+USE_L10N = True
 USE_TZ = True
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'uk'  # Основной язык для modeltranslation
+MODELTRANSLATION_FALLBACK_LANGUAGES = ('uk', 'en')
+
+
+# LANGUAGE_CODE = 'uk'  
+# TIME_ZONE = 'Europe/Kiev'  
+# USE_I18N = True
+# USE_TZ = True
 
 
 

@@ -1,0 +1,1123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-10 02:47-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config/settings.py:91 hands/templates/include/menu/menu.html:52
+msgid "Українська"
+msgstr "Ukrainian"
+
+#: config/settings.py:92
+msgid "English"
+msgstr ""
+
+#: hands/models.py:10 hands/templates/app/pages/projects.html:155
+msgid "Відкритий"
+msgstr "Open"
+
+#: hands/models.py:11 hands/templates/app/pages/index.html:246
+#: hands/templates/app/pages/projects-detail.html:151
+msgid "Закритий"
+msgstr "Closed"
+
+#: hands/templates/app/base.html:40
+msgid "Руки Милості головна"
+msgstr "Hands of mercy"
+
+#: hands/templates/app/pages/about.html:3
+msgid "Про благодійний фонд Рукі Милості"
+msgstr "About the Hands of Mercy"
+
+#: hands/templates/app/pages/about.html:13
+msgid "Ми-Благодійний фонд Руки Милості"
+msgstr "We are the Charitable Foundation Hands of Mercy"
+
+#: hands/templates/app/pages/about.html:16
+#: hands/templates/app/pages/contact.html:18
+msgid "Допомагаємо людям, котрі опинилися у складних життєвих обставинах."
+msgstr "We help people in difficult life circumstances."
+
+#: hands/templates/app/pages/about.html:19
+#: hands/templates/app/pages/contact.html:21
+#: hands/templates/app/pages/news-detail.html:20
+#: hands/templates/app/pages/news.html:20
+#: hands/templates/app/pages/projects-detail.html:24
+#: hands/templates/app/pages/projects.html:19
+msgid "Підтримати фонд"
+msgstr "Support the fund"
+
+#: hands/templates/app/pages/about.html:22
+msgid ""
+"Наша команда має багатий  досвіду роботи з дітьми та підлітками у сфері "
+"ментального здоров’я, соціальної підтримки та захисту. Ми організували "
+"десятки дитячих таборів, заходів і лекцій, створили безпечні простори для "
+"розвитку. Реалізуємо гуманітарні, освітні та соціальні проєкти, де діти та "
+"батьки отримують підтримку, беруть участь у семінарах, таборах і клубах для "
+"зростання та адаптації."
+msgstr ""
+"Our team has extensive experience working with children and adolescents in "
+"the field ofmental health, social support and protection. We organizeddozens "
+"of children's camps, events and lectures, created safe spaces "
+"fordevelopment. We implement humanitarian, educational and social projects "
+"where children andparents receive support, participate in seminars, camps "
+"and clubs forgrowth and adaptation."
+
+#: hands/templates/app/pages/about.html:54
+msgid ""
+"Через наші ініціативи ми прагнемо не лише надати матеріальну допомогу, а й "
+"підтримати духовне відродження та відновлення людської гідності. Вся наша "
+"діяльність спрямована на те, щоб дарувати надію та підтримку тим, хто "
+"опинився у скрутній ситуації.Приєднуйтесь до нашої місії, допоможіть нам "
+"робити добро і приносити світло в житті тих, хто цього потребує."
+msgstr ""
+"Through our initiatives, we strive not only to provide material assistance, "
+"but also tosupport the spiritual revival and restoration of human dignity. "
+"All of ouractivities are aimed at giving hope and support to those whois in "
+"a difficult situation.Join our mission, help usto do good and bring light "
+"into the lives of those who need it."
+
+#: hands/templates/app/pages/about.html:122
+#: hands/templates/app/pages/contact.html:12
+msgid "Благодійний фонд Руки Милості"
+msgstr "Charitable Foundation Hands of Mercy"
+
+#: hands/templates/app/pages/about.html:125
+msgid "Приносити світло в житті тих, хто цього потребує."
+msgstr "To bring light into the lives of those who need it."
+
+#: hands/templates/app/pages/about.html:128
+msgid ""
+"Ми – команда небайдужих людей, які прагнуть допомагати тим, хто цього "
+"найбільше потребує. Наша місія – підтримка дітей, сімей та вразливих верств "
+"населення через гуманітарні, освітні та соціальні ініціативи.За роки роботи "
+"ми організували десятки дитячих таборів, освітніх заходів і профілактичних "
+"лекцій, створили безпечні простори для розвитку дітей та підлітків. Ми "
+"прагнемо не лише надавати матеріальну допомогу, а й допомагати людям знайти "
+"можливості для самореалізації та соціальної адаптації.Наші гуманітарні "
+"проєкти спрямовані на забезпечення найнеобхіднішого: їжі, одягу, "
+"медикаментів та інших ресурсів для сімей у складних життєвих "
+"обставинах.Освітні ініціативи охоплюють тренінги, семінари та навчальні "
+"програми для дітей та дорослих, які допомагають розвивати нові навички, "
+"відкривати можливості для майбутнього та покращувати якість життя.Соціальні "
+"проєкти підтримують сім'ї, дітей і підлітків через консультативну допомогу, "
+"психологічну підтримку та організацію дитячих клубів і таборів, що сприяють "
+"соціальній інтеграції та особистісному зростанню.Ми віримо, що кожна людина "
+"заслуговує на шанс на краще майбутнє, і робимо все можливе, щоб цей шанс "
+"став реальністю. Разом ми можемо більше!"
+msgstr ""
+"We are a team of caring people who want to help those who need it.are in the "
+"greatest need. Our mission is to support children, families and vulnerable "
+"groupspopulation through humanitarian, educational and social initiatives.we "
+"organized dozens of children's camps, educational events and "
+"preventivelectures, and created safe spaces for the development of children "
+"and adolescents. We arewe strive not only to provide material assistance, "
+"but also to help people findopportunities for self-realization and social "
+"adaptation.projects are aimed at providing the most basic necessities: food, "
+"clothingmedicines and other resources for families in difficult life "
+"situationscircumstances. Educational initiatives include trainings, seminars "
+"and educationalprograms for children and adults that help develop new "
+"skills,to open up opportunities for the future and improve the quality of "
+"life.Socialprojects support families, children and adolescents through "
+"advisory assistance,psychological support and organization of children's "
+"clubs and camps that promotesocial integration and personal growth. We "
+"believe that every persondeserves a chance for a better future, and we do "
+"everything possible to make this chancehas become a reality. Together we can "
+"do more!"
+
+#: hands/templates/app/pages/about.html:147
+#: hands/templates/app/pages/index.html:502
+#: hands/templates/app/pages/index.html:725
+#: hands/templates/app/pages/news-detail.html:265
+#: hands/templates/app/pages/news.html:338
+#: hands/templates/app/pages/projects-detail.html:280
+#: hands/templates/app/pages/projects.html:340
+#: hands/templates/include/footer/footer.html:37
+msgid "Підтримати благодійний фонд"
+msgstr "Support the charity fund"
+
+#: hands/templates/app/pages/about.html:154
+#: hands/templates/app/pages/index.html:509
+#: hands/templates/app/pages/index.html:728
+#: hands/templates/app/pages/news-detail.html:268
+#: hands/templates/app/pages/news.html:341
+#: hands/templates/app/pages/projects-detail.html:283
+#: hands/templates/app/pages/projects.html:343
+msgid "Руки Милості"
+msgstr "Hands of mercy"
+
+#: hands/templates/app/pages/about.html:157
+#: hands/templates/app/pages/index.html:24
+#: hands/templates/app/pages/index.html:512
+#: hands/templates/app/pages/index.html:734
+#: hands/templates/app/pages/news-detail.html:274
+#: hands/templates/app/pages/news.html:347
+#: hands/templates/app/pages/projects-detail.html:289
+#: hands/templates/app/pages/projects.html:349
+#: hands/templates/include/footer/footer.html:40
+msgid "Підтримати"
+msgstr "Support"
+
+#: hands/templates/app/pages/about.html:177
+#: hands/templates/app/pages/index.html:526
+#: hands/templates/app/pages/news.html:252
+#: hands/templates/app/pages/projects.html:249
+msgid "Напрямок нашої діяльності"
+msgstr "Assistance and development"
+
+#: hands/templates/app/pages/about.html:178
+#: hands/templates/app/pages/index.html:527
+#: hands/templates/app/pages/news.html:253
+#: hands/templates/app/pages/projects.html:250
+msgid "Надаємо допомогу людям, надаючи тимчасове житло та підтримку."
+msgstr "We help people by providing temporary housing and support."
+
+#: hands/templates/app/pages/about.html:194
+#: hands/templates/app/pages/index.html:315
+#: hands/templates/app/pages/index.html:345
+#: hands/templates/include/menu/menu.html:30
+msgid "Про нас"
+msgstr "About us"
+
+#: hands/templates/app/pages/about.html:200
+#: hands/templates/app/pages/index.html:352
+msgid ""
+"Наша команда налічує близько 50 волонтерів, серед яких практикуючі педагоги "
+"та вихователі, психологи, сертифіковані фасилітатори, а також активні "
+"студенти й молодь. У сфері захисту дітей ми співпрацюємо з місцевими "
+"школами, сімейними центрами та міською адміністрацією. Фасилітатори нашої ГО "
+"пройшли навчання від міжнародних організацій (World Vision, USAID, ACTED "
+"тощо) за темами: «Позитивне батьківство», «Психосоціальна підтримка дітей», "
+"«Самодопомога Плюс», «Управління проблемами» та ін."
+msgstr ""
+"Our team consists of about 50 volunteers, including practicing teachersand "
+"educators, psychologists, certified facilitators, as well as activestudents "
+"and youth. In the area of child protection, we cooperate with localschools, "
+"family centers and city administration. The facilitators of our NGOwere "
+"trained by international organizations World Vision, USAID, ACTEDetc. on the "
+"following topics: “Positive parenting”, “Psychosocial support for "
+"childrenSelf-Help Plus”, “Problem Management”, etc"
+
+#: hands/templates/app/pages/about.html:207
+#: hands/templates/app/pages/index.html:359
+msgid "Місія"
+msgstr "Mission"
+
+#: hands/templates/app/pages/about.html:213
+msgid ""
+"Сприяти покращенню якості життя людей і розвитку суспільства через "
+"реалізацію проєктів у гуманітарній, соціальній та освітній сферах, "
+"спрямованих на допомогу, підтримку та просвіту. Наша команда реалізує на "
+"Дніпропетровщині самостійні проєкти, а також проєкти материнської "
+"організації БФ Руки Милості."
+msgstr ""
+"To contribute to improving the quality of life of people and the development "
+"of society throughimplementing projects in the humanitarian, social, and "
+"educational spheres,aimed at helping, supporting, and educating. Our team "
+"implements onIn the Dnipro region, independent projects, as well as projects "
+"of the parentorganization of the Charitable Foundation Hands of Mercy."
+
+#: hands/templates/app/pages/about.html:223
+#: hands/templates/app/pages/index.html:375
+msgid "Принципи"
+msgstr "Principles"
+
+#: hands/templates/app/pages/about.html:229
+#: hands/templates/app/pages/index.html:381
+msgid ""
+"Наша організація базується на таких основних цінностях, як відповідальність, "
+"служіння суспільству та гуманність. Ми прагнемо забезпечувати саморозвиток і "
+"самообслуговування суспільства, збалансувати власні та суспільні інтереси, "
+"орієнтуючись на вищі цілі. Важливими аспектами є партнерська співпраця, "
+"захист прав людини, прозорість та підзвітність. Ми сприяємо рівності, "
+"чесності, законності та незалежності у всіх сферах діяльності."
+msgstr ""
+"Our organization is based on such core values as responsibilityservice to "
+"society and humanity. We strive to ensure self-development andself-service "
+"of the society, to balance own and public interests,focusing on higher "
+"goals. Partnership cooperation is an important aspect,human rights "
+"protection, transparency and accountability. We promote equality,honesty, "
+"legality and independence in all areas of activity."
+
+#: hands/templates/app/pages/about.html:236
+#: hands/templates/app/pages/index.html:388
+msgid "Бачення"
+msgstr "Vision"
+
+#: hands/templates/app/pages/about.html:242
+#: hands/templates/app/pages/index.html:394
+msgid ""
+"Надання допомоги людям, які опинилися у складних життєвих обставинах, "
+"включаючи постраждалих від війни.Сприяння організації відпочинку, розвитку "
+"спортивних, творчих та освітніх програм для дітей, підлітків, жінок та сімей "
+"громади.Формування у дітей і підлітків високих моральних цінностей, сприяння "
+"їх соціалізації, духовному та психологічному розвитку та підтримці.Залучення "
+"членів громади до активної участі у соціальному житті, розвитку громадських "
+"ініціатив та надання позитивного внеску у життя суспільства."
+msgstr ""
+"Helping people in difficult life circumstances,including those affected by "
+"the war.Promoting the organization of recreation, developmentsports, "
+"creative and educational programs for children, teenagers, women and "
+"familiescommunity. Formation of high moral values in children and "
+"adolescents, promotion oftheir socialization, spiritual and psychological "
+"development and supportcommunity members to actively participate in social "
+"life, develop communityinitiatives and making a positive contribution to "
+"society."
+
+#: hands/templates/app/pages/contact.html:3
+msgid "Контакти фонду Руки Милості - Дніпро"
+msgstr "Contacts of the Hands of Mercy Foundation - Dnipro"
+
+#: hands/templates/app/pages/contact.html:15
+msgid "Зараз саме час допомогти тим, хто цього потребує"
+msgstr "Now is the time to help those in need."
+
+#: hands/templates/app/pages/contact.html:34
+#: hands/templates/app/pages/index.html:748
+msgid "Наші спонсори"
+msgstr "Our sponsors"
+
+#: hands/templates/app/pages/contact.html:35
+#: hands/templates/app/pages/index.html:749
+msgid ""
+"Спонсорська допомога для благодійного фонду — це можливість підтримати тих, "
+"хто потребує захисту"
+msgstr ""
+"Sponsorship for a charitable foundation is an opportunity to support "
+"thosewho needs protection"
+
+#: hands/templates/app/pages/contact.html:71
+#: hands/templates/app/pages/contact.html:126
+msgid "Наші контакти"
+msgstr "Our contacts"
+
+#: hands/templates/app/pages/contact.html:72
+msgid "Наші адреси, за якими ви можете нас знайти, а також соціальні мережі."
+msgstr "Our addresses where you can find us, as well as social networks."
+
+#: hands/templates/app/pages/contact.html:87
+msgid "Наші coц. мереж"
+msgstr "Our social networks"
+
+#: hands/templates/app/pages/contact.html:105
+msgid "Наші адреси"
+msgstr "Our addresses"
+
+#: hands/templates/app/pages/contact.html:151
+msgid "Наші реквiзити"
+msgstr "Our details"
+
+#: hands/templates/app/pages/contact.html:152
+msgid "Наші реквізити для того, щоб ви могли фінансово підтримати наш фонд."
+msgstr "Our details so that you can financially support our foundation."
+
+#: hands/templates/app/pages/contact.html:168
+#: hands/templates/app/pages/contact.html:199
+#: hands/templates/app/pages/contact.html:230
+msgid "Получатель"
+msgstr "Recipient"
+
+#: hands/templates/app/pages/contact.html:176
+#: hands/templates/app/pages/contact.html:207
+msgid "ЕГРПОУ"
+msgstr "EDRPOU"
+
+#: hands/templates/app/pages/index.html:3
+msgid "Головна Руки Милості - Дніпро"
+msgstr "Hands of mercy - Dnipro"
+
+#: hands/templates/app/pages/index.html:12
+msgid "Громадська організація"
+msgstr "Public organization"
+
+#: hands/templates/app/pages/index.html:12
+#: hands/templates/include/footer/footer.html:13
+msgid "Руки Милості - Дніпро"
+msgstr "Hands of mercy - Dnipro"
+
+#: hands/templates/app/pages/index.html:15
+msgid "Змінюємо"
+msgstr "We change"
+
+#: hands/templates/app/pages/index.html:15
+msgid "життя на"
+msgstr "life on"
+
+#: hands/templates/app/pages/index.html:15
+msgid "краще"
+msgstr "better"
+
+#: hands/templates/app/pages/index.html:21
+#: hands/templates/include/footer/footer.html:16
+msgid ""
+"Надання допомоги людям, які опинилися у складних життєвих обставинах, "
+"включаючи постраждалих від війни."
+msgstr ""
+"Helping people in difficult life circumstances,including victims of war."
+
+#: hands/templates/app/pages/index.html:219
+#: hands/templates/app/pages/projects.html:10
+#: hands/templates/app/pages/projects.html:129
+msgid "Наші проекти"
+msgstr "Our projects"
+
+#: hands/templates/app/pages/index.html:220
+#: hands/templates/app/pages/projects.html:130
+msgid "Наші проекти – реальна допомога тим, хто її потребує."
+msgstr "Our projects are a real help to those who need it."
+
+#: hands/templates/app/pages/index.html:261
+msgid "Переглянути всі проекти"
+msgstr "View all projects"
+
+#: hands/templates/app/pages/index.html:269
+#: hands/templates/app/pages/news.html:11
+msgid "Наші новини"
+msgstr "Our news"
+
+#: hands/templates/app/pages/index.html:270
+msgid ""
+"Ми, благодійний фонд 'Руки милості', допомагаємо найбільш уразливим: "
+"внутрішньопереміщеним особам"
+msgstr ""
+"We, the charitable foundation ‘Hands of Mercy’, help the most vulnerable "
+"internally displaced persons"
+
+#: hands/templates/app/pages/index.html:293
+#: hands/templates/app/pages/news-detail.html:138
+#: hands/templates/app/pages/news.html:157
+msgid "Дивитись новину"
+msgstr "Watch the news"
+
+#: hands/templates/app/pages/index.html:306
+msgid "Переглянути всі новини"
+msgstr "View all news"
+
+#: hands/templates/app/pages/index.html:316
+msgid ""
+"Ми — команда професіоналів, яка об'єднала свої зусилля для того, щоб "
+"приносити реальну допомогу тим, хто цього потребує"
+msgstr ""
+"We are a team of professionals, who have joined forcesto bring real help to "
+"those, who need it"
+
+#: hands/templates/app/pages/index.html:365
+msgid ""
+"Сприяти покращенню якості життя людей і розвитку суспільства через "
+"реалізацію проєктів у гуманітарній, соціальній та освітній сферах, "
+"спрямованих на допомогу, підтримку та просвіту. Наша команда реалізує на "
+"Дніпропетровщині самостійні проєкти, а також проєкти материнської "
+"організації БФ «Руки Милості»."
+msgstr ""
+"To contribute to improving the quality of life of people and the development "
+"of society throughimplementing projects in the humanitarian, social, and "
+"educational spheres,aimed at helping, supporting, and educating. Our team "
+"implements onIn the Dnipro region, independent projects, as well as projects "
+"of the parentorganization of the Charitable Foundation Hands of Mercy."
+
+#: hands/templates/app/pages/index.html:409
+msgid "Наші проєкти"
+msgstr "Our projects"
+
+#: hands/templates/app/pages/index.html:410
+msgid ""
+"Наші соціальні та гуманітарні проєкти спрямовані на підтримку населення, "
+"надання допомоги сім’ям, дітям і всім, хто потребує. Ми реалізуємо "
+"ініціативи для соціального розвитку, освіти, психологічної підтримки та "
+"гуманітарної допомоги."
+msgstr ""
+"Our social and humanitarian projects are aimed at supporting the "
+"population,providing assistance to families, children and all those in need. "
+"We are implementinginitiatives for social development, education, "
+"psychological support andhumanitarian aid."
+
+#: hands/templates/app/pages/index.html:427
+msgid "Допомога та розвиток"
+msgstr "Assistance and development"
+
+#: hands/templates/app/pages/index.html:431
+msgid ""
+"Наша команда має 10-річний досвід роботи (ще до створення ГО) з дітьми та "
+"підлітками різних категорій у сфері ментального здоров’я, психосоціальної "
+"підтримки та захисту дітей. Ми організували понад 20 тематичних дитячих "
+"таборів, заходів для дітей, профілактичних лекцій і створили кілька дружніх "
+"дитячих просторів."
+msgstr ""
+"Our team has 10 years of experience (even before the establishment of the "
+"NGO) working with children andadolescents of different categories in the "
+"field of mental health, psychosocialsupport and protection of children. We "
+"have organized more than 20 thematic children'sтаборів, заходів для дітей, "
+"профілактичних лекцій і створили кілька дружніхchildren's spaces."
+
+#: hands/templates/app/pages/index.html:434
+#: hands/templates/app/pages/projects.html:272
+msgid ""
+"Ми проводимогуманітарні, освітні та соціальні проєкти для всіх, хто потребує "
+"підтримки. Це ініціативи, де діти та батьки отримують необхідну допомогу, "
+"беруть участь у семінарах, дитячих таборах і клубах, що сприяють їхньому "
+"розвитку та соціальній адаптації."
+msgstr ""
+"We run humanitarian, educational and social projects for everyone in "
+"needsupport. These are initiatives where children and parents get the help "
+"they need,participate in seminars, children's camps and clubs that promote "
+"theirdevelopment and social adaptation."
+
+#: hands/templates/app/pages/index.html:437
+msgid "Переглянути проєкти"
+msgstr "View projects"
+
+#: hands/templates/app/pages/index.html:449
+msgid "Гуманітарні проєкти"
+msgstr "Humanitarian projects"
+
+#: hands/templates/app/pages/index.html:453
+msgid ""
+"Наші гуманітарні проєкти спрямовані на соціальний розвиток різних верств "
+"населення – як дітей, так і дорослих. Ми реалізуємо програми для сімей, "
+"психологічні та пізнавальні тренінги, підтримку в кризових ситуаціях, а "
+"також допомогу військовим і їхнім родинам."
+msgstr ""
+"Our humanitarian projects are aimed at the social development of various "
+"social groupspopulation - both children and adults. We implement programs "
+"for families,psychological and cognitive trainings, support in crisis "
+"situations, andas well as assistance to the military and their families."
+
+#: hands/templates/app/pages/index.html:464
+#: hands/templates/app/pages/projects.html:300
+msgid "Соціальні проєкти"
+msgstr "Social projects"
+
+#: hands/templates/app/pages/index.html:468
+msgid ""
+"Наші соціальні проєкти спрямовані на підтримку сімей, дітей і всіх, хто "
+"потребує допомоги. Ми проводимо освітні, гуманітарні та психологічні "
+"ініціативи, створюємо простори для розвитку, взаємодії та соціальної "
+"адаптації"
+msgstr ""
+"Our social projects are aimed at supporting families, children and everyone "
+"whoneeds help. We conduct educational, humanitarian and "
+"psychologicalinitiatives, create spaces for development, interaction and "
+"socialadaptations"
+
+#: hands/templates/app/pages/index.html:479
+msgid "Освітні проєкти"
+msgstr "Educational projects"
+
+#: hands/templates/app/pages/index.html:483
+msgid ""
+"Наші освітні проєкти спрямовані на розвиток знань та навичок у різних "
+"вікових групах. Ми організовуємо тренінги, майстер-класи, курси для дітей і "
+"дорослих, допомагаючи кожному досягти свого потенціалу. В рамках проєктів "
+"проводимо навчання з психології, соціальної адаптації та розвитку "
+"особистості, а також забезпечуємо доступ до ресурсів для підвищення "
+"кваліфікації. Наші програми сприяють розвитку критичного мислення, "
+"покращенню комунікативних навичок і формуванню здорових соціальних зв'язків."
+msgstr ""
+"Our educational projects are aimed at developing knowledge and skills in "
+"variousage groups. We organize trainings, master classes, courses for "
+"children andadults, helping everyone reach their potential. As part of the "
+"projectsprovide training in psychology, social adaptation and developmentof "
+"the individual, as well as provide access to resources to "
+"improvequalifications. Our programs promote the development of critical "
+"thinking,improving communication skills and building healthy social "
+"relationships."
+
+#: hands/templates/app/pages/index.html:545
+msgid "Продовольча/не продовольча, допомога"
+msgstr "Food/non-food aid, assistance"
+
+#: hands/templates/app/pages/index.html:548
+msgid ""
+"Ми надаємо фінансову, продовольчу та дитячу допомогу сім’ям у складних "
+"обставинах, підтримуючи їхню стабільність і безпеку."
+msgstr ""
+"We provide financial, food and childcare assistance to families in "
+"difficultcircumstances, maintaining their stability and security."
+
+#: hands/templates/app/pages/index.html:559
+msgid "Психологічний захист"
+msgstr "Psychological protection"
+
+#: hands/templates/app/pages/index.html:562
+msgid ""
+"Психологічна допомога для сімей, дітей і батьків – підтримка, адаптація та "
+"розвиток у складних життєвих ситуаціях."
+msgstr ""
+"Psychological assistance for families, children and parents - support, "
+"adaptation anddevelopment in difficult life situations."
+
+#: hands/templates/app/pages/index.html:575
+msgid "Притулок"
+msgstr "Shelter"
+
+#: hands/templates/app/pages/index.html:578
+msgid ""
+"Надаємо притулок людям та допомагаємо в різних життєвих ситуаціях – "
+"фінансово, психологічно та соціально."
+msgstr ""
+"We provide shelter and help people in various life situationsfinancially, "
+"psychologically, and socially."
+
+#: hands/templates/app/pages/index.html:589
+msgid "Освіта та треннінги"
+msgstr "Education and training"
+
+#: hands/templates/app/pages/index.html:592
+msgid ""
+"Ми допомагаємо всім верствам населення, дітям і сім’ям через тренінги, що "
+"сприяють розвитку, адаптації та підтримці в складних життєвих ситуаціях."
+msgstr ""
+"We help all segments of the population, children and families through "
+"trainings thatpromote development, adaptation and support in difficult life "
+"situations."
+
+#: hands/templates/app/pages/index.html:608
+msgid "Дивитися нас на YouTube"
+msgstr "Watch us on YouTube"
+
+#: hands/templates/app/pages/index.html:609
+msgid "Дивіться наші новини та звіти на YouTube-каналі благодійного фонду!"
+msgstr "Check out our news and reports on the charity's YouTube channel!"
+
+#: hands/templates/app/pages/index.html:624
+msgid "Наш відео канал"
+msgstr "Our video channel"
+
+#: hands/templates/app/pages/index.html:627
+msgid ""
+"Наш YouTube-канал – тут ви знайдете всі наші відео, де ми ділимося нашими "
+"досягненнями!"
+msgstr ""
+"Our YouTube channel - here you will find all our videos where we share "
+"ourachievements!"
+
+#: hands/templates/app/pages/index.html:630
+msgid "Переглянути"
+msgstr "View"
+
+#: hands/templates/app/pages/index.html:648
+msgid "Наш шлях"
+msgstr "Our way"
+
+#: hands/templates/app/pages/index.html:649
+msgid "Наш шлях – це роки допомоги, підтримки та добрих справ на благо людей"
+msgstr ""
+"Our path is years of help, support and good deeds for the benefit of people"
+
+#: hands/templates/app/pages/index.html:673
+msgid ""
+"Створення ініціативної групи для допомоги постраждалим від анексії Криму та "
+"військової агресії РФ на Сході України"
+msgstr ""
+"Establishment of an initiative group to help those affected by the "
+"annexation of Crimea andrussian military aggression in the East of Ukraine"
+
+#: hands/templates/app/pages/index.html:690
+#: hands/templates/app/pages/index.html:707
+msgid ""
+"Державна реєстрація БФ «Руки милості» як організації, яка спрямовує "
+"гуманітарну допомогу в зону бойових дій, відкриття соціального центру для "
+"ВПО та створення дитячих таборів"
+msgstr ""
+"State registration of the Charitable Foundation “Hands of Mercy” as an "
+"organization that directshumanitarian aid to the combat zone, opening a "
+"social center forIDPs and the creation of children's camps"
+
+#: hands/templates/app/pages/index.html:731
+#: hands/templates/app/pages/news-detail.html:271
+#: hands/templates/app/pages/news.html:344
+#: hands/templates/app/pages/projects-detail.html:286
+#: hands/templates/app/pages/projects.html:346
+msgid ""
+"Руки Милості невтомно працюють.І лише ваша підтримка дозволяє рухатися вперед"
+msgstr ""
+"The Hands of Mercy work tirelessly. And only your support allows us to move "
+"forward"
+
+#: hands/templates/app/pages/index.html:785
+msgid "Часті питання"
+msgstr "Frequently asked questions"
+
+#: hands/templates/app/pages/index.html:799
+msgid "Як з нами зв'язатися?"
+msgstr "How to contact us?"
+
+#: hands/templates/app/pages/index.html:802
+msgid ""
+"Ми завжди на зв'язку та готові вислухати вас. Фонд Руки Милості відкритий "
+"для питань, пропозицій та підтримки тим, хто потребує допомоги. Зв'яжіться з "
+"нами у будь-який час!"
+msgstr ""
+"We are always in touch and ready to listen to you. The Hand of Grace "
+"Foundation is openfor questions, suggestions and support for those who need "
+"help. Get in touch withus at any time!"
+
+#: hands/templates/app/pages/index.html:809
+#: hands/templates/app/pages/news.html:222
+msgid "Соціальний центр"
+msgstr "Social center"
+
+#: hands/templates/app/pages/index.html:812
+msgid ""
+"Ми завжди готові прийти на допомогу тим, хто потребує. Фонд Руки Милості "
+"підтримує людей у ​​складних ситуаціях, даруючи турботу, тепло та надію на "
+"краще."
+msgstr ""
+"We are always ready to help those in need. Hand of Mercy of Mercysupports "
+"people in difficult situations by providing care, warmth and hope forbetter."
+
+#: hands/templates/app/pages/index.html:821
+msgid "Фінансова допомогу фонду"
+msgstr "Financial assistance from the foundation"
+
+#: hands/templates/app/pages/index.html:824
+msgid ""
+"Ви можете надати грошову допомогу, переказуючи будь-яку суму на реквізити, "
+"зазначені на банківських картках. Ваша підтримка допоможе нам продовжувати "
+"надавати допомогу тим, хто її потребує"
+msgstr ""
+"You can provide financial assistance by transferring any amount to the "
+"requisites,indicated on bank cards. Your support will help us to "
+"continueprovide assistance to those who need it"
+
+#: hands/templates/app/pages/index.html:831
+msgid "Де слідкуват за новінами та проєктами"
+msgstr "Where to follow the news and projects"
+
+#: hands/templates/app/pages/index.html:834
+msgid ""
+"Ви можете стежити за нашими проєктами на нашому сайті та у наших соц "
+"мережах, де ми публікуємо всі актуальні новини та оновлення."
+msgstr ""
+"You can follow our projects on our website and in our social "
+"networksnetworks, where we publish all the latest news and updates."
+
+#: hands/templates/app/pages/news-detail.html:3
+msgid "Новина фонду"
+msgstr "Fund news"
+
+#: hands/templates/app/pages/news-detail.html:12
+#: hands/templates/app/pages/projects-detail.html:16
+msgid ""
+"Актуальні події, проєкти та допомога фонду Руки Милості - підтримка "
+"нужденних, гуманітарна допомога, благодійні ініціативи та звіти."
+msgstr ""
+"Current events, projects and assistance from the Hands of Mercy Foundation - "
+"supportneedy, humanitarian aid, charitable initiatives and reports."
+
+#: hands/templates/app/pages/news-detail.html:34
+#: hands/templates/app/pages/projects-detail.html:38
+msgid "Партнери фонду"
+msgstr "Fund partners"
+
+#: hands/templates/app/pages/news-detail.html:53
+#: hands/templates/app/pages/projects-detail.html:57
+msgid "Дата статті : "
+msgstr "Date of the article : "
+
+#: hands/templates/app/pages/news-detail.html:56
+#: hands/templates/app/pages/projects-detail.html:60
+msgid "Автор : "
+msgstr "Author : "
+
+#: hands/templates/app/pages/news-detail.html:95
+msgid "Особливість новини"
+msgstr "Feature of the news"
+
+#: hands/templates/app/pages/news-detail.html:112
+msgid "Інші новини"
+msgstr "Other news"
+
+#: hands/templates/app/pages/news-detail.html:151
+msgid "Переглянути новини"
+msgstr "View news"
+
+#: hands/templates/app/pages/news.html:3
+msgid "Всі новини фонду Руки Милості - Дніпро"
+msgstr "All news from the Hands of Mercy Foundation - Dnipro"
+
+#: hands/templates/app/pages/news.html:12
+msgid ""
+"Благодійний фонд Руки милості активно працює над безліччю ініціатив, "
+"спрямованих на допомогу тим, хто опинився у складній життєвій ситуації. Ми "
+"пишаємося тим, що можемо підтримувати людей, які потребують піклування та "
+"уваги, і прагнемо зробити наш світ трохи кращим. Ось деякі з наших проектів:"
+msgstr ""
+"The Hands of Mercy Charity Foundation is actively working on many "
+"initiatives,aimed at helping those who find themselves in a difficult life "
+"situation. Weare proud to be able to support people in need of care "
+"andattention, and we strive to make our world a little better. Here are some "
+"of our projects:"
+
+#: hands/templates/app/pages/news.html:131
+msgid "Усі новини"
+msgstr "All news"
+
+#: hands/templates/app/pages/news.html:132
+msgid ""
+"Останні події та важливі новини нашого фонду. Дізнавайтеся про нові проєкти, "
+"акції допомоги та звіти про виконану роботу."
+msgstr ""
+"Latest events and important news from our foundation. Learn about new "
+"projects,aid campaigns and reports on the work done."
+
+#: hands/templates/app/pages/news.html:197
+#: hands/templates/app/pages/projects.html:195
+msgid "Наша допомога"
+msgstr "Our help"
+
+#: hands/templates/app/pages/news.html:198
+#: hands/templates/app/pages/projects.html:196
+msgid "Тисячі людей отримали допомогу, підтримку та турботу"
+msgstr "Thousands of people received help, support and care"
+
+#: hands/templates/app/pages/news.html:212
+msgid "Психологічна допомога"
+msgstr "Psychological help"
+
+#: hands/templates/app/pages/news.html:215
+msgid ""
+"Фонд Руки Милості надає психологічну допомогу людям у складних життєвих "
+"ситуаціях, підтримуючи тих, хто потребує турботи та допомоги у подоланні "
+"стресу і труднощів через консультації фахівців."
+msgstr ""
+"The Hands of Mercy Foundation provides psychological assistance to people in "
+"difficult life situations.situations, supporting those who need care and "
+"help in overcomingstress and difficulties through specialist consultations."
+
+#: hands/templates/app/pages/news.html:225
+msgid ""
+"Фонд Руки Милості надає житло в соціальних центрах, де люди знаходять "
+"затишок, спокій та турботу. Ми допомагаємо тим, хто опинився у скрутній "
+"ситуації, створюючи комфортні умови для життя та відновлення."
+msgstr ""
+"The Hand of Mercy Foundation provides housing in social centers where people "
+"findcomfort, peace and care. We help those who find themselves in difficult "
+"situationssituations, creating comfortable conditions for life and recovery."
+
+#: hands/templates/app/pages/news.html:235
+msgid "Роздаємо нужденним"
+msgstr "We distribute to the needy"
+
+#: hands/templates/app/pages/news.html:238
+msgid ""
+"Фонд надає допомогу великій кількості людей, які потрапили у складні життєві "
+"обставини. Ми роздаємо продукти харчування, в тому числі хліб і випічку, а "
+"також надаємо психологічну допомогу, підтримуючи тих, хто переживає стрес чи "
+"тривогу. Наші ініціативи допомагають людям отримати не лише матеріальну "
+"підтримку, а й емоційну рівновагу, що важливо для подолання труднощів у "
+"житті. Ми завжди поруч, готові допомогти кожному, хто потребує підтримки."
+msgstr ""
+"The Foundation provides assistance to a large number of people who have "
+"found themselves in difficult life situations.circumstances. We distribute "
+"food products, including bread and pastries, andwe also provide "
+"psychological assistance, supporting those who are experiencing stress "
+"oranxiety. Our initiatives help people get not only materialsupport, but "
+"also emotional balance, which is important for overcoming difficulties "
+"inlife. We are always there, ready to help anyone who needs support."
+
+#: hands/templates/app/pages/news.html:269
+msgid "Дитячий розвиток"
+msgstr "Child development"
+
+#: hands/templates/app/pages/news.html:273
+msgid ""
+"Ми багато уваги приділяємо роботі з дітьми, оскільки віримо, що їхнє "
+"майбутнє залежить від підтримки і розвитку вже в ранньому віці. Ми "
+"організували понад 20 тематичних дитячих таборів, заходів, профілактичних "
+"лекцій, а також створили кілька безпечних і дружніх просторів для розвитку "
+"дітей. Наші ініціативи допомагають дітям і підліткам не лише покращувати "
+"психологічний стан, а й адаптуватися до сучасних викликів і розвивати "
+"ключові життєві навички, необхідні для успішної соціалізації та "
+"самореалізації."
+msgstr ""
+"We pay a lot of attention to working with children because we believe that "
+"theirthe future depends on support and development from an early age. "
+"Weorganized more than 20 thematic children's camps, events, "
+"preventivelectures, and also created several safe and friendly spaces for "
+"developmentchildren. Our initiatives help children and adolescents not only "
+"improve theirpsychological state, but also to adapt to modern challenges and "
+"developkey life skills necessary for successful socialization andself-"
+"realization."
+
+#: hands/templates/app/pages/news.html:284
+msgid "Сімейні зустрічі"
+msgstr "Family meetings"
+
+#: hands/templates/app/pages/news.html:288
+msgid ""
+"Головне значення таких зустрічей – це ЖИВЕ СПІЛКУВАННЯ, що так важливе в "
+"сучасному світі зі швидким темпом життя. Часто батьки не мають часу для "
+"щирих розмов із дітьми, тому ці заходи допомагають краще зрозуміти одне "
+"одного, обговорити важливі моменти та підтримати дитину, даруючи їй відчуття "
+"безпеки й любові."
+msgstr ""
+"The main meaning of such meetings is LIVE COMMUNICATION, which is so "
+"important inin today's fast-paced world. Parents often don't have time "
+"forhonest conversations with children, so these activities help to better "
+"understand one anotherone another, discuss important points and support the "
+"child, giving them a sense ofsafety and love."
+
+#: hands/templates/app/pages/news.html:299
+msgid "Вплив"
+msgstr "Influenc"
+
+#: hands/templates/app/pages/news.html:303
+msgid ""
+"Проекти СІМЕЙНИХ ЗУСТРІЧЕЙ мають величезне позитивне вплив на дітей та всю "
+"родину. Вони сприяють зміцненню емоційного зв’язку між батьками та дітьми, "
+"допомагаючи краще зрозуміти одне одного. Це дає можливість дітям відчути "
+"підтримку, любов і безпеку, що є основою їхнього здорового психоемоційного "
+"розвитку. Активності, такі як спільні ігри та руханки, не лише сприяють "
+"фізичному розвитку, а й допомагають дітям розвивати соціальні навички, "
+"навички співпраці та взаєморозуміння."
+msgstr ""
+"FAMILY MEETINGS projects have a huge positive impact on children and the "
+"entire communityfamily. They help strengthen the emotional bond between "
+"parents and children,helping to understand each other better. This gives "
+"children the opportunity to feelsupport, love and security, which are the "
+"basis of their healthy psycho-emotionaldevelopment. Activities such as joint "
+"games and movements not only contribute tophysical development, but also "
+"help children develop social skills,skills of cooperation and mutual "
+"understanding."
+
+#: hands/templates/app/pages/news.html:314
+msgid "Розвиток родини"
+msgstr "Family development"
+
+#: hands/templates/app/pages/news.html:318
+msgid ""
+"Для батьків такі зустрічі є нагодою для відновлення контакту з дітьми, а "
+"також можливістю краще зрозуміти їхні потреби та емоції. Вони допомагають "
+"створювати атмосферу довіри та тепла в родині, що є важливим фактором у "
+"вихованні здорових стосунків.Загалом, такі проекти є важливим інструментом "
+"для розвитку і зміцнення родинних зв’язків, покращення емоційного клімату в "
+"родині та сприяють здоровому розвитку дітей у гармонійній та підтримуючій "
+"атмосфері."
+msgstr ""
+"For parents, such meetings are an opportunity to reconnect with their "
+"children, andalso an opportunity to better understand their needs and "
+"emotions. They helpcreate an atmosphere of trust and warmth in the family, "
+"which is an important factor infostering healthy relationships. In general, "
+"such projects are an important toolto develop and strengthen family ties, "
+"improve the emotional climate infamily and promote the healthy development "
+"of children in a harmonious and supportive environmentatmosphere"
+
+#: hands/templates/app/pages/projects-detail.html:3
+msgid "Проєкт фонду"
+msgstr "Fund project"
+
+#: hands/templates/app/pages/projects-detail.html:12
+#: hands/templates/app/pages/projects-detail.html:14
+msgid "Проєкт:"
+msgstr "Project:"
+
+#: hands/templates/app/pages/projects-detail.html:12
+#: hands/templates/app/pages/projects-detail.html:65
+msgid "відкрито."
+msgstr "open."
+
+#: hands/templates/app/pages/projects-detail.html:14
+#: hands/templates/app/pages/projects-detail.html:67
+msgid "закрито."
+msgstr "closed."
+
+#: hands/templates/app/pages/projects-detail.html:65
+#: hands/templates/app/pages/projects-detail.html:67
+msgid "Проект : "
+msgstr "Project:"
+
+#: hands/templates/app/pages/projects-detail.html:107
+msgid "Особливість проєкту"
+msgstr "Feature of the project"
+
+#: hands/templates/app/pages/projects-detail.html:124
+msgid "Інші проєкти"
+msgstr "Other projects"
+
+#: hands/templates/app/pages/projects-detail.html:167
+msgid "Переглянути проекти"
+msgstr "View projects"
+
+#: hands/templates/app/pages/projects.html:3
+msgid "Всі проєкти фонду Руки Милості - Дніпро"
+msgstr "All projects  Hands of Mercy - Dnipro"
+
+#: hands/templates/app/pages/projects.html:11
+msgid ""
+"Актуальні події, проекти та допомога фонду 'Руки Милості' – підтримка "
+"нужденних, гуманітарна допомога, благодійні ініціативи та звіти."
+msgstr ""
+"Current events, projects and assistance from the 'Hands of Mercy' foundation "
+"– supportneedy people, humanitarian aid, charitable initiatives and reports."
+
+#: hands/templates/app/pages/projects.html:210
+msgid "Допомога дітям"
+msgstr "Help for children"
+
+#: hands/templates/app/pages/projects.html:213
+msgid ""
+"Наш фонд надає матеріальну допомогу сім'ям з дітьми з інвалідністю, "
+"допомагаючи їм покривати необхідні витрати на лікування, реабілітацію та "
+"розвиток дітей. Ми організовуємо спеціальні заходи та програми, спрямовані "
+"на покращення якості життя цих дітей."
+msgstr ""
+"Our foundation provides financial assistance to families with children with "
+"disabilities,helping them cover the necessary costs of treatment, "
+"rehabilitation anddevelopment of children. We organize special events and "
+"programs aimed atto improve the quality of life of these children."
+
+#: hands/templates/app/pages/projects.html:222
+msgid "Фінансова допомога"
+msgstr "Financial assistance"
+
+#: hands/templates/app/pages/projects.html:225
+msgid ""
+"Надає фінансову підтримку найбільш уразливим категоріям населення. Ми "
+"допомагаємо внутрішньо переміщеним особам, багатодітним та малозабезпеченим "
+"сім'ям."
+msgstr ""
+"Provides financial support to the most vulnerable groups of the population. "
+"Weдопомагаємо внутрішньо переміщеним особам, багатодітним та "
+"малозабезпеченимto families"
+
+#: hands/templates/app/pages/projects.html:232
+msgid "Гуманітарна допомога"
+msgstr "Humanitarian aid"
+
+#: hands/templates/app/pages/projects.html:235
+msgid ""
+"Благодійний фонд 'Руки милості' активно надає підтримку нужденним, роздаючи "
+"гуманітарну допомогу тим, хто опинився у складній життєвій ситуації"
+msgstr ""
+"The 'Hands of Mercy' charity foundation actively supports those in need by "
+"distributinghumanitarian aid to those who find themselves in a difficult "
+"life situation"
+
+#: hands/templates/app/pages/projects.html:265
+msgid "Допомога суспільству"
+msgstr "Helping society"
+
+#: hands/templates/app/pages/projects.html:269
+msgid ""
+"Наша організація активно впроваджує освітні ініціативи, спрямовані на "
+"розвиток потенціалу кожної людини, незалежно від віку чи соціального "
+"статусу. Ми організовуємо різноманітні тренінги, семінари та навчальні "
+"програми для дітей і дорослих, що надають можливість розвивати нові навички, "
+"відкривати нові горизонти та готуватися до майбутніх викликів."
+msgstr ""
+"Our organization actively implements educational initiatives aimed "
+"atdevelopment of the potential of every person, regardless of age or social "
+"statusstatus. We organize various trainings, seminars and "
+"educationalprograms for children and adults that provide the opportunity to "
+"develop new skills,open new horizons and prepare for future challenges."
+
+#: hands/templates/app/pages/projects.html:285
+msgid "Проєкти розвитку"
+msgstr "Development projects"
+
+#: hands/templates/app/pages/projects.html:289
+msgid ""
+"Наші тренінги орієнтовані на практичне навчання та особистісний розвиток. "
+"Для дітей ми проводимо програми, які допомагають не лише покращити "
+"академічні досягнення, але й розвивати соціальні навички, емоційну "
+"грамотність та креативність. Ми переконані, що саме ці навички є основою для "
+"успішного адаптування до життя в сучасному світі."
+msgstr ""
+"Our trainings are focused on practical learning and personal development.We "
+"run programs for children that help not only improveacademic achievements, "
+"but also to develop social skills, emotionalliteracy and creativity. We are "
+"convinced that these skills are the foundation forsuccessful adaptation to "
+"life in the modern world."
+
+#: hands/templates/app/pages/projects.html:304
+msgid ""
+"Наші психологічні тренінги орієнтовані на допомогу людям, які пережили "
+"травматичні події, зокрема тим, хто повернувся з війни. Ми пропонуємо "
+"програми, які допомагають відновити емоційну рівновагу, зменшити стрес і "
+"тривогу, а також надаємо інструменти для кращої адаптації в "
+"суспільстві.Психологічні тренінги допомагають не лише опрацювати пережиті "
+"травми, а й розвивати навички саморегуляції, відновлення внутрішньої сили та "
+"впевненості. Віримо, що підтримка в цей складний період є важливою складовою "
+"на шляху до повного відновлення та соціальної адаптації."
+msgstr ""
+"Our psychological trainings are focused on helping people who have "
+"experiencedtraumatic events, particularly for those who have returned from "
+"war. We offerprograms that help restore emotional balance, reduce stress "
+"andanxiety, and also provide tools for better adaptation insociety. "
+"Psychological trainings help not only to process the experiencesinjuries, "
+"but also to develop self-regulation skills, restore inner strength andWe "
+"believe that support during this difficult period is an important "
+"componenton the path to full recovery and social adaptation."
+
+#: hands/templates/app/pages/projects.html:315
+msgid "Висновок"
+msgstr "Conclusion"
+
+#: hands/templates/app/pages/projects.html:319
+msgid ""
+"Ці програми допомагають не лише здобути нові знання, а й розвинути важливі "
+"соціальні навички, що сприяють більшій інтеграції в суспільство та зростанню "
+"особистої впевненості. Ми створюємо умови для того, щоб кожен, хто бере "
+"участь у наших тренінгах, міг відчути свою цінність і здатність змінювати "
+"своє життя на краще."
+msgstr ""
+"These programs help not only to gain new knowledge, but also to develop "
+"importantsocial skills that promote greater integration into society and "
+"growthpersonal confidence. We create conditions so that everyone who "
+"takesparticipating in our trainings, could feel their value and ability to "
+"changeyour life for the better."
+
+#: hands/templates/include/footer/footer.html:34
+msgid "Змінюємо жіття на краще"
+msgstr "Changing lives for the better"
+
+#: hands/templates/include/footer/footer.html:66
+msgid "studio-dnepr.Все права защищены."
+msgstr "studio-dnepr.All rights reserved."
+
+#: hands/templates/include/menu/menu.html:13
+msgid "Руки милості"
+msgstr "Hands of mercy"
+
+#: hands/templates/include/menu/menu.html:27
+msgid "Головна"
+msgstr "Home"
+
+#: hands/templates/include/menu/menu.html:33
+msgid "Проєкти"
+msgstr "Projects"
+
+#: hands/templates/include/menu/menu.html:36
+msgid "Новини"
+msgstr "News"
+
+#: hands/templates/include/menu/menu.html:39
+msgid "Контакти"
+msgstr "Contacts"
+
+#, fuzzy
+#~| msgid ""
+#~| "Актуальні події, проекти та допомога фонду 'Руки Милості' – підтримка "
+#~| "нужденних, гуманітарна допомога, благодійні ініціативи та звіти."
+#~ msgid ""
+#~ "Актуальные события, проекты и помощь фонда Руки Милости – поддержка "
+#~ "нуждающихся, гуманитарная помощь, благотворительные инициативы и отчёты."
+#~ msgstr ""
+#~ "Current events, projects and assistance from the 'Hands of Mercy' "
+#~ "foundation – supportneedy people, humanitarian aid, charitable "
+#~ "initiatives and reports."

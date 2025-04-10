@@ -1,6 +1,6 @@
 {% extends "app/base.html" %}
-{% load static %}
-{% block title %}Проєкт фонду{% endblock %}
+{% load static i18n %}
+{% block title %}{% trans "Проєкт фонду" %}{% endblock %}
 {% block content %}
          <!-- text -->
         <section class="text-section">
@@ -9,11 +9,11 @@
                     <div class="col-12 text-center d-flex flex-column align-items-center mt-2">
                         <h2 class="main-text">{{projects.name}}</h2>
                         {% if projects.status == 'open' %}
-                            <p class="text-center description-text">Проєкт: <strong>відкрито.</strong></p>
+                            <p class="text-center description-text">{% trans "Проєкт:" %}<strong style="color:#E77B2D">{% trans "відкрито." %}</strong></p>
                         {% else %}
-                            <p class="text-center description-text">Проєкт: <strong>закрито.</strong></p>
+                            <p class="text-center description-text">{% trans "Проєкт:" %}<strong style="color:#E77B2D">{% trans "закрито." %}</strong></p>
                         {% endif %}
-                        <p class="text-center description-text">Актуальные события, проекты и помощь фонда "Руки Милости" – поддержка нуждающихся, гуманитарная помощь, благотворительные инициативы и отчёты.</p>
+                        <p class="text-center description-text">{% trans "Актуальні події, проєкти та допомога фонду Руки Милості - підтримка нужденних, гуманітарна допомога, благодійні ініціативи та звіти." %}</p>
                     </div>
                 </div> 
             </div>
@@ -21,7 +21,7 @@
         <!-- text -->
         <!-- секция  button -->
         <section class="section-button d-flex justify-content-center mt-2">
-            <a href="#"></a><button class="button-section">Підтримати фонд</button>
+            <a href="#"></a><button class="button-section">{% trans "Підтримати фонд" %}</button>
         </section>
         <!-- секция  button -->
     
@@ -30,30 +30,48 @@
             <img src="{{ projects.main_image.url }}" class="full-screen-image" alt="{{projects.name}}">
         </section>
         <!-- секция  картинка -->
+        {% if projects.partner %}
+            <section class="osoblivosty-detail mt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 justify-content-start osoblivosty-detail mt-4">
+                            <h5>{% trans "Партнери фонду" %}</h5>
+                            <div class="osoblivosty-line"></div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <div class="osoblivosty-detail-text mt-5">
+                                <p class="partner-fond">{{projects.partner}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endif%}
+    
         
         <section class="projects-detail-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3 small-column justify-content-start pb-4 mt-4">
                         <div class="detail-data">
-                            <p>Дата статті : <strong>{{projects.created_at|date:"Y-m-d"}}</strong></p>
+                            <p>{% trans "Дата статті : "%}<strong style="color:#E77B2D">{{projects.created_at|date:"Y-m"}}</strong></p>
                         </div>
                         <div class="detail-avtor">
-                            <p>Автор : <strong>{{projects.author}}</strong></p>
+                            <p>{% trans "Автор : " %}<strong>{{projects.author}}</strong></p>
                         </div>
                         
                         <div class="project-open">
                             {% if projects.status == 'open' %}
-                                <p>Проект : <strong>відкрито.</strong></p>
+                                <p>{% trans "Проект : " %}<strong  style="color:#E77B2D">{% trans "відкрито." %}</strong></p>
                             {% else %} 
-                                <p>Проект : <strong>закрито.</strong></p>  
+                                <p>{% trans "Проект : " %}<strong  style="color:#E77B2D">{% trans "закрито." %}</strong></p>  
                             {% endif %}     
 
                         </div>
                         <div class="detail-soc d-flex justify-content-start align-items-center flex-row gap-3 mt-2">
-                            <a href="#"><img src="{% static 'image/deyail-instagram.svg' %}" class="detail-logo" alt="logo-ruki-milosty"></a>
-                            <a href="#"><img src="{% static 'image/detail-facebook.svg' %}" class="detail-logo-youtube" alt="logo-ruki-milosty"></a>
-                            <a href="#"><img src="{% static 'image/detail-face.svg' %}" class="detail-logo" alt="logo-ruki-milosty"></a>
+                            <a href="https://www.instagram.com/arms_of_mercy.dnipro?igsh=MWxkdTE2ZDZqcTBrMw%3D%3Dhttps%3A%2F%2Fww" target="_blank"><img src="{% static 'image/deyail-instagram.svg' %}" class="detail-logo" alt="logo-ruki-milosty"></a>
+                            <a href="https://www.facebook.com/AoM.Dnipro" target="_blank"><img src="{% static 'image/detail-facebook.svg' %}" class="detail-logo-youtube" alt="logo-ruki-milosty"></a>
+                            <a href="https://www.youtube.com/@armsofmercy.dnipro" target="_blank"><img src="{% static 'image/detail-face.svg' %}" class="detail-logo" alt="logo-ruki-milosty"></a>
                         </div>
                     </div>
                     <div class="col-12 col-md-8 mt-4">
@@ -65,15 +83,19 @@
             </div>
         </section>
     
-        <section class="detail-image-section">
+        <section class="detail-image-section mt-4">
             <div class="container">
                 <div class="row justify-content-center gap-2">
-                    <div class="col-auto">
-                          <img src="{{ projects.project_image1.url }}" alt="Random Image 1" class="detail-random-img">
-                    </div>
-                    <div class="col-auto">
-                        <img src="{{ projects.project_image2.url }}" alt="Random Image 1" class="detail-random-img">
-                  </div>
+                    {% if projects.project_image1 %}
+                        <div class="col-auto">
+                            <img src="{{ projects.project_image1.url }}" alt="Random Image 1" class="detail-random-img">
+                        </div>
+                    {% endif %}
+                    {% if projects.project_image2 %}
+                        <div class="col-auto">
+                            <img src="{{ projects.project_image2.url }}" alt="Random Image 1" class="detail-random-img">
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </section>
@@ -82,7 +104,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-12 justify-content-start osoblivosty-detail mt-4">
-                        <h5>Особливість проєкту</h5>
+                        <h5>{% trans "Особливість проєкту" %}</h5>
                         <div class="osoblivosty-line"></div>
                     </div>
                     <div class="col-12 col-md-12">
@@ -99,7 +121,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                        <h2 class="main-text"> Інші проєкти</h2>
+                        <h2 class="main-text">{% trans "Інші проєкти" %}</h2>
                     </div>
                 </div> 
             </div>
@@ -117,7 +139,7 @@
                             <a href="{% url "hands:projects-detail" item.slug %}" class="project-card-link">
                                 <img src="{{ item.main_image.url }}" class="imag-projects-card" alt="card">
                                 <div class="card-body mt-3">
-                                    <h5>{{item.name|truncatechars:20}}</h5>
+                                    <h5>{{item.name|truncatechars:28}}</h5>
                                 </div>
                                 <div class="card-description">
                                     <h6>{{item.description|truncatechars:110}}</h6>
@@ -126,9 +148,9 @@
                                     {% if project.status == 'open' %}
                                         <span class="project-close">{{ item.get_status_display }}</span>
                                     {% else %}
-                                        <span class="project-close">Закритий</span>
+                                        <span class="project-close">{% trans "Закритий" %}</span>
                                     {% endif %}
-                                    <span class="project-month">{{item.created_at|date:"Y-m-d"}}</span>
+                                    <span class="project-month">{{item.created_at|date:"Y-m"}}</span>
                                 </div>
                             </a>
                         </div>
@@ -142,7 +164,7 @@
     
         <!-- секция  button -->
         <section class="section-button d-flex justify-content-center mt-5">
-            <a href="{%  url 'hands:projects' %}"><button class="button-section">Переглянути проекти</button></a>
+            <a href="{%  url 'hands:projects' %}"><button class="button-section">{% trans "Переглянути проекти" %}</button></a>
         </section>
         <!-- секция  button -->
           <!-- секция   first-page-->
@@ -255,16 +277,16 @@
     
                         <div class="ruki-body-column d-flex justify-content-center flex-column align-items-center">
                             <div class="ruki-text">
-                                <h3>Підтримати благодійний фонд</h3>
+                                <h3>{% trans "Підтримати благодійний фонд" %}</h3>
                             </div>
                             <div class="ruki-item mt-2">
-                                <p>Руки Милості</p>
+                                <p>{% trans "Руки Милості" %}</p>
                             </div>
                             <div class="ruki-description d-flex  justify-content-center  mt-2">
-                                <h6>Руки Милості невтомно працюють.І лише ваша підтримка дозволяє рухатися вперед</h6>
+                                <h6>{% trans "Руки Милості невтомно працюють.І лише ваша підтримка дозволяє рухатися вперед" %}</h6>
                             </div>
                             <div class="ruki-button mt-3">
-                                <a href="#"></a><button class="button-section">Підтримати</button>
+                                <a href="#"></a><button class="button-section">{% trans "Підтримати" %}</button>
                             </div>
                         </div>
                     </div>

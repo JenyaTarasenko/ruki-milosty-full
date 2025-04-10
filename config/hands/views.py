@@ -1,9 +1,24 @@
-
+from django.shortcuts import redirect
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Project, News
 from django.views.generic import ListView, DetailView
 import random
+from django.utils import translation
+
+# def set_language(request):
+#     language = request.GET.get('language', 'en')
+#     translation.activate(language)
+#     request.session[translation.LANGUAGE_SESSION_KEY] = language 
+#     return redirect(request.META.get('HTTP_REFERER', '/'))
+
+
+
+def test(request):
+    project_item = Project.objects.all()
+    new_item = News.objects.all()    
+    return render(request,'app/pages/test.html', {'project_item':project_item, 'new_item':new_item})
+
 
 def index(request):
     latest_project = Project.objects.order_by()[:3]

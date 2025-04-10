@@ -1,4 +1,5 @@
-{% load static %}    
+{% load static i18n  %}
+{% comment %} <html lang="{{ LANGUAGE_CODE }}">  {% endcomment %}
 
 <!-- меню ms-2 d-inline d-lg-none -->
 <section class="navigation-section">
@@ -8,7 +9,7 @@
             <!-- Логотип -->
             <a class="navbar-brand logo-text" href="/">
                 <img src="{% static 'image/logo-ruki.jpeg' %}" alt="Лого руки милости" width="70" height="60">
-                <span class="text-decor-mobile">Руки милості</span>
+                <span class="text-decor-mobile">{% trans 'Руки милості' %}</span>
             </a>
     
             <!-- Кнопка для мобильного меню -->
@@ -22,32 +23,45 @@
             <div class="collapse navbar-collapse full-screen-menu" id="navbarNav">
                 <ul class="navbar-nav mx-auto align-items-center" style="display: flex; gap: 30px;">
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'hands:index' %}">Головна</a>
+                        <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'hands:index' %}">{% trans 'Головна' %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/about-ruki-milosty-team/' %}active{% endif %}" href="{% url 'hands:about' %}">Про нас</a>
+                        <a class="nav-link {% if request.path == '/about-ruki-milosty-team/' %}active{% endif %}" href="{% url 'hands:about' %}">{% trans 'Про нас' %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/all-projects-ruki-milosty/' %}active{% endif %}" href="{% url 'hands:projects' %}">Проєкти</a>
+                        <a class="nav-link {% if request.path == '/all-projects-ruki-milosty/' %}active{% endif %}" href="{% url 'hands:projects' %}">{% trans 'Проєкти' %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/all-news-ruki-milosty/' %}active{% endif %}" href="{% url 'hands:news' %}">Новини</a>
+                        <a class="nav-link {% if request.path == '/all-news-ruki-milosty/' %}active{% endif %}" href="{% url 'hands:news' %}">{% trans 'Новини' %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == '/contacti-ta-partneri/' %}active{% endif %}" href="{% url 'hands:contact' %}">Контакти</a>
+                        <a class="nav-link {% if request.path == '/contacti-ta-partneri/' %}active{% endif %}" href="{% url 'hands:contact' %}">{% trans 'Контакти' %}</a>
                     </li>
-                    
+                    {% comment %} <li class="nav-item">
+                        <a class="nav-link {% if request.path == '/test/' %}active{% endif %}" href="{% url 'hands:test' %}">Test</a>
+                    </li> {% endcomment %}
                 </ul>
-    
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Українська</a>
+                        <form method="post" action="{% url 'hands:set_language' %}" class="d-inline">
+                            {% csrf_token %}
+                            <input type="hidden" name="next" value="{{ request.path }}">
+                            <button type="submit" name="language" value="uk" class="nav-link {% if request.LANGUAGE_CODE == 'uk' %}active{% endif %}" style="border: none; background: none;">
+                                {% trans 'Українська' %}
+                            </button>
+                        </form>
                     </li>
                     <li class="nav-item">
                         <div style="border-left: 1px solid rgb(65, 59, 59); height: 20px; margin: 0 10px;"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">English</a>
+                        <form method="post" action="{% url 'hands:set_language' %}" class="d-inline">
+                            {% csrf_token %}
+                            <input type="hidden" name="next" value="{{ request.path }}">
+                            <button type="submit" name="language" value="en" class="nav-link {% if request.LANGUAGE_CODE == 'en' %}active{% endif %}" style="border: none; background: none;">
+                                English
+                            </button>
+                        </form>
                     </li>
                 </ul>
             </div>

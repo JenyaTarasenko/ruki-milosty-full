@@ -2,12 +2,13 @@
 from django.db import models
 from django.utils.text import slugify 
 from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
 
 class Project(models.Model):
     
     STATUS_CHOICES = [
-        ('open','Відкритий'),
-        ('closed', "Закритий"),
+        ('open', _('Відкритий')),
+        ('closed', _('Закритий')),
     ]
     name = models.CharField(max_length=255, verbose_name='Назва проєкту')
     slug = models.SlugField(unique=True, blank=True, max_length=200, verbose_name="Слаг проєкту")
@@ -19,6 +20,7 @@ class Project(models.Model):
     status = models.CharField(max_length=7, choices=STATUS_CHOICES, default='open', verbose_name="Статус проєкта")
     created_at = models.DateTimeField(null=True, blank=True, verbose_name="Дата створення проєкту")
     author = models.CharField(max_length=100, verbose_name="Автор статті проєкту")
+    partner = models.CharField(max_length=255, blank=True, null=True,  verbose_name="Партнер" )
     
     
  
@@ -51,6 +53,7 @@ class News(models.Model):
     news_image2 = models.ImageField(upload_to='news/', blank=True, null=True, verbose_name="Зображення друге новини")
     created_at = models.DateTimeField(null=True, blank=True,verbose_name="Дата створення новини")
     author = models.CharField(max_length=100, verbose_name="Автор статті новини")
+    partner = models.CharField(max_length=255, blank=True, null=True,  verbose_name="Партнер" )
     
     
     

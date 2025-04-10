@@ -152,7 +152,7 @@ html,body {
     font-size: 15px;
     font-weight: 500;
     /* line-height: 28px; */
-    color: #070707;
+    color: #515050;
 }
 .first-text-description  {
 
@@ -213,8 +213,6 @@ html,body {
 /* -----------------slider section------------------*/
 /* -----------------Text section------------------*/
 .text-section {
-
-  
    
     margin-top: 150px;
     display: flex;
@@ -275,9 +273,10 @@ html,body {
     font-family: "Unbounded",sans-serif;
     font-size: 30px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 1;
     color: #000000;
     max-width: 500px;
+
 
 }
 .new-ditache-item-description h6 {
@@ -328,9 +327,8 @@ html,body {
 
 }
 .dialnist-card {
-
+    display: none;
     margin-top: 50px;
-
 }
 .card-left-item {
     width: 480px;
@@ -656,17 +654,29 @@ html,body {
 }
 .card-body h5 {
 
-    font-family: "Unbounded",sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+    font-family: "Jost",sans-serif;
+    font-size: 15px;
+    font-weight: 600;
     line-height: 28px;
 }
 .card-description h6{
 
     font-family: "Jost",sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 18px;
+}
+.partner-fond {
+
+    font-family: "Jost",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    color: rgb(198 73 73);
+
+
+
+
 }
 
 
@@ -676,7 +686,7 @@ html,body {
     font-size: 13px;
     font-weight: 600;
     line-height: 18px;
-    color:#000000;
+    color:#E77B2D;
 
 
 }
@@ -686,7 +696,7 @@ html,body {
     font-size: 13px;
     font-weight: 600;
     line-height: 18px;
-    color:#636363;
+    color:#E77B2D;
 
 
 }
@@ -825,7 +835,7 @@ html,body {
 .about-card {
 
     width: 420px;
-    height: 350px;
+    height: 370px;
     background-color:#5C7685;
     border-radius: 30px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -841,11 +851,11 @@ html,body {
 
 
 .about-card-body-logo {
-    /* background-image: url(../image/about-card.svg); */
+    background-image: url(../image/icons-about-new.svg);
     /* width:48px;
     height: 48px; */
-    margin-right: 30px;
-    margin-top: 30px;  
+    /* margin-right: 30px;
+    margin-top: 30px;   */
 }
 .about-card-body-item h5{
 
@@ -1000,7 +1010,7 @@ html,body {
 .pidtrimka-card-oplata-body_items h6{
 
     font-family: "Unbounded",sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     color: #C01F2F;
 
@@ -1129,7 +1139,19 @@ html,body {
     overflow: hidden;
     object-fit: cover;
     border-radius: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  
 
+}
+.video-card-content:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-card-content:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 /* -----------------video-card-----------------*/
 
@@ -1499,7 +1521,8 @@ html,body {
     font-size: 16px;
     font-weight: 400;
     color: #373737;
-    opacity: 50%;
+    opacity: 80%;
+  
     
 }
 .about-first-description {

@@ -1,6 +1,6 @@
 {% extends "app/base.html" %}
-{% load static %}
-{% block title %}Новина фонду{% endblock %}
+{% load static i18n %}
+{% block title %}{% trans "Новина фонду" %}{% endblock %}
 {% block content %}
          <!-- text -->
         <section class="text-section">
@@ -9,7 +9,7 @@
                     <div class="col-12 text-center d-flex flex-column align-items-center mt-2">
                         <h2 class="main-text">{{news.name}}</h2>
                      
-                        <p class="text-center description-text">Актуальные события, проекты и помощь фонда "Руки Милости" – поддержка нуждающихся, гуманитарная помощь, благотворительные инициативы и отчёты.</p>
+                        <p class="text-center description-text">{% trans "Актуальні події, проєкти та допомога фонду Руки Милості - підтримка нужденних, гуманітарна допомога, благодійні ініціативи та звіти." %}</p>
                     </div>
                 </div> 
             </div>
@@ -17,7 +17,7 @@
         <!-- text -->
         <!-- секция  button -->
         <section class="section-button d-flex justify-content-center mt-2">
-            <a href="#"></a><button class="button-section">Підтримати фонд</button>
+            <a href="#"></a><button class="button-section">{% trans "Підтримати фонд" %}</button>
         </section>
         <!-- секция  button -->
     
@@ -26,21 +26,39 @@
             <img src="{{ news.main_image.url }}" class="full-screen-image" alt="">
         </section>
         <!-- секция  картинка -->
+        {% if news.partner %}
+            <section class="osoblivosty-detail mt-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 justify-content-start osoblivosty-detail mt-4">
+                            <h5>{% trans "Партнери фонду" %}</h5>
+                            <div class="osoblivosty-line"></div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <div class="osoblivosty-detail-text mt-5">
+                                <p class="partner-fond">{{news.partner}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endif%}
+
         
         <section class="projects-detail-section">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3 small-column justify-content-start pb-4 mt-4">
                         <div class="detail-data">
-                            <p>Дата статті : <strong>{{news.created_at|date:"Y-m-d"}}</strong></p>
+                            <p>{% trans "Дата статті : " %}<strong style="color:#E77B2D">{{news.created_at|date:"Y-m"}}</strong></p>
                         </div>
                         <div class="detail-avtor">
-                            <p>Автор : <strong>{{news.author}}</strong></p>
+                            <p>{% trans "Автор : " %}<strong>{{news.author}}</strong></p>
                         </div>
                         <div class="detail-soc d-flex justify-content-start align-items-center flex-row gap-3 mt-2">
-                            <a href="#"><img src="{% static 'image/deyail-instagram.svg' %}" class="detail-logo" alt="logo-ruki-milosty"></a>
-                            <a href="#"><img src="{% static 'image/detail-facebook.svg' %}" class="detail-logo-youtube" alt="logo-ruki-milosty"></a>
-                            <a href="#"><img src="{% static 'image/detail-face.svg' %}" class="detail-logo" alt="logo-ruki-milosty"></a>
+                            <a href="https://www.instagram.com/arms_of_mercy.dnipro?igsh=MWxkdTE2ZDZqcTBrMw%3D%3Dhttps%3A%2F%2Fww" target="_blank"><img src="{% static 'image/deyail-instagram.svg' %}" class="detail-logo" alt="logo-ruki-milosty"></a>
+                            <a href="https://www.facebook.com/AoM.Dnipro" target="_blank"><img src="{% static 'image/detail-facebook.svg' %}" class="detail-logo-youtube" alt="logo-ruki-milosty"></a>
+                            <a href="https://www.youtube.com/@armsofmercy.dnipro" target="_blank"><img src="{% static 'image/detail-face.svg' %}" class="detail-logo" alt="logo-ruki-milosty"></a>
                         </div>
                     </div>
                     <div class="col-12 col-md-8 mt-4">
@@ -52,15 +70,20 @@
             </div>
         </section>
     
-        <section class="detail-image-section">
+        <section class="detail-image-section mt-4">
             <div class="container">
                 <div class="row justify-content-center gap-2">
-                    <div class="col-auto">
-                          <img src="{{ news.main_image.url }}" alt="Random Image 1" class="detail-random-img">
-                    </div>
-                    <div class="col-auto">
-                        <img src="{{ news.main_image.url }}" alt="Random Image 1" class="detail-random-img">
-                  </div>
+
+                  {% if news.news_image1 %}
+                        <div class="col-auto">
+                            <img src="{{ news.news_image1.url }}" alt="Random Image 1" class="detail-random-img">
+                        </div>
+                    {% endif %}
+                    {% if news.news_image2 %}
+                        <div class="col-auto">
+                            <img src="{{ news.news_image1.url }}" alt="Random Image 1" class="detail-random-img">
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </section>
@@ -69,7 +92,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-12 justify-content-start osoblivosty-detail mt-4">
-                        <h5>Особливість проєкту</h5>
+                        <h5>{% trans "Особливість новини" %}</h5>
                         <div class="osoblivosty-line"></div>
                     </div>
                     <div class="col-12 col-md-12">
@@ -86,7 +109,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                        <h2 class="main-text"> Інші новини</h2>
+                        <h2 class="main-text">{% trans "Інші новини" %}</h2>
                     </div>
                 </div> 
             </div>
@@ -112,7 +135,7 @@
                                         <h6>{{news.description|truncatechars:80}}</h6>
                                     </div>
                                     <div class="news-top mt-5 me-auto">
-                                        <p>Дивитись новину</p>
+                                        <p>{% trans "Дивитись новину" %}</p>
                                     </div>
                                 </div>
                             </a> 
@@ -125,7 +148,7 @@
     
         <!-- секция  button -->
         <section class="section-button d-flex justify-content-center mt-5">
-            <a href="{%  url 'hands:news' %}"><button class="button-section">Переглянути новини</button></a>
+            <a href="{%  url 'hands:news' %}"><button class="button-section">{% trans "Переглянути новини" %}</button></a>
         </section>
         <!-- секция  button -->
     
@@ -239,16 +262,16 @@
     
                         <div class="ruki-body-column d-flex justify-content-center flex-column align-items-center">
                             <div class="ruki-text">
-                                <h3>Підтримати благодійний фонд</h3>
+                                <h3>{% trans "Підтримати благодійний фонд" %}</h3>
                             </div>
                             <div class="ruki-item mt-2">
-                                <p>Руки Милості</p>
+                                <p>{% trans "Руки Милості" %}</p>
                             </div>
                             <div class="ruki-description d-flex  justify-content-center  mt-2">
-                                <h6>Руки Милості невтомно працюють.І лише ваша підтримка дозволяє рухатися вперед</h6>
+                                <h6>{% trans "Руки Милості невтомно працюють.І лише ваша підтримка дозволяє рухатися вперед" %}</h6>
                             </div>
                             <div class="ruki-button mt-3">
-                                <a href="#"></a><button class="button-section">Підтримати</button>
+                                <a href="#"></a><button class="button-section">{% trans "Підтримати" %}</button>
                             </div>
                         </div>
                     </div>

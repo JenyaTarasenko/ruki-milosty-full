@@ -1,4 +1,4 @@
-{% load static %}    
+{% load static i18n  %}    
 
     <!-- footer -->
     <footer class="footer">
@@ -7,13 +7,13 @@
                 <div class="col-12 col-md-3 d-flex flex-column px-4">
                     <div class="footer-column-bady-left">
                         <div class="footer-logo">
-                            <img src="{% static 'image/logo-ruki.jpeg' %}" alt="logo">
+                            <img src="{% static 'image/arms.png' %}" alt="logo">
                         </div>
                         <div class="footer-item mt-4">
-                            <p>Руки Милості - Дніпро</p>
+                            <p>{% trans "Руки Милості - Дніпро" %}</p>
                         </div>
                         <div class="footer-item-text mt-2">
-                            <h6>Надання допомоги людям, які опинилися у складних життєвих обставинах, включаючи постраждалих від війни.</h6>
+                            <h6>{% trans  "Надання допомоги людям, які опинилися у складних життєвих обставинах, включаючи постраждалих від війни." %}</h6>
                         </div>
                         <div class="footer-item-tel mt-4">
                             <a href="">095 504 1484</a>
@@ -24,20 +24,20 @@
                         <div class="footer-item-soc-body d-flex flex-row gap-3 mt-5 align-items-center">
                             <a href="https://www.facebook.com/AoM.Dnipro" target="_blank"><img class="footer-soc" src="{% static 'image/footer-facebook.png' %}"></a>
                             <a href="https://www.instagram.com/arms_of_mercy.dnipro?igsh=MWxkdTE2ZDZqcTBrMw%3D%3Dhttps%3A%2F%2Fww" target="_blank"><img  class="footer-soc" src="{% static 'image/footer-instagramm.png' %}"></a>
-                            <a href="" target="_blank"><img  class="footer-soс-youtube" src="{% static 'image/footer-YouTube.png' %}"></a>
+                            <a href="https://www.youtube.com/@armsofmercy.dnipro" target="_blank"><img  class="footer-soс-youtube" src="{% static 'image/footer-YouTube.png' %}"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-8">
                     <div class="footer-colum-right d-flex flex-column px-4">
                         <div class="footer-item-rigth-text">
-                            <h6>Змінюємо жіття на краще</h6>
+                            <h6>{% trans  "Змінюємо жіття на краще" %}</h6>
                         </div>
                         <div class="footer-item-rigth-description mt-5">
-                            <p class="footer-item-top-style">Підтримати благодійний фонд</p>
+                            <p class="footer-item-top-style">{% trans  "Підтримати благодійний фонд" %}</p>
                         </div>
                         <div class="footer-item-rigth-button">
-                            <a href="#"></a><button class="button-footer">Підтримати</button>
+                            <a href="#"></a><button class="button-footer">{% trans  "Підтримати" %}</button>
                         </div>
                         <div class="footer-item-rigth-description d-flex flex-row gap-3 mt-5">
                             <a href="#"><img class="location-footer" src="{% static 'image/location-footer.png' %}" alt="logo"></a>
@@ -63,7 +63,7 @@
                 <div class="row mt-2">
                     <div class="col-auto">
                         <div class="mars-studio">
-                            <a href="#"><p>&copy; 2024<strong>Mars</strong> studio-dnepr.Все права защищены.</p></a>
+                            <a href="#"><p>&copy; 2024<strong>Mars</strong>{% trans "studio-dnepr.Все права защищены." %}</p></a>
                         </div>
                     </div>
                 </div>
