@@ -124,6 +124,17 @@ html,body {
 
     padding: 10px;
 }
+.img-first-section {
+
+    width: 600px;
+    height: 400px;
+    border-radius: 40px;
+    object-fit: cover;
+}
+.img-first-page-mobile {
+
+    border-radius: 20px;
+}
 .first-item {
 
     /* padding: 10px; */

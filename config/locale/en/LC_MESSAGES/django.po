@@ -460,8 +460,9 @@ msgstr ""
 "Our team has 10 years of experience (even before the establishment of the "
 "NGO) working with children andadolescents of different categories in the "
 "field of mental health, psychosocialsupport and protection of children. We "
-"have organized more than 20 thematic children'sтаборів, заходів для дітей, "
-"профілактичних лекцій і створили кілька дружніхchildren's spaces."
+"have organized more than 20 thematic children's camps, activities for children, "
+"preventive lectures and created several friendly "
+"children's spaces."
 
 #: hands/templates/app/pages/index.html:434
 #: hands/templates/app/pages/projects.html:272
