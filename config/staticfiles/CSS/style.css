@@ -80,10 +80,9 @@ html,body {
 .text-decor-mobile {
 
     font-family: 'Jost',sans-serif;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 600;
     color: #033069;
-
 
 }
 .text-decor-mobile:hover {
@@ -155,7 +154,7 @@ html,body {
     font-size: 50px;
     font-weight: 600;
     /* line-height: 70px; */
-    color:#C01F2F;
+    color:#E76B2D;
 }
 .first-text-description h3 {
 
@@ -683,11 +682,7 @@ html,body {
     font-size: 20px;
     font-weight: 600;
     line-height: 18px;
-    color: rgb(198 73 73);
-
-
-
-
+    color: #E77B2D;
 }
 
 
@@ -973,7 +968,7 @@ html,body {
 .pidtrimka-card {
 
     width: 650px;
-    height: 300px;
+    height: 350px;
     /* background-color: #C7EDFA; */
     border-radius: 40px;
     background: linear-gradient(135deg, rgba(199, 237, 250, 0.8), rgba(180, 220, 255, 0.6));
@@ -1023,7 +1018,7 @@ html,body {
     font-family: "Unbounded",sans-serif;
     font-size: 30px;
     font-weight: 600;
-    color: #C01F2F;
+    color: #E76B2D;
 
 }
 .pidtrimka-card-oplata-body_items {
@@ -1036,6 +1031,7 @@ html,body {
 
     margin-top: 20px;
     margin-right: 20px;
+    margin-left: 40px;
 
 
 }
@@ -1299,7 +1295,7 @@ html,body {
     font-family: "Unbounded",sans-serif;
     font-size: 40px;
     font-weight: 600;
-    color: #C01F2F;
+    color: #E77B2D;
 
 
 }
@@ -1623,7 +1619,7 @@ html,body {
     font-family: "Unbounded",sans-serif;
     font-size: 64px;
     font-weight: 600;
-    color: #C01F2F;
+    color: #E77B2D;
 }
 .about-text-description-item  {
 
@@ -2299,9 +2295,7 @@ html,body {
     font-family: "Unbounded",sans-serif;
     font-size: 64px;
     font-weight: 600;
-    color: #C01F2F;
-
-
+    color: #E77B2D;
 }
 .contact-rukimilosty-text {
 
@@ -2583,3 +2577,17 @@ html,body {
 
 }
 /* ---------------------social.icons--------------*/
+
+.sponsor-card img{
+
+    width: 150px;
+
+}
+/* .sponsor-image {
+
+    width: 80px;
+
+
+} */
+/* синий #414db4;*/
+/* синий #E77B2D;*/

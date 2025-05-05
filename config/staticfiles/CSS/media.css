@@ -218,7 +218,7 @@
     }
     .pidtrimka-card-oplata-body_button {
 
-        padding-left: 70px;
+        padding-left: 30px;
     }
     .pidtrimka-card {
 
@@ -628,10 +628,9 @@
     }
     .pidtrimka-card-oplata-body_button {
         padding-left: 30px;
-        margin-top: 60px;
-    }    
-
-   
+        margin-top: 40px;
+        margin-right: 70px;
+    }
 
     .img-first-page {
 

@@ -424,12 +424,12 @@
                             </div>
                             <div class="pidtrimka-card-body_img d-flex justify-content-center align-items-center mx-auto"></div>
                         </div>
-                        <div class="pidtrimka-card-oplata-body d-flex justify-content-between flex-wrap">
+                        <div class="pidtrimka-card-oplata-body d-flex justify-content-start flex-column">
     
                             <div class="pidtrimka-card-oplata-body_items d-flex">
                                 <h6>{% trans "Руки Милості" %}</h6>
                             </div>
-                            <div class="pidtrimka-card-oplata-body_button d-flex">
+                            <div class="pidtrimka-card-oplata-body_button d-flex justify-content-start">
                                 <a href="#"></a><button class="button-section">{% trans "Підтримати" %}</button>
                             </div>
                         </div>
@@ -561,80 +561,6 @@
     </section>
     <!-- section video -->
 
-    <!-- text -->
-    <section class="text-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
-                    <h2 class="main-text">{% trans "Наш шлях" %}</h2>
-                    <p class="text-center description-text">{% trans "Наш шлях – це роки допомоги, підтримки та добрих справ на благо людей" %}</p>
-                </div>
-            </div> 
-        </div>
-    </section>
-    <!-- text -->
-    
-
-    <!-- section shlah -->
-    <section class="shlah-section">
-        <div class="container">
-            <div class="row d-flex justify-content-center align-items-end mt-5 gap-3">
-                <div class="col-auto align-items-center">
-                    <div class="shlah-card-one">
-                        <div class="shlah-card-one-top d-flex justify-content-between">
-                            <div class="shlah-card-one-top_text">
-                                <h6>2014</h6>
-                            </div>
-                            <div class="shlah-card-one-top_logo">
-                                <img src="{% static 'image/shlah1.png' %}" alt="logo">
-                            </div>
-                        </div>
-                        <div class="shlah-card-one-body">
-                            <div class="shlah-card-one-body_items">
-                                <p>{% trans "Створення ініціативної групи для допомоги постраждалим від анексії Криму та військової агресії РФ на Сході України" %}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto align-items-center ">
-                    <div class="shlah-card-two">
-                        <div class="shlah-card-one-top d-flex justify-content-between">
-                            <div class="shlah-card-one-top_text">
-                                <h6>2016</h6>
-                            </div>
-                            <div class="shlah-card-one-top_logo">
-                                <img src="{% static 'image/shlah2.png' %}" alt="logo">
-                            </div>
-                        </div>
-                        <div class="shlah-card-one-body">
-                            <div class="shlah-card-one-body_items">
-                                <p>{% trans "Державна реєстрація БФ «Руки милості» як організації, яка спрямовує гуманітарну допомогу в зону бойових дій, відкриття соціального центру для ВПО та створення дитячих таборів" %}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto align-items-center ">
-                    <div class="shlah-card-three">
-                        <div class="shlah-card-one-top d-flex justify-content-between">
-                            <div class="shlah-card-one-top_text">
-                                <h6 style="margin-top: 30px;">2022</h6>
-                            </div>
-                            <div class="shlah-card-one-top_logo">
-                                <img src="{% static 'image/shlah3.png' %}" alt="logo">
-                            </div>
-                        </div>
-                        <div class="shlah-card-one-body">
-                            <div class="shlah-card-one-body_items">
-                                <p>{% trans "Державна реєстрація БФ «Руки милості» як організації, яка спрямовує гуманітарну допомогу в зону бойових дій, відкриття соціального центру для ВПО та створення дитячих таборів" %}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section shlah -->
-
     <!-- section ruki-->
     <section class="ruki-section">
         <div class="container">
@@ -680,17 +606,32 @@
             <div class="row justify-content-center align-items-center gap-5 mt-5">
                 <div class="col-auto">
                     <div class="sponsor-card">
-                        <img src="{% static 'image/sponsor1.png' %}" alt="logo-sponsor-ruki-milosty">
+                        <img src="{% static 'image/ruki-sponsor.png' %}" alt="logo-sponsor-ruki-milosty" style="width:200px;">
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="sponsor-card">
-                        <img src="{% static 'image/sponsor2.png' %}" alt="logo-sponsor-ruki-milosty">
+                        <img src="{% static 'image/ruki-sponsor1.png' %}" alt="logo-sponsor-ruki-milosty">
                     </div>
                 </div>
                 <div class="col-auto">
                     <div class="sponsor-card">
-                        <img src="{% static 'image/sponsor1.png' %}" alt="logo-sponsor-ruki-milosty">
+                        <img src="{% static 'image/ruki-sponsor2.png' %}" alt="logo-sponsor-ruki-milosty">
+                    </div>
+                </div>
+                {% comment %} <div class="col-auto">
+                    <div class="sponsor-card">
+                        <img src="{% static 'image/ruki-sponsor3.png' %}" alt="logo-sponsor-ruki-milosty">
+                    </div>
+                </div> {% endcomment %}
+                <div class="col-auto">
+                    <div class="sponsor-card">
+                        <img src="{% static 'image/ruki-sponsor4.png' %}" alt="logo-sponsor-ruki-milosty">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="sponsor-card">
+                        <img src="{% static 'image/ruki-sponsor6.png' %}" alt="logo-sponsor-ruki-milosty" style="width:150px;">
                     </div>
                 </div>
             </div>

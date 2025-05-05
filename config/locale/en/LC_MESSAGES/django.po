@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-10 02:47-0500\n"
+"POT-Creation-Date: 2025-05-05 12:29+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,22 +30,22 @@ msgstr ""
 msgid "Відкритий"
 msgstr "Open"
 
-#: hands/models.py:11 hands/templates/app/pages/index.html:246
+#: hands/models.py:11 hands/templates/app/pages/index.html:167
 #: hands/templates/app/pages/projects-detail.html:151
 msgid "Закритий"
 msgstr "Closed"
 
-#: hands/templates/app/base.html:40
+#: hands/templates/app/base.html:45
 msgid "Руки Милості головна"
-msgstr "Hands of mercy"
+msgstr "Arms of Mercy - Dnipro"
 
 #: hands/templates/app/pages/about.html:3
 msgid "Про благодійний фонд Рукі Милості"
-msgstr "About the Hands of Mercy"
+msgstr "About the Arms of Mercy "
 
 #: hands/templates/app/pages/about.html:13
 msgid "Ми-Благодійний фонд Руки Милості"
-msgstr "We are the Charitable Foundation Hands of Mercy"
+msgstr "We are the Charitable Foundation Arms of Mercy"
 
 #: hands/templates/app/pages/about.html:16
 #: hands/templates/app/pages/contact.html:18
@@ -91,16 +91,16 @@ msgstr ""
 "a difficult situation.Join our mission, help usto do good and bring light "
 "into the lives of those who need it."
 
-#: hands/templates/app/pages/about.html:122
+#: hands/templates/app/pages/about.html:81
 #: hands/templates/app/pages/contact.html:12
 msgid "Благодійний фонд Руки Милості"
-msgstr "Charitable Foundation Hands of Mercy"
+msgstr "Charitable Foundation Arms of Mercy "
 
-#: hands/templates/app/pages/about.html:125
+#: hands/templates/app/pages/about.html:84
 msgid "Приносити світло в житті тих, хто цього потребує."
 msgstr "To bring light into the lives of those who need it."
 
-#: hands/templates/app/pages/about.html:128
+#: hands/templates/app/pages/about.html:87
 msgid ""
 "Ми – команда небайдужих людей, які прагнуть допомагати тим, хто цього "
 "найбільше потребує. Наша місія – підтримка дітей, сімей та вразливих верств "
@@ -139,9 +139,9 @@ msgstr ""
 "everything possible to make this chancehas become a reality. Together we can "
 "do more!"
 
-#: hands/templates/app/pages/about.html:147
-#: hands/templates/app/pages/index.html:502
-#: hands/templates/app/pages/index.html:725
+#: hands/templates/app/pages/about.html:106
+#: hands/templates/app/pages/index.html:423
+#: hands/templates/app/pages/index.html:572
 #: hands/templates/app/pages/news-detail.html:265
 #: hands/templates/app/pages/news.html:338
 #: hands/templates/app/pages/projects-detail.html:280
@@ -150,20 +150,20 @@ msgstr ""
 msgid "Підтримати благодійний фонд"
 msgstr "Support the charity fund"
 
-#: hands/templates/app/pages/about.html:154
-#: hands/templates/app/pages/index.html:509
-#: hands/templates/app/pages/index.html:728
+#: hands/templates/app/pages/about.html:113
+#: hands/templates/app/pages/index.html:430
+#: hands/templates/app/pages/index.html:575
 #: hands/templates/app/pages/news-detail.html:268
 #: hands/templates/app/pages/news.html:341
 #: hands/templates/app/pages/projects-detail.html:283
 #: hands/templates/app/pages/projects.html:343
 msgid "Руки Милості"
-msgstr "Hands of mercy"
+msgstr "Arms of Mercy - Dnipro"
 
-#: hands/templates/app/pages/about.html:157
+#: hands/templates/app/pages/about.html:116
 #: hands/templates/app/pages/index.html:24
-#: hands/templates/app/pages/index.html:512
-#: hands/templates/app/pages/index.html:734
+#: hands/templates/app/pages/index.html:433
+#: hands/templates/app/pages/index.html:581
 #: hands/templates/app/pages/news-detail.html:274
 #: hands/templates/app/pages/news.html:347
 #: hands/templates/app/pages/projects-detail.html:289
@@ -172,29 +172,29 @@ msgstr "Hands of mercy"
 msgid "Підтримати"
 msgstr "Support"
 
-#: hands/templates/app/pages/about.html:177
-#: hands/templates/app/pages/index.html:526
+#: hands/templates/app/pages/about.html:131
+#: hands/templates/app/pages/index.html:447
 #: hands/templates/app/pages/news.html:252
 #: hands/templates/app/pages/projects.html:249
 msgid "Напрямок нашої діяльності"
 msgstr "Assistance and development"
 
-#: hands/templates/app/pages/about.html:178
-#: hands/templates/app/pages/index.html:527
+#: hands/templates/app/pages/about.html:132
+#: hands/templates/app/pages/index.html:448
 #: hands/templates/app/pages/news.html:253
 #: hands/templates/app/pages/projects.html:250
 msgid "Надаємо допомогу людям, надаючи тимчасове житло та підтримку."
 msgstr "We help people by providing temporary housing and support."
 
-#: hands/templates/app/pages/about.html:194
-#: hands/templates/app/pages/index.html:315
-#: hands/templates/app/pages/index.html:345
+#: hands/templates/app/pages/about.html:148
+#: hands/templates/app/pages/index.html:236
+#: hands/templates/app/pages/index.html:266
 #: hands/templates/include/menu/menu.html:30
 msgid "Про нас"
 msgstr "About us"
 
-#: hands/templates/app/pages/about.html:200
-#: hands/templates/app/pages/index.html:352
+#: hands/templates/app/pages/about.html:154
+#: hands/templates/app/pages/index.html:273
 msgid ""
 "Наша команда налічує близько 50 волонтерів, серед яких практикуючі педагоги "
 "та вихователі, психологи, сертифіковані фасилітатори, а також активні "
@@ -212,12 +212,12 @@ msgstr ""
 "following topics: “Positive parenting”, “Psychosocial support for "
 "childrenSelf-Help Plus”, “Problem Management”, etc"
 
-#: hands/templates/app/pages/about.html:207
-#: hands/templates/app/pages/index.html:359
+#: hands/templates/app/pages/about.html:161
+#: hands/templates/app/pages/index.html:280
 msgid "Місія"
 msgstr "Mission"
 
-#: hands/templates/app/pages/about.html:213
+#: hands/templates/app/pages/about.html:167
 msgid ""
 "Сприяти покращенню якості життя людей і розвитку суспільства через "
 "реалізацію проєктів у гуманітарній, соціальній та освітній сферах, "
@@ -231,13 +231,13 @@ msgstr ""
 "implements onIn the Dnipro region, independent projects, as well as projects "
 "of the parentorganization of the Charitable Foundation Hands of Mercy."
 
-#: hands/templates/app/pages/about.html:223
-#: hands/templates/app/pages/index.html:375
+#: hands/templates/app/pages/about.html:177
+#: hands/templates/app/pages/index.html:296
 msgid "Принципи"
 msgstr "Principles"
 
-#: hands/templates/app/pages/about.html:229
-#: hands/templates/app/pages/index.html:381
+#: hands/templates/app/pages/about.html:183
+#: hands/templates/app/pages/index.html:302
 msgid ""
 "Наша організація базується на таких основних цінностях, як відповідальність, "
 "служіння суспільству та гуманність. Ми прагнемо забезпечувати саморозвиток і "
@@ -253,13 +253,13 @@ msgstr ""
 "protection, transparency and accountability. We promote equality,honesty, "
 "legality and independence in all areas of activity."
 
-#: hands/templates/app/pages/about.html:236
-#: hands/templates/app/pages/index.html:388
+#: hands/templates/app/pages/about.html:190
+#: hands/templates/app/pages/index.html:309
 msgid "Бачення"
 msgstr "Vision"
 
-#: hands/templates/app/pages/about.html:242
-#: hands/templates/app/pages/index.html:394
+#: hands/templates/app/pages/about.html:196
+#: hands/templates/app/pages/index.html:315
 msgid ""
 "Надання допомоги людям, які опинилися у складних життєвих обставинах, "
 "включаючи постраждалих від війни.Сприяння організації відпочинку, розвитку "
@@ -287,12 +287,12 @@ msgid "Зараз саме час допомогти тим, хто цього �
 msgstr "Now is the time to help those in need."
 
 #: hands/templates/app/pages/contact.html:34
-#: hands/templates/app/pages/index.html:748
+#: hands/templates/app/pages/index.html:595
 msgid "Наші спонсори"
 msgstr "Our sponsors"
 
 #: hands/templates/app/pages/contact.html:35
-#: hands/templates/app/pages/index.html:749
+#: hands/templates/app/pages/index.html:596
 msgid ""
 "Спонсорська допомога для благодійного фонду — це можливість підтримати тих, "
 "хто потребує захисту"
@@ -300,45 +300,45 @@ msgstr ""
 "Sponsorship for a charitable foundation is an opportunity to support "
 "thosewho needs protection"
 
-#: hands/templates/app/pages/contact.html:71
-#: hands/templates/app/pages/contact.html:126
+#: hands/templates/app/pages/contact.html:88
+#: hands/templates/app/pages/contact.html:143
 msgid "Наші контакти"
 msgstr "Our contacts"
 
-#: hands/templates/app/pages/contact.html:72
+#: hands/templates/app/pages/contact.html:89
 msgid "Наші адреси, за якими ви можете нас знайти, а також соціальні мережі."
 msgstr "Our addresses where you can find us, as well as social networks."
 
-#: hands/templates/app/pages/contact.html:87
+#: hands/templates/app/pages/contact.html:104
 msgid "Наші coц. мереж"
 msgstr "Our social networks"
 
-#: hands/templates/app/pages/contact.html:105
+#: hands/templates/app/pages/contact.html:122
 msgid "Наші адреси"
 msgstr "Our addresses"
 
-#: hands/templates/app/pages/contact.html:151
+#: hands/templates/app/pages/contact.html:168
 msgid "Наші реквiзити"
 msgstr "Our details"
 
-#: hands/templates/app/pages/contact.html:152
+#: hands/templates/app/pages/contact.html:169
 msgid "Наші реквізити для того, щоб ви могли фінансово підтримати наш фонд."
 msgstr "Our details so that you can financially support our foundation."
 
-#: hands/templates/app/pages/contact.html:168
-#: hands/templates/app/pages/contact.html:199
-#: hands/templates/app/pages/contact.html:230
+#: hands/templates/app/pages/contact.html:185
+#: hands/templates/app/pages/contact.html:216
+#: hands/templates/app/pages/contact.html:247
 msgid "Получатель"
 msgstr "Recipient"
 
-#: hands/templates/app/pages/contact.html:176
-#: hands/templates/app/pages/contact.html:207
+#: hands/templates/app/pages/contact.html:193
+#: hands/templates/app/pages/contact.html:224
 msgid "ЕГРПОУ"
 msgstr "EDRPOU"
 
 #: hands/templates/app/pages/index.html:3
 msgid "Головна Руки Милості - Дніпро"
-msgstr "Hands of mercy - Dnipro"
+msgstr "Arms of Mercy - Dnipro"
 
 #: hands/templates/app/pages/index.html:12
 msgid "Громадська організація"
@@ -347,7 +347,7 @@ msgstr "Public organization"
 #: hands/templates/app/pages/index.html:12
 #: hands/templates/include/footer/footer.html:13
 msgid "Руки Милості - Дніпро"
-msgstr "Hands of mercy - Dnipro"
+msgstr "Arms of Mercy - Dnipro"
 
 #: hands/templates/app/pages/index.html:15
 msgid "Змінюємо"
@@ -369,27 +369,27 @@ msgid ""
 msgstr ""
 "Helping people in difficult life circumstances,including victims of war."
 
-#: hands/templates/app/pages/index.html:219
+#: hands/templates/app/pages/index.html:140
 #: hands/templates/app/pages/projects.html:10
 #: hands/templates/app/pages/projects.html:129
 msgid "Наші проекти"
 msgstr "Our projects"
 
-#: hands/templates/app/pages/index.html:220
+#: hands/templates/app/pages/index.html:141
 #: hands/templates/app/pages/projects.html:130
 msgid "Наші проекти – реальна допомога тим, хто її потребує."
 msgstr "Our projects are a real help to those who need it."
 
-#: hands/templates/app/pages/index.html:261
+#: hands/templates/app/pages/index.html:182
 msgid "Переглянути всі проекти"
 msgstr "View all projects"
 
-#: hands/templates/app/pages/index.html:269
+#: hands/templates/app/pages/index.html:190
 #: hands/templates/app/pages/news.html:11
 msgid "Наші новини"
 msgstr "Our news"
 
-#: hands/templates/app/pages/index.html:270
+#: hands/templates/app/pages/index.html:191
 msgid ""
 "Ми, благодійний фонд 'Руки милості', допомагаємо найбільш уразливим: "
 "внутрішньопереміщеним особам"
@@ -397,17 +397,17 @@ msgstr ""
 "We, the charitable foundation ‘Hands of Mercy’, help the most vulnerable "
 "internally displaced persons"
 
-#: hands/templates/app/pages/index.html:293
+#: hands/templates/app/pages/index.html:214
 #: hands/templates/app/pages/news-detail.html:138
 #: hands/templates/app/pages/news.html:157
 msgid "Дивитись новину"
 msgstr "Watch the news"
 
-#: hands/templates/app/pages/index.html:306
+#: hands/templates/app/pages/index.html:227
 msgid "Переглянути всі новини"
 msgstr "View all news"
 
-#: hands/templates/app/pages/index.html:316
+#: hands/templates/app/pages/index.html:237
 msgid ""
 "Ми — команда професіоналів, яка об'єднала свої зусилля для того, щоб "
 "приносити реальну допомогу тим, хто цього потребує"
@@ -415,7 +415,7 @@ msgstr ""
 "We are a team of professionals, who have joined forcesto bring real help to "
 "those, who need it"
 
-#: hands/templates/app/pages/index.html:365
+#: hands/templates/app/pages/index.html:286
 msgid ""
 "Сприяти покращенню якості життя людей і розвитку суспільства через "
 "реалізацію проєктів у гуманітарній, соціальній та освітній сферах, "
@@ -429,11 +429,11 @@ msgstr ""
 "implements onIn the Dnipro region, independent projects, as well as projects "
 "of the parentorganization of the Charitable Foundation Hands of Mercy."
 
-#: hands/templates/app/pages/index.html:409
+#: hands/templates/app/pages/index.html:330
 msgid "Наші проєкти"
 msgstr "Our projects"
 
-#: hands/templates/app/pages/index.html:410
+#: hands/templates/app/pages/index.html:331
 msgid ""
 "Наші соціальні та гуманітарні проєкти спрямовані на підтримку населення, "
 "надання допомоги сім’ям, дітям і всім, хто потребує. Ми реалізуємо "
@@ -445,11 +445,11 @@ msgstr ""
 "We are implementinginitiatives for social development, education, "
 "psychological support andhumanitarian aid."
 
-#: hands/templates/app/pages/index.html:427
+#: hands/templates/app/pages/index.html:348
 msgid "Допомога та розвиток"
 msgstr "Assistance and development"
 
-#: hands/templates/app/pages/index.html:431
+#: hands/templates/app/pages/index.html:352
 msgid ""
 "Наша команда має 10-річний досвід роботи (ще до створення ГО) з дітьми та "
 "підлітками різних категорій у сфері ментального здоров’я, психосоціальної "
@@ -460,11 +460,10 @@ msgstr ""
 "Our team has 10 years of experience (even before the establishment of the "
 "NGO) working with children andadolescents of different categories in the "
 "field of mental health, psychosocialsupport and protection of children. We "
-"have organized more than 20 thematic children's camps, activities for children, "
-"preventive lectures and created several friendly "
-"children's spaces."
+"have organized more than 20 thematic children's camps, activities for "
+"children, preventive lectures and created several friendly children's spaces."
 
-#: hands/templates/app/pages/index.html:434
+#: hands/templates/app/pages/index.html:355
 #: hands/templates/app/pages/projects.html:272
 msgid ""
 "Ми проводимогуманітарні, освітні та соціальні проєкти для всіх, хто потребує "
@@ -477,15 +476,15 @@ msgstr ""
 "they need,participate in seminars, children's camps and clubs that promote "
 "theirdevelopment and social adaptation."
 
-#: hands/templates/app/pages/index.html:437
+#: hands/templates/app/pages/index.html:358
 msgid "Переглянути проєкти"
 msgstr "View projects"
 
-#: hands/templates/app/pages/index.html:449
+#: hands/templates/app/pages/index.html:370
 msgid "Гуманітарні проєкти"
 msgstr "Humanitarian projects"
 
-#: hands/templates/app/pages/index.html:453
+#: hands/templates/app/pages/index.html:374
 msgid ""
 "Наші гуманітарні проєкти спрямовані на соціальний розвиток різних верств "
 "населення – як дітей, так і дорослих. Ми реалізуємо програми для сімей, "
@@ -497,12 +496,12 @@ msgstr ""
 "for families,psychological and cognitive trainings, support in crisis "
 "situations, andas well as assistance to the military and their families."
 
-#: hands/templates/app/pages/index.html:464
+#: hands/templates/app/pages/index.html:385
 #: hands/templates/app/pages/projects.html:300
 msgid "Соціальні проєкти"
 msgstr "Social projects"
 
-#: hands/templates/app/pages/index.html:468
+#: hands/templates/app/pages/index.html:389
 msgid ""
 "Наші соціальні проєкти спрямовані на підтримку сімей, дітей і всіх, хто "
 "потребує допомоги. Ми проводимо освітні, гуманітарні та психологічні "
@@ -514,11 +513,11 @@ msgstr ""
 "psychologicalinitiatives, create spaces for development, interaction and "
 "socialadaptations"
 
-#: hands/templates/app/pages/index.html:479
+#: hands/templates/app/pages/index.html:400
 msgid "Освітні проєкти"
 msgstr "Educational projects"
 
-#: hands/templates/app/pages/index.html:483
+#: hands/templates/app/pages/index.html:404
 msgid ""
 "Наші освітні проєкти спрямовані на розвиток знань та навичок у різних "
 "вікових групах. Ми організовуємо тренінги, майстер-класи, курси для дітей і "
@@ -537,11 +536,11 @@ msgstr ""
 "thinking,improving communication skills and building healthy social "
 "relationships."
 
-#: hands/templates/app/pages/index.html:545
+#: hands/templates/app/pages/index.html:466
 msgid "Продовольча/не продовольча, допомога"
 msgstr "Food/non-food aid, assistance"
 
-#: hands/templates/app/pages/index.html:548
+#: hands/templates/app/pages/index.html:469
 msgid ""
 "Ми надаємо фінансову, продовольчу та дитячу допомогу сім’ям у складних "
 "обставинах, підтримуючи їхню стабільність і безпеку."
@@ -549,11 +548,11 @@ msgstr ""
 "We provide financial, food and childcare assistance to families in "
 "difficultcircumstances, maintaining their stability and security."
 
-#: hands/templates/app/pages/index.html:559
+#: hands/templates/app/pages/index.html:480
 msgid "Психологічний захист"
 msgstr "Psychological protection"
 
-#: hands/templates/app/pages/index.html:562
+#: hands/templates/app/pages/index.html:483
 msgid ""
 "Психологічна допомога для сімей, дітей і батьків – підтримка, адаптація та "
 "розвиток у складних життєвих ситуаціях."
@@ -561,11 +560,11 @@ msgstr ""
 "Psychological assistance for families, children and parents - support, "
 "adaptation anddevelopment in difficult life situations."
 
-#: hands/templates/app/pages/index.html:575
+#: hands/templates/app/pages/index.html:496
 msgid "Притулок"
 msgstr "Shelter"
 
-#: hands/templates/app/pages/index.html:578
+#: hands/templates/app/pages/index.html:499
 msgid ""
 "Надаємо притулок людям та допомагаємо в різних життєвих ситуаціях – "
 "фінансово, психологічно та соціально."
@@ -573,11 +572,11 @@ msgstr ""
 "We provide shelter and help people in various life situationsfinancially, "
 "psychologically, and socially."
 
-#: hands/templates/app/pages/index.html:589
+#: hands/templates/app/pages/index.html:510
 msgid "Освіта та треннінги"
 msgstr "Education and training"
 
-#: hands/templates/app/pages/index.html:592
+#: hands/templates/app/pages/index.html:513
 msgid ""
 "Ми допомагаємо всім верствам населення, дітям і сім’ям через тренінги, що "
 "сприяють розвитку, адаптації та підтримці в складних життєвих ситуаціях."
@@ -586,19 +585,19 @@ msgstr ""
 "trainings thatpromote development, adaptation and support in difficult life "
 "situations."
 
-#: hands/templates/app/pages/index.html:608
+#: hands/templates/app/pages/index.html:529
 msgid "Дивитися нас на YouTube"
 msgstr "Watch us on YouTube"
 
-#: hands/templates/app/pages/index.html:609
+#: hands/templates/app/pages/index.html:530
 msgid "Дивіться наші новини та звіти на YouTube-каналі благодійного фонду!"
 msgstr "Check out our news and reports on the charity's YouTube channel!"
 
-#: hands/templates/app/pages/index.html:624
+#: hands/templates/app/pages/index.html:545
 msgid "Наш відео канал"
 msgstr "Our video channel"
 
-#: hands/templates/app/pages/index.html:627
+#: hands/templates/app/pages/index.html:548
 msgid ""
 "Наш YouTube-канал – тут ви знайдете всі наші відео, де ми ділимося нашими "
 "досягненнями!"
@@ -606,39 +605,11 @@ msgstr ""
 "Our YouTube channel - here you will find all our videos where we share "
 "ourachievements!"
 
-#: hands/templates/app/pages/index.html:630
+#: hands/templates/app/pages/index.html:551
 msgid "Переглянути"
 msgstr "View"
 
-#: hands/templates/app/pages/index.html:648
-msgid "Наш шлях"
-msgstr "Our way"
-
-#: hands/templates/app/pages/index.html:649
-msgid "Наш шлях – це роки допомоги, підтримки та добрих справ на благо людей"
-msgstr ""
-"Our path is years of help, support and good deeds for the benefit of people"
-
-#: hands/templates/app/pages/index.html:673
-msgid ""
-"Створення ініціативної групи для допомоги постраждалим від анексії Криму та "
-"військової агресії РФ на Сході України"
-msgstr ""
-"Establishment of an initiative group to help those affected by the "
-"annexation of Crimea andrussian military aggression in the East of Ukraine"
-
-#: hands/templates/app/pages/index.html:690
-#: hands/templates/app/pages/index.html:707
-msgid ""
-"Державна реєстрація БФ «Руки милості» як організації, яка спрямовує "
-"гуманітарну допомогу в зону бойових дій, відкриття соціального центру для "
-"ВПО та створення дитячих таборів"
-msgstr ""
-"State registration of the Charitable Foundation “Hands of Mercy” as an "
-"organization that directshumanitarian aid to the combat zone, opening a "
-"social center forIDPs and the creation of children's camps"
-
-#: hands/templates/app/pages/index.html:731
+#: hands/templates/app/pages/index.html:578
 #: hands/templates/app/pages/news-detail.html:271
 #: hands/templates/app/pages/news.html:344
 #: hands/templates/app/pages/projects-detail.html:286
@@ -646,18 +617,18 @@ msgstr ""
 msgid ""
 "Руки Милості невтомно працюють.І лише ваша підтримка дозволяє рухатися вперед"
 msgstr ""
-"The Hands of Mercy work tirelessly. And only your support allows us to move "
+"The Arms of Mercy work tirelessly. And only your support allows us to move "
 "forward"
 
-#: hands/templates/app/pages/index.html:785
+#: hands/templates/app/pages/index.html:648
 msgid "Часті питання"
 msgstr "Frequently asked questions"
 
-#: hands/templates/app/pages/index.html:799
+#: hands/templates/app/pages/index.html:662
 msgid "Як з нами зв'язатися?"
 msgstr "How to contact us?"
 
-#: hands/templates/app/pages/index.html:802
+#: hands/templates/app/pages/index.html:665
 msgid ""
 "Ми завжди на зв'язку та готові вислухати вас. Фонд Руки Милості відкритий "
 "для питань, пропозицій та підтримки тим, хто потребує допомоги. Зв'яжіться з "
@@ -667,25 +638,25 @@ msgstr ""
 "Foundation is openfor questions, suggestions and support for those who need "
 "help. Get in touch withus at any time!"
 
-#: hands/templates/app/pages/index.html:809
+#: hands/templates/app/pages/index.html:672
 #: hands/templates/app/pages/news.html:222
 msgid "Соціальний центр"
 msgstr "Social center"
 
-#: hands/templates/app/pages/index.html:812
+#: hands/templates/app/pages/index.html:675
 msgid ""
 "Ми завжди готові прийти на допомогу тим, хто потребує. Фонд Руки Милості "
 "підтримує людей у ​​складних ситуаціях, даруючи турботу, тепло та надію на "
 "краще."
 msgstr ""
-"We are always ready to help those in need. Hand of Mercy of Mercysupports "
+"We are always ready to help those in need. Arms of Mercy of Mercysupports "
 "people in difficult situations by providing care, warmth and hope forbetter."
 
-#: hands/templates/app/pages/index.html:821
+#: hands/templates/app/pages/index.html:684
 msgid "Фінансова допомогу фонду"
 msgstr "Financial assistance from the foundation"
 
-#: hands/templates/app/pages/index.html:824
+#: hands/templates/app/pages/index.html:687
 msgid ""
 "Ви можете надати грошову допомогу, переказуючи будь-яку суму на реквізити, "
 "зазначені на банківських картках. Ваша підтримка допоможе нам продовжувати "
@@ -695,11 +666,11 @@ msgstr ""
 "requisites,indicated on bank cards. Your support will help us to "
 "continueprovide assistance to those who need it"
 
-#: hands/templates/app/pages/index.html:831
+#: hands/templates/app/pages/index.html:694
 msgid "Де слідкуват за новінами та проєктами"
 msgstr "Where to follow the news and projects"
 
-#: hands/templates/app/pages/index.html:834
+#: hands/templates/app/pages/index.html:697
 msgid ""
 "Ви можете стежити за нашими проєктами на нашому сайті та у наших соц "
 "мережах, де ми публікуємо всі актуальні новини та оновлення."
@@ -717,7 +688,7 @@ msgid ""
 "Актуальні події, проєкти та допомога фонду Руки Милості - підтримка "
 "нужденних, гуманітарна допомога, благодійні ініціативи та звіти."
 msgstr ""
-"Current events, projects and assistance from the Hands of Mercy Foundation - "
+"Current events, projects and assistance from the Arms of Mercy Foundation - "
 "supportneedy, humanitarian aid, charitable initiatives and reports."
 
 #: hands/templates/app/pages/news-detail.html:34
@@ -796,7 +767,7 @@ msgid ""
 "ситуаціях, підтримуючи тих, хто потребує турботи та допомоги у подоланні "
 "стресу і труднощів через консультації фахівців."
 msgstr ""
-"The Hands of Mercy Foundation provides psychological assistance to people in "
+"The Arms of Mercy Foundation provides psychological assistance to people in "
 "difficult life situations.situations, supporting those who need care and "
 "help in overcomingstress and difficulties through specialist consultations."
 
@@ -806,7 +777,7 @@ msgid ""
 "затишок, спокій та турботу. Ми допомагаємо тим, хто опинився у скрутній "
 "ситуації, створюючи комфортні умови для життя та відновлення."
 msgstr ""
-"The Hand of Mercy Foundation provides housing in social centers where people "
+"The Arms of Mercy Foundation provides housing in social centers where people "
 "findcomfort, peace and care. We help those who find themselves in difficult "
 "situationssituations, creating comfortable conditions for life and recovery."
 
@@ -956,14 +927,14 @@ msgstr "View projects"
 
 #: hands/templates/app/pages/projects.html:3
 msgid "Всі проєкти фонду Руки Милості - Дніпро"
-msgstr "All projects  Hands of Mercy - Dnipro"
+msgstr "All projects Arms of Mercy - Dnipro"
 
 #: hands/templates/app/pages/projects.html:11
 msgid ""
 "Актуальні події, проекти та допомога фонду 'Руки Милості' – підтримка "
 "нужденних, гуманітарна допомога, благодійні ініціативи та звіти."
 msgstr ""
-"Current events, projects and assistance from the 'Hands of Mercy' foundation "
+"Current events, projects and assistance from the 'Arms of Mercy' foundation "
 "– supportneedy people, humanitarian aid, charitable initiatives and reports."
 
 #: hands/templates/app/pages/projects.html:210
@@ -1005,7 +976,7 @@ msgid ""
 "Благодійний фонд 'Руки милості' активно надає підтримку нужденним, роздаючи "
 "гуманітарну допомогу тим, хто опинився у складній життєвій ситуації"
 msgstr ""
-"The 'Hands of Mercy' charity foundation actively supports those in need by "
+"The 'Arms of Mercy' charity foundation actively supports those in need by "
 "distributinghumanitarian aid to those who find themselves in a difficult "
 "life situation"
 
@@ -1092,8 +1063,8 @@ msgid "studio-dnepr.Все права защищены."
 msgstr "studio-dnepr.All rights reserved."
 
 #: hands/templates/include/menu/menu.html:13
-msgid "Руки милості"
-msgstr "Hands of mercy"
+msgid "Руки милості - Дніпро"
+msgstr "Arms of Mercy - Dnipro"
 
 #: hands/templates/include/menu/menu.html:27
 msgid "Головна"
@@ -1111,6 +1082,34 @@ msgstr "News"
 msgid "Контакти"
 msgstr "Contacts"
 
+#~ msgid "Наш шлях"
+#~ msgstr "Our way"
+
+#~ msgid ""
+#~ "Наш шлях – це роки допомоги, підтримки та добрих справ на благо людей"
+#~ msgstr ""
+#~ "Our path is years of help, support and good deeds for the benefit of "
+#~ "people"
+
+#~ msgid ""
+#~ "Створення ініціативної групи для допомоги постраждалим від анексії Криму "
+#~ "та військової агресії РФ на Сході України"
+#~ msgstr ""
+#~ "Establishment of an initiative group to help those affected by the "
+#~ "annexation of Crimea andrussian military aggression in the East of Ukraine"
+
+#~ msgid ""
+#~ "Державна реєстрація БФ «Руки милості» як організації, яка спрямовує "
+#~ "гуманітарну допомогу в зону бойових дій, відкриття соціального центру для "
+#~ "ВПО та створення дитячих таборів"
+#~ msgstr ""
+#~ "State registration of the Charitable Foundation “Hands of Mercy” as an "
+#~ "organization that directshumanitarian aid to the combat zone, opening a "
+#~ "social center forIDPs and the creation of children's camps"
+
+#~ msgid "Руки милості - Дніпро "
+#~ msgstr "Arms of Mercy - Dnipro"
+
 #, fuzzy
 #~| msgid ""
 #~| "Актуальні події, проекти та допомога фонду 'Руки Милості' – підтримка "
@@ -1119,6 +1118,6 @@ msgstr "Contacts"
 #~ "Актуальные события, проекты и помощь фонда Руки Милости – поддержка "
 #~ "нуждающихся, гуманитарная помощь, благотворительные инициативы и отчёты."
 #~ msgstr ""
-#~ "Current events, projects and assistance from the 'Hands of Mercy' "
+#~ "Current events, projects and assistance from the 'Arms of Mercy' "
 #~ "foundation – supportneedy people, humanitarian aid, charitable "
 #~ "initiatives and reports."
