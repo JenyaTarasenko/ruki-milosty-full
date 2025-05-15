@@ -9,6 +9,8 @@ urlpatterns = [
     path('', include('hands.urls', namespace='hands')),
 ]
 
+#  кастомный обработчик 404
+handler404 = 'hands.views.custom_404'
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-05 12:29+0300\n"
+"POT-Creation-Date: 2025-05-15 10:01+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: config/settings.py:91 hands/templates/include/menu/menu.html:52
+#: config/settings.py:91 hands/templates/include/menu/menu.html:49
 msgid "Українська"
 msgstr "Ukrainian"
 
@@ -300,41 +300,126 @@ msgstr ""
 "Sponsorship for a charitable foundation is an opportunity to support "
 "thosewho needs protection"
 
-#: hands/templates/app/pages/contact.html:88
-#: hands/templates/app/pages/contact.html:143
+#: hands/templates/app/pages/contact.html:83
+#: hands/templates/app/pages/contact.html:138
 msgid "Наші контакти"
 msgstr "Our contacts"
 
-#: hands/templates/app/pages/contact.html:89
+#: hands/templates/app/pages/contact.html:84
 msgid "Наші адреси, за якими ви можете нас знайти, а також соціальні мережі."
 msgstr "Our addresses where you can find us, as well as social networks."
 
-#: hands/templates/app/pages/contact.html:104
+#: hands/templates/app/pages/contact.html:99
 msgid "Наші coц. мереж"
 msgstr "Our social networks"
 
-#: hands/templates/app/pages/contact.html:122
+#: hands/templates/app/pages/contact.html:117
 msgid "Наші адреси"
 msgstr "Our addresses"
 
-#: hands/templates/app/pages/contact.html:168
+#: hands/templates/app/pages/contact.html:163
+#: hands/templates/app/pages/oplata.html:10
 msgid "Наші реквiзити"
 msgstr "Our details"
 
-#: hands/templates/app/pages/contact.html:169
-msgid "Наші реквізити для того, щоб ви могли фінансово підтримати наш фонд."
-msgstr "Our details so that you can financially support our foundation."
+#: hands/templates/app/pages/contact.html:164
+msgid ""
+"Щоб підтримати діяльність ГО 'Руки Милості-Дріпро', ви можете здійснити "
+"переказ коштів на один із наших рахунків у зручній для вас валюті: гривня "
+"(UAH), долар США (USD) або євро (EUR)"
+msgstr ""
+"To support the activities of the NGO 'Arms of Mercy-Dripro', you can make "
+"transfer funds to one of our accounts in a currency convenient for you: "
+"hryvnia (UAH), US dollar (USD) or euro (EUR) "
+
+#: hands/templates/app/pages/contact.html:179
+#: hands/templates/app/pages/oplata.html:26
+msgid "Гривневий рахунок"
+msgstr "Hryvnia account"
+
+#: hands/templates/app/pages/contact.html:182
+#: hands/templates/app/pages/contact.html:230
+#: hands/templates/app/pages/contact.html:278
+#: hands/templates/app/pages/oplata.html:29
+#: hands/templates/app/pages/oplata.html:77
+#: hands/templates/app/pages/oplata.html:125
+msgid "Одержувач платежу"
+msgstr "Payee"
 
 #: hands/templates/app/pages/contact.html:185
-#: hands/templates/app/pages/contact.html:216
-#: hands/templates/app/pages/contact.html:247
-msgid "Получатель"
-msgstr "Recipient"
+#: hands/templates/app/pages/oplata.html:32
+msgid "ГО РУКИ МИЛОСТІ-ДНІПРО"
+msgstr "Arms of Mercy - Dnipro"
 
-#: hands/templates/app/pages/contact.html:193
-#: hands/templates/app/pages/contact.html:224
-msgid "ЕГРПОУ"
-msgstr "EDRPOU"
+#: hands/templates/app/pages/contact.html:188
+#: hands/templates/app/pages/oplata.html:35
+msgid "Код ЄРДПОУЄ"
+msgstr "ERDPOUE code"
+
+#: hands/templates/app/pages/contact.html:194
+#: hands/templates/app/pages/contact.html:242
+#: hands/templates/app/pages/contact.html:290
+#: hands/templates/app/pages/oplata.html:41
+#: hands/templates/app/pages/oplata.html:89
+#: hands/templates/app/pages/oplata.html:137
+msgid "Рахунок/IBAN"
+msgstr "Account/IBAN"
+
+#: hands/templates/app/pages/contact.html:200
+#: hands/templates/app/pages/contact.html:248
+#: hands/templates/app/pages/contact.html:296
+#: hands/templates/app/pages/oplata.html:47
+#: hands/templates/app/pages/oplata.html:95
+#: hands/templates/app/pages/oplata.html:143
+msgid "Банк"
+msgstr "Bank"
+
+#: hands/templates/app/pages/contact.html:203
+#: hands/templates/app/pages/oplata.html:50
+msgid ""
+"Акціонерне Товариство “Перший Український Міжнародний Банк” Київ Україна"
+msgstr "Joint Stock Company First Ukrainian International Bank  Kyiv Ukraine"
+
+#: hands/templates/app/pages/contact.html:206
+#: hands/templates/app/pages/oplata.html:53
+msgid "Призначення"
+msgstr "Appointment"
+
+#: hands/templates/app/pages/contact.html:209
+#: hands/templates/app/pages/oplata.html:56
+msgid "Благодійний внесок"
+msgstr "Charitable Foundation Arms of Mercy "
+
+#: hands/templates/app/pages/contact.html:227
+#: hands/templates/app/pages/oplata.html:74
+msgid "Доларовий рахунок"
+msgstr "Dollar account"
+
+#: hands/templates/app/pages/contact.html:236
+#: hands/templates/app/pages/contact.html:284
+#: hands/templates/app/pages/oplata.html:83
+#: hands/templates/app/pages/oplata.html:131
+msgid "Код ЄРДПОУ"
+msgstr "EDRPOU Code"
+
+#: hands/templates/app/pages/contact.html:254
+#: hands/templates/app/pages/oplata.html:101
+msgid "SWIFT BIC"
+msgstr "SWIFT BIC"
+
+#: hands/templates/app/pages/contact.html:275
+#: hands/templates/app/pages/oplata.html:122
+msgid "Євро рахунок"
+msgstr "Euro account"
+
+#: hands/templates/app/pages/contact.html:325
+#: hands/templates/app/pages/oplata.html:172
+msgid ""
+"Оберіть валюту, в якій вам зручно зробити внесок, cкопіюйте відповідні "
+"банківські реквізити, здійсніть ваш переказ через банк або онлайн-банкінг."
+msgstr ""
+"Choose the currency in which you are comfortable making a contribution, copy "
+"the relevant bank details, make your transfer via bank or online-banking."
 
 #: hands/templates/app/pages/index.html:3
 msgid "Головна Руки Милості - Дніпро"
@@ -889,6 +974,20 @@ msgstr ""
 "improve the emotional climate infamily and promote the healthy development "
 "of children in a harmonious and supportive environmentatmosphere"
 
+#: hands/templates/app/pages/oplata.html:3
+msgid "Реквізити фонду Руки Милості - Дніпро"
+msgstr "Contacts of the Hands of Mercy Foundation - Dnipro"
+
+#: hands/templates/app/pages/oplata.html:11
+msgid ""
+"Щоб підтримати діяльність ГО Руки Милості-Дріпро, ви можете здійснити "
+"переказ коштів на один із наших рахунків у зручній для вас валюті: гривня "
+"(UAH), долар США (USD) або євро (EUR)"
+msgstr ""
+"To support the activities of the NGO Hands of Mercy-Dripro, you can make a "
+"donationtransfer funds to one of our accounts in a currency convenient for "
+"you: hryvnia(UAH), US dollar (USD) or euro (EUR)"
+
 #: hands/templates/app/pages/projects-detail.html:3
 msgid "Проєкт фонду"
 msgstr "Fund project"
@@ -1081,6 +1180,21 @@ msgstr "News"
 #: hands/templates/include/menu/menu.html:39
 msgid "Контакти"
 msgstr "Contacts"
+
+#~ msgid "ГО Руки Милості-Дніпро"
+#~ msgstr "Arms of Mercy - Dnipro"
+
+#~ msgid "Joint Stock Company "
+#~ msgstr "Joint Stock Company "
+
+#~ msgid "Наші реквізити для того, щоб ви могли фінансово підтримати наш фонд."
+#~ msgstr "Our details so that you can financially support our foundation."
+
+#~ msgid "Получатель"
+#~ msgstr "Recipient"
+
+#~ msgid "ЕГРПОУ"
+#~ msgstr "EDRPOU"
 
 #~ msgid "Наш шлях"
 #~ msgstr "Our way"

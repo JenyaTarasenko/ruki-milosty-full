@@ -18,7 +18,7 @@
                         <h3>{% trans "Допомагаємо людям, котрі опинилися у складних життєвих обставинах."%}</h3>
                     </div>
                     <div class="contact-rukimilosty-button mt-5">
-                        <a href="#"></a><button class="button-section">{% trans "Підтримати фонд" %}</button>
+                        <a href="{%  url 'hands:oplata' %}"><button class="button-section">{% trans "Підтримати фонд" %}</button></a>
                     </div>
                 </div>
             </div>
@@ -58,11 +58,7 @@
                         <img src="{% static 'image/ruki-sponsor2.png' %}" alt="logo-sponsor-ruki-milosty">
                     </div>
                 </div>
-                {% comment %} <div class="col-auto">
-                    <div class="sponsor-card">
-                        <img src="{% static 'image/ruki-sponsor3.png' %}" alt="logo-sponsor-ruki-milosty">
-                    </div>
-                </div> {% endcomment %}
+                
                 <div class="col-auto">
                     <div class="sponsor-card">
                         <img src="{% static 'image/ruki-sponsor4.png' %}" alt="logo-sponsor-ruki-milosty">
@@ -165,101 +161,170 @@
             <div class="row">
                 <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
                     <h2 class="main-text">{% trans "Наші реквiзити" %}</h2>
-                    <p class="text-center description-text">{% trans "Наші реквізити для того, щоб ви могли фінансово підтримати наш фонд." %}</p>
+                    <p class="text-center description-text">{% trans "Щоб підтримати діяльність ГО 'Руки Милості-Дріпро', ви можете здійснити переказ коштів на один із наших рахунків у зручній для вас валюті: гривня (UAH), долар США (USD) або євро (EUR)" %}</p>
                 </div>
             </div> 
         </div>
     </section>
     <!-- text -->
-    <section class="card-contact-oplata-section mt-5 pb-4">
+    <section class="card-contact-oplata-section mt-2 pb-4">
         <div class="container">
             <div class="row align-items-center justify-content-center gap-2">
-
                 <div class="col-auto">
                     <a href="#">
-                        <div class="card-contact-oplata d-flex">
+                        <div class="card-contact-oplata d-flex" style="height: 500px; position: relative">
                             <div class="card-contact-oplata-body">
                                 <div class="card-contact-oplata-items d-flex flex-column">
-                                    <div class="recvizit-card">
-                                        <h5>{% trans "Получатель" %}</h5>
+                                    <div class="recvizit-card-title">
+                                        <h5>{% trans "Гривневий рахунок" %}<strong style="color:#E77B2D; font-size: 30px; font-family: "Jost", sans-serif; font-weight: 600;"> UAH</strong></h5>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Одержувач платежу" %}</h5>
                                     </div>
                                     <div class="recvizit-card-item">
-                                        <h6>UA833052990000026002021807346</h6>
+                                        <h6>{% trans "ГО РУКИ МИЛОСТІ-ДНІПРО" %}</h6>
                                     </div>
-                                    <div class="card-contact-oplata-items-top d-flex flex-row justify-content-between gap-5">
-                                        <div class="card-contact-oplata-items-column d-flex flex-column justify-content-center">
-                                            <div class="card-oplata-recvizit-top">
-                                                <h5>{% trans "ЕГРПОУ" %}</h5>
-                                            </div>
-                                            <div class="card-oplata-recvizit-top-item">
-                                                <h6>40334905</h6>
-                                            </div>
-                                        </div>
-                                        <div class="card-oplata-recvizit-img">
-                                            <img src="{% static 'image/privat-bank.png' %}" alt="logo-privat">
-                                        </div>
-    
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Код ЄРДПОУЄ" %}</h5>
                                     </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>45127569</h6>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Рахунок/IBAN" %}</h5>
+                                    </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>UA533348510000000026004226129</h6>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Банк" %}</h5>
+                                    </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>{% trans "Акціонерне Товариство “Перший Український Міжнародний Банк” Київ Україна" %}</h6>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Призначення" %}</h5>
+                                    </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>{% trans "Благодійний внесок" %}</h6>
+                                    </div>
+                                    <img src="{% static 'image/pumb.svg' %}"
+                                        alt="Логотип"
+                                        class="position-absolute"
+                                        style="right: 24px; width: 100px; margin-top: 380px;"
+                                    >
                                 </div>
-    
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-auto">
                     <a href="#">
-                        <div class="card-contact-oplata d-flex">
+                        <div class="card-contact-oplata d-flex" style="height: 500px; position: relative">
                             <div class="card-contact-oplata-body">
                                 <div class="card-contact-oplata-items d-flex flex-column">
-                                    <div class="recvizit-card">
-                                        <h5>{% trans "Получатель" %}</h5>
+                                    <div class="recvizit-card-title">
+                                        <h5>{% trans "Доларовий рахунок" %}<strong style="color:#E77B2D; font-size: 30px; font-family: "Jost", sans-serif; font-weight: 600;"> USD</strong></h5>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Одержувач платежу" %}</h5>
                                     </div>
                                     <div class="recvizit-card-item">
-                                        <h6>UA833052990000026002021807346</h6>
+                                        <h6>ARMS OF MERCY-DNIPRO</h6>
                                     </div>
-                                    <div class="card-contact-oplata-items-top d-flex flex-row justify-content-between gap-5">
-                                        <div class="card-contact-oplata-items-column d-flex flex-column justify-content-center">
-                                            <div class="card-oplata-recvizit-top">
-                                                <h5>{% trans "ЕГРПОУ" %}</h5>
-                                            </div>
-                                            <div class="card-oplata-recvizit-top-item">
-                                                <h6>40334905</h6>
-                                            </div>
-                                        </div>
-                                        <div class="card-oplata-recvizit-img">
-                                            <img src="{% static 'image/privat-bank.png' %}" alt="logo-privat">
-                                        </div>
-    
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Код ЄРДПОУ" %}</h5>
                                     </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>45127569</h6>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Рахунок/IBAN" %}</h5>
+                                    </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>UA533348510000000026004226129</h6>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Банк" %}</h5>
+                                    </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>Joint Stock Company "First Ukrainian International Bank" Kyiv Ukraine</h6>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "SWIFT BIC" %}</h5>
+                                    </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>FUIBUA2X</h6>
+                                    </div>
+                                    <img src="{% static 'image/pumb.svg' %}"
+                                        alt="Логотип"
+                                        class="position-absolute"
+                                        style="right: 24px; width: 100px; margin-top: 380px;"
+                                    >
                                 </div>
-    
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-auto">
                     <a href="#">
-                        <div class="card-contact-oplata d-flex">
-                            <div class="card-contact-oplata-body-top">
+                        <div class="card-contact-oplata d-flex" style="height: 500px; position: relative">
+                            <div class="card-contact-oplata-body">
                                 <div class="card-contact-oplata-items d-flex flex-column">
-                                    <div class="recvizit-card">
-                                        <h5>{% trans "Получатель" %}</h5>
+                                    <div class="recvizit-card-title">
+                                        <h5>{% trans "Євро рахунок" %}<strong style="color:#E77B2D; font-size: 30px; font-family: "Jost", sans-serif; font-weight: 600;"> EURO</strong></h5>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Одержувач платежу" %}</h5>
                                     </div>
                                     <div class="recvizit-card-item">
-                                        <h6>armsofmercy.dnipro@gmail.com</h6>
+                                        <h6>ARMS OF MERCY-DNIPRO</h6>
                                     </div>
-                                    <div class="card-contact-img-top">
-                                        <img src="{% static 'image/PayPal-logo-white.png' %}" alt="logo-paypal">
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Код ЄРДПОУ" %}</h5>
                                     </div>
-                                    
+                                    <div class="recvizit-card-item">
+                                        <h6>45127569</h6>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Рахунок/IBAN" %}</h5>
+                                    </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>UA533348510000000026004226129</h6>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">{% trans "Банк" %}</h5>
+                                    </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>Joint Stock Company "First Ukrainian International Bank" Kyiv Ukraine</h6>
+                                    </div>
+                                    <div class="recvizit-card mt-3">
+                                        <h5 style="font-size: 16px">SWIFT BIC</h5>
+                                    </div>
+                                    <div class="recvizit-card-item">
+                                        <h6>FUIBUA2X</h6>
+                                    </div>
+                                    <img src="{% static 'image/pumb.svg' %}"
+                                        alt="Логотип"
+                                        class="position-absolute"
+                                        style="right: 24px; width: 100px; margin-top: 380px;"
+                                    >
                                 </div>
-    
                             </div>
                         </div>
                     </a>
                 </div>
+                
             </div>
         </div>
     </section>
-
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex justify-content-center flex-column align-items-center">
+                    <p class="text-center description-text">{% trans "Оберіть валюту, в якій вам зручно зробити внесок, cкопіюйте відповідні банківські реквізити, здійсніть ваш переказ через банк або онлайн-банкінг."%}</p>
+                </div>
+            </div> 
+        </div>
+    </section>
 {% endblock%}

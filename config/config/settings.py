@@ -117,6 +117,7 @@ STATIC_URL = 'static/'
 CSRF_TRUSTED_ORIGINS = ['https://handsmercy.pythonanywhere.com']
 
 ALLOWED_HOSTS = ['Handsmercy.pythonanywhere.com','localhost', '127.0.0.1']
+# ALLOWED_HOSTS = ['*']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_URL = '/static/'

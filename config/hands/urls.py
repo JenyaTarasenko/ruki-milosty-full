@@ -16,7 +16,7 @@ urlpatterns = [
     path('project-detail/<slug:slug>/', views.ProjectDetailView.as_view(), name="projects-detail"),#detail
     path('news-detail/<slug:slug>/', views.NewsDetailView.as_view(), name="news-detail"),#detail
     path('setlang/', set_language, name='set_language'),#перевод язывов
-    path('test/', views.test, name="test"), #test-page
+    path('oplata-fond/',TemplateView.as_view(template_name="app/pages/oplata.html"), name="oplata"), #oplata-page
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

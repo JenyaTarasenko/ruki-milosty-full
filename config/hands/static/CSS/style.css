@@ -1,5 +1,8 @@
 
 /* ---------------------общие--------------*/
+html {
+    scroll-behavior: smooth;
+  }
 a {
 
     text-decoration: none;
@@ -2591,3 +2594,13 @@ html,body {
 } */
 /* синий #414db4;*/
 /* синий #E77B2D;*/
+
+.recvizit-card-title h5{
+
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+ 
+
+}
+
