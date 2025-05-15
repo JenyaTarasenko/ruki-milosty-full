@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-15 10:01+0300\n"
+"POT-Creation-Date: 2025-05-15 10:26+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -280,7 +280,7 @@ msgstr ""
 
 #: hands/templates/app/pages/contact.html:3
 msgid "Контакти фонду Руки Милості - Дніпро"
-msgstr "Contacts of the Hands of Mercy Foundation - Dnipro"
+msgstr "Contacts of the Arms of Mercy Foundation - Dnipro"
 
 #: hands/templates/app/pages/contact.html:15
 msgid "Зараз саме час допомогти тим, хто цього потребує"
@@ -349,12 +349,16 @@ msgstr "Payee"
 #: hands/templates/app/pages/contact.html:185
 #: hands/templates/app/pages/oplata.html:32
 msgid "ГО РУКИ МИЛОСТІ-ДНІПРО"
-msgstr "Arms of Mercy - Dnipro"
+msgstr "NGO Arms of Mercy - Dnipro"
 
 #: hands/templates/app/pages/contact.html:188
+#: hands/templates/app/pages/contact.html:236
+#: hands/templates/app/pages/contact.html:284
 #: hands/templates/app/pages/oplata.html:35
-msgid "Код ЄРДПОУЄ"
-msgstr "ERDPOUE code"
+#: hands/templates/app/pages/oplata.html:83
+#: hands/templates/app/pages/oplata.html:131
+msgid "Код ЄРДПОУ"
+msgstr "EDRPOU Code"
 
 #: hands/templates/app/pages/contact.html:194
 #: hands/templates/app/pages/contact.html:242
@@ -394,13 +398,6 @@ msgstr "Charitable Foundation Arms of Mercy "
 #: hands/templates/app/pages/oplata.html:74
 msgid "Доларовий рахунок"
 msgstr "Dollar account"
-
-#: hands/templates/app/pages/contact.html:236
-#: hands/templates/app/pages/contact.html:284
-#: hands/templates/app/pages/oplata.html:83
-#: hands/templates/app/pages/oplata.html:131
-msgid "Код ЄРДПОУ"
-msgstr "EDRPOU Code"
 
 #: hands/templates/app/pages/contact.html:254
 #: hands/templates/app/pages/oplata.html:101
@@ -1180,6 +1177,9 @@ msgstr "News"
 #: hands/templates/include/menu/menu.html:39
 msgid "Контакти"
 msgstr "Contacts"
+
+#~ msgid "Код ЄРДПОУЄ"
+#~ msgstr "ERDPOUE code"
 
 #~ msgid "ГО Руки Милості-Дніпро"
 #~ msgstr "Arms of Mercy - Dnipro"
