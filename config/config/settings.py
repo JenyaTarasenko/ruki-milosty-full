@@ -9,8 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-uis!_s6dy=(if+04qko-syq($%s&d%1lu7xp2u-09j7e9+kpvn'
 
 
-# DEBUG = True
-DEBUG = False
+
 # python manage.py collectstatic
 
 
@@ -113,11 +112,12 @@ MODELTRANSLATION_FALLBACK_LANGUAGES = ('uk', 'en')
 
 
 
+
 STATIC_URL = 'static/'
 
-CSRF_TRUSTED_ORIGINS = ['https://handsmercy.pythonanywhere.com']
+# CSRF_TRUSTED_ORIGINS = ['https://handsmercy.pythonanywhere.com']
 
-ALLOWED_HOSTS = ['Handsmercy.pythonanywhere.com','localhost', '127.0.0.1']
+# ALLOWED_HOSTS = ['Handsmercy.pythonanywhere.com','localhost', '127.0.0.1']
 # ALLOWED_HOSTS = ['*']
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
@@ -130,3 +130,23 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+SITE_URL = 'https://www.aomdnipro.com'
+ALLOWED_HOSTS = ['aomdnipro.com', 'www.aomdnipro.com', '127.0.0.1', 'localhost']
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://aomdnipro.com',
+    'https://www.aomdnipro.com',
+]
+
+
+# DEBUG = True
+DEBUG = False
+SECURE_SSL_REDIRECT = True 
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
+
+# python manage.py collectstatic
